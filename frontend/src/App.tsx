@@ -7,9 +7,10 @@ import  Home from './pages/home/Home'
 const App = () => {
   return (
     <div>
-      <Routes>
+      Hi from App.tsx
+     <Routes>
        <Route path='/' element={<Home />} />
-        </Routes>
+        </Routes> 
     </div>
   )
 }

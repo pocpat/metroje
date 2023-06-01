@@ -1,12 +1,13 @@
 const prod = process.env.NODE_ENV === 'production';
-
+import.meta.url
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import MiniCssExtractPlugin, { loader } from 'mini-css-extract-plugin';
-
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import pkg from 'mini-css-extract-plugin';
+const { loader } = pkg;
 export const mode = prod ? 'production' : 'development';
 export const entry = './src/index.tsx';
 export const output = {
-  path: __dirname + '/dist/',
+  path: new URL('.', import.meta.url).pathname + '/dist/',
 };
 export const module = {
   rules: [
@@ -31,3 +32,11 @@ export const plugins = [
   }),
   new MiniCssExtractPlugin(),
 ];
+export default {
+  mode,
+  entry,
+  output,
+  module,
+  devtool,
+  plugins
+};
