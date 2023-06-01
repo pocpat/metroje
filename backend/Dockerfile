@@ -3,13 +3,13 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY package-lock.json ./
+COPY package.json package-lock.json ./
 
 # install dependencies
 RUN npm install
 
 # install node
-COPY . /app
+COPY . .
 
 # build my api
 RUN npm run build
