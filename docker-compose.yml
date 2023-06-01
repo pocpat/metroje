@@ -3,18 +3,13 @@ services:
   frontend:
     build: ./frontend
     ports:
-      - 3000:3000
+      - 3001:3001
   backend:
     build: ./backend
     ports:
       - 8080:8080
     environment:
-      DB_URL: mongodb://db/metroje
-  database: 
-    image: mongo:4.0-xenial
-    ports:
-      - 27017:27017
-    volumes:
-      - metroje:/data/db
+      DB_URL: mongodb+srv://joesfound:joesfound@cluster0.nc35kze.mongodb.net/?retryWrites=true&w=majority
+  
 volumes:
   metroje:
