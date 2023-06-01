@@ -6,8 +6,12 @@ import compression from "compression";
 import cors from "cors";
 import mongoose from "mongoose";
 import router from "./router"
+import env from "dotenv"
+
+env.config()
 
 const app = express();
+const PORT = process.env.PORT || 3000
 
 app.use(
   cors({
@@ -21,8 +25,8 @@ app.use(bodyParser.json());
 
 const server = http.createServer(app);
 
-server.listen(8080, () => {
-  console.log("Server running on http://localhost:8080/");
+server.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}/`);
 });
 
 const MONGO_URL =
