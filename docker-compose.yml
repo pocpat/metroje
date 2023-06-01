@@ -1,0 +1,20 @@
+version: "Compose specification"
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - 3000:3000
+  backend:
+    build: ./backend
+    ports:
+      - 8080:8080
+    environment:
+      DB_URL: mongodb://db/metroje
+  database: 
+    image: mongo:4.0-xenial
+    ports:
+      - 27017:27017
+    volumes:
+      - metroje:/data/db
+volumes:
+  metroje:
