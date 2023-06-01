@@ -1,0 +1,4 @@
+.em
+node_modules/
+coverage/
+dist/
