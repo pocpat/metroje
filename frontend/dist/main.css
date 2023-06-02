@@ -1,24 +1,6 @@
-@import url(https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap);
 body {
     color: rgb(132, 0, 255);
   }
-
-/* *{
-      border: 1px solid rgb(241, 5, 5);
-} */
-
-body{
-      box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-    color: blueviolet;
-    font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-}
 .rhBody{
     background-color: #f44336;
     color: white;

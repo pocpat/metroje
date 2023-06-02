@@ -2,7 +2,6 @@
 /* *{
       border: 1px solid rgb(241, 5, 5);
 } */
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap");
 
 body{
       box-sizing: border-box;
@@ -15,4 +14,7 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+}
+.testcolor{
+  color: red;
 }

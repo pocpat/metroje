@@ -1,5 +1,9 @@
 {
-    "compilerOptions": {
+ "compilerOptions": {
+  "plugins": [{ "name": "typescript-plugin-css-modules" }],
+     "noImplicitAny": true,
+      // "target": "ES5",
+    //  "module": "ES2015",
       "esModuleInterop": true,
       "jsx": "react",
       "module": "esnext",
@@ -16,8 +20,6 @@
       "sourceMap": true,
       "target": "esnext",
     },
-    "include": ["src", "images.d.ts"],
-    "exclude": [
-      "node_modules"
-    ]
-  }
+ "include": ["src", "typings.d.ts"],
+ "exclude": [ "node_modules"]
+}
