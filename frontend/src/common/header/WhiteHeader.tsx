@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react"
-// import banner from '../../srcAssets/bannerTest_1.jpg'
  import '../../styles/WhiteHeader.css'
+import banner from '../../srcAssets/bannerTest_1.jpg'
+
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false)
@@ -9,7 +10,7 @@ export default function Navbar() {
   return (
     <div className="wh_navigation">
 
-     {/* <img src={banner} alt="Image"className="whBanner" /> */}
+     <img src={banner} alt="Image"className="whBanner" />
       <button
         className="wh_hamburger"
         onClick={() => {

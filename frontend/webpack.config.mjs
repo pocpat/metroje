@@ -23,8 +23,12 @@ export const module = {
       test: /\.css$/,
       use: [loader, 'css-loader'],
     },
-    { test: /\.(png|jpe?g|svg|gif)$/, 
-    use: ['file-loader'], },
+    {
+      test: /\.(png|jpe?g|gif|jp2|webp)$/,
+      loader: 'file-loader',
+      options: {
+        name: '[name].[ext]',
+    },}
   ]
 };
 export const devtool = prod ? undefined : 'source-map';

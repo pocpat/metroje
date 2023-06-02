@@ -4,7 +4,10 @@
       "jsx": "react",
       "module": "esnext",
       "moduleResolution": "node",
-      "typeRoots": ["./node_modules/@types"],
+      "typeRoots": [
+        "./node_modules/@types", 
+        "./src/types"
+     ],
       "lib": [
         "dom",
         "esnext"
@@ -13,6 +16,7 @@
       "sourceMap": true,
       "target": "esnext",
     },
+    "include": ["src", "images.d.ts"],
     "exclude": [
       "node_modules"
     ]

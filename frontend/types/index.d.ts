@@ -1,7 +1,5 @@
 import { ChangeHandler, RefCallBack } from "react-hook-form";
 
-declare module "*.jpg";
-declare module "*.png";
 
 export interface FormRegisterReturn {
     onChange: ChangeHandler;
