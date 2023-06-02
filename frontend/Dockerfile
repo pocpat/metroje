@@ -4,15 +4,15 @@ FROM node:18-alpine
 # set working directory
 WORKDIR /app
 
-# copy the package.json file into the working directory
-COPY dist /app
-COPY package**.json /app
-# COPY index.html /app/dist
-# COPY src /app/src
-# COPY node_modules /app/node_modules
+
+COPY . . 
+RUN rm -rf node_modules
 
 # install dependencies
 RUN npm install
+
+# Render production build
+RUN npm run build
 
 # list contents of /app directory
 # RUN ls /app
@@ -21,4 +21,5 @@ RUN npm install
 EXPOSE 3000
 
 # run the application
-CMD ["npm", "start"]
+
+CMD ["npm", "run", "start"]
