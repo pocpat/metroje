@@ -3,7 +3,7 @@ import '../../styles/RedHeader.css'
 
 const RedHeader = () => {
   return (
-    <div className='rhBody'>RedHeader</div>
+    <div className="rhBody">RedHeader</div>
   )
 }
 

@@ -1,19 +1,25 @@
-#  create a new image from the base image
-
+# create a new image from the base image
 FROM node:18-alpine
 
 # set working directory
 WORKDIR /app
 
-# copy the package.json file into the working directory
-COPY dist /app
-COPY package.json /app
+
+COPY . . 
+RUN rm -rf node_modules
 
 # install dependencies
 RUN npm install
 
-# expose port 3001
-EXPOSE 3001
+# Render production build
+RUN npm run build
+
+# list contents of /app directory
+# RUN ls /app
+
+# expose port 3000
+EXPOSE 3000
 
 # run the application
-CMD ["npx", "serve", "dist"]
+
+CMD ["npm", "run", "start"]

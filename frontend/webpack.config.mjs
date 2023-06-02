@@ -1,31 +1,37 @@
 const prod = process.env.NODE_ENV === 'production';
-import.meta.url
+import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import pkg from 'mini-css-extract-plugin';
 const { loader } = pkg;
-export const mode = prod ? 'production' : 'development';
+ export const mode = prod ? 'production' : 'development';
+
 export const entry = './src/index.tsx';
 export const output = {
-  path: new URL('.', import.meta.url).pathname + '/dist/',
+  path: path.resolve(process.cwd(), 'dist'),
 };
-export const module = {
+export const moduleRules = {
   rules: [
     {
       test: /\.(ts|tsx)$/,
-      exclude: /node_modules/,
-      resolve: {
-        extensions: ['.ts', '.tsx', '.js', '.json'],
-      },
       use: 'ts-loader',
+      exclude: /node_modules/,
     },
     {
       test: /\.css$/,
       use: [loader, 'css-loader'],
     },
-    { test: /\.(png|jpe?g|svg|gif)$/, 
-    use: ['file-loader'], },
-  ]
+    {
+      test: /\.(png|jpe?g|gif|jp2|webp)$/,
+      loader: 'file-loader',
+      options: {
+        name: '[name].[ext]',
+      },
+    },
+  ],
+};
+export const resolve = {
+  extensions: ['.ts', '.tsx', '.js', '.json'],
 };
 export const devtool = prod ? undefined : 'source-map';
 export const plugins = [
@@ -38,7 +44,8 @@ export default {
   mode,
   entry,
   output,
-  module,
+  module: moduleRules,
+  resolve,
   devtool,
-  plugins
+  plugins,
 };
