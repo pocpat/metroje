@@ -1,25 +1,85 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
+  \*****************************************************************/
+:root{
+  --textMain:  #410909;
+  --textSecondary: #ffffff;
+  --bgSecondary:  #5EB1BF;
+  --gray:  #D9D9D9;
+  --red: #E4353C;
+}
+
+
 body {
-    color: rgb(132, 0, 255);
-  }
+  box-sizing: border-box;
+  width: 1280px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  color:  #410909;
+  font-family: "open sans", sans-serif;
+}
+
+/*!***************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/app.css ***!
+  \***************************************************************/
+
+
+
+/*!****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/LilHeader.css ***!
+  \****************************************************************************/
 .rhBody{
-    background-color: #f44336;
+    background-color: rgb(94,177,191);
     color: white;
-    padding: 10px;
     font-size: 1rem;
     text-align: center;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 120px;   
 }
 
-.whBanner{
+.lh_search{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    align-items: center;
+    width: 250px;
+    height: 28px;
+    box-sizing: border-box;
+    background-color: rgb(217,217,217);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: 0px solid red;
+    border-radius: 10px;
+    margin: 0px 10px;
+}
+.rhBody p {
+    margin: 0 10px;
+    font-size: 1.2rem;
+
+}
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/WhiteHeader.css ***!
+  \******************************************************************************/
+.wh_img{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #29a85a;
-  height: 100%;
+  background-color: #294ba8;
+  width: 1040px;
+height: 100%;
+  /* height: 160px; */
   position: static;
   width: auto;
   box-sizing: border-box;
+  /* margin: 0px 120px; */
 }
  /* .container {
   max-width: 90%;
@@ -35,13 +95,15 @@ body {
 
 .wh_navigation {
   height: 100px;
-  width: 100%;
+  width: auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: relative;
-  padding: 0.5rem 0rem;
+  margin: 0.5% 120px;
   background-color: #fff;
-  color: black;
+  color: rgb(65,9,9);
+  margin: 10px 120px;
   /* box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); */
 }
 
@@ -81,6 +143,7 @@ body {
 .wh_hamburger:hover {
   background-color: #2642af;
 }
+ /*  390px */
 
 @media screen and (max-width: 768px) {
   .wh_hamburger {
@@ -119,6 +182,9 @@ body {
   }
   .wh_navigation-menu li:hover {
     background-color: #eee;
+  }
+  .wh_navigation{
+    margin: 0px 0px;
   }
 }
 
@@ -190,3 +256,150 @@ body {
 
 
 
+/*!*******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/HomeSection1.css ***!
+  \*******************************************************************************/
+.s1container{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgSecondary);
+    /* background-color: #5EB1BF; */
+    
+    color: white;
+    padding: 0px 3%;
+    margin: 0px 120px;
+    width: auto;
+    height: 522px;
+    position: relative;
+    justify-content: space-between;
+    font-size: 2rem;
+    /* z-index: 1; */
+}
+
+.btn{
+    text-transform: uppercase;
+}
+.s1Right img{
+width: auto;
+height: 90%;
+}
+@media screen and (max-width: 768px) {
+    .s1container{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0px 0;
+        margin: 0px 0 ;
+    }
+    .s1Title{
+        margin: 0px;
+    }
+}
+/*!*******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/HomeSection2.css ***!
+  \*******************************************************************************/
+.hsiContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: var(--textSecondary);
+    padding: 0px 3% ;
+    margin: 0px 0px;
+    width: 235px;
+    height: 260px;
+} 
+.hsiContainer img{
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.hsiContainer p{
+    text-align: center;
+}
+.s2Container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--textSecondary);
+    justify-content: space-between;
+    margin: 0px 120px;
+    padding: 50px 0px;
+}
+/*!*******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/HomeSection3.css ***!
+  \*******************************************************************************/
+.hcpContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0px 120px;
+    
+}
+.hpcText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0px 0px;
+    padding: 0px 20%;
+}
+.homePCardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    background-color:var(--gray);
+    border-radius: 10px;
+    margin: 0px 0px;
+    padding: 0;
+    width: 30%;
+    height: auto;
+    box-shadow: -4px 4px 4px 1px rgba(0,0,0,0.2);
+}
+
+.hpcText{
+    padding: 5% 20%;
+}
+hr{
+    
+    border: 0.1px solid var(--textMain);
+    margin: 2% 120px;
+}
+
+/*!*******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/HomeSection4.css ***!
+  \*******************************************************************************/
+.hs4Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 120px;
+    height: auto;
+    
+}
+.hs4Container h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--textMain);
+    text-align: center;
+}
+.hs4body{
+    
+}
+
+/*# sourceMappingURL=main.css.map*/

@@ -1,0 +1,18 @@
+.hs4Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 120px;
+    height: auto;
+    
+}
+.hs4Container h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--textMain);
+    text-align: center;
+}
+.hs4body{
+    
+}

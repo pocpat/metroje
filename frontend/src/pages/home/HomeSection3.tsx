@@ -1,14 +1,18 @@
 import React from 'react'
-import HomeCardIcons from './HomeCardIcons'
+import '../../styles/HomeSection3.css'
+import HomeCardPeople from './HomeCardPeople'
 
 
 const HomeSection3 = () => {
   return (
-    <div>
-       section 3 here
-       reviews
-
+    <>
+    <div className='hcpContainer'>
+      <HomeCardPeople/>
+      <HomeCardPeople/>
+      <HomeCardPeople/>
     </div>
+    <hr/>
+    </>
   )
 }
 
