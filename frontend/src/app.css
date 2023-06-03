@@ -1,20 +1,12 @@
+* {
+  border: 1px solid rgb(241, 5, 5);
+}
 
-/* *{
-      border: 1px solid rgb(241, 5, 5);
-} */
-
-body{
-      box-sizing: border-box;
+body {
+  box-sizing: border-box;
+  width: 1280px;
   margin: 0;
   padding: 0;
-    color: blueviolet;
-    font-family: "Karla", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-}
-.testcolor{
-  color: red;
+  color:  #410909;
+  font-family: "open sans", sans-serif;
 }

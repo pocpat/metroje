@@ -1,0 +1,36 @@
+.s1container{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(94,177,191);
+    color: white;
+    padding: 0px 3%;
+    margin: 0px 120px;
+    width: auto;
+    height: 522px;
+    position: relative;
+    justify-content: space-between;
+    font-size: 2rem;
+    /* z-index: 1; */
+}
+
+.btn{
+    text-transform: uppercase;
+}
+.s1Right img{
+width: auto;
+height: 90%;
+}
+@media screen and (max-width: 768px) {
+    .s1container{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0px 0;
+        margin: 0px 0 ;
+    }
+    .s1Title{
+        margin: 0px;
+    }
+}
