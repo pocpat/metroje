@@ -41,6 +41,9 @@ export const plugins = [
   new MiniCssExtractPlugin(),
 ];
 export default {
+  devServer: {
+    historyApiFallback: true,
+  },
   mode,
   entry,
   output,

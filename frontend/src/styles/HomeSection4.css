@@ -11,8 +11,29 @@
     font-size: 2.5rem;
     font-weight: 600;
     color: var(--textMain);
-    text-align: center;
+    margin: 0% ;
+
+}
+.hs4Sponsor{
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 .hs4body{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 0% 10%; */
+    height: auto;
+}
+.hs4text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 0%;
+    width: 40%;
+    height: auto;
 }

@@ -3,6 +3,7 @@
   \*****************************************************************/
 :root{
   --textMain:  #410909;
+  --textMainAlpha: rgba(65, 9, 9, 0.5);
   --textSecondary: #ffffff;
   --bgSecondary:  #5EB1BF;
   --gray:  #D9D9D9;
@@ -375,9 +376,11 @@ height: 90%;
     padding: 5% 20%;
 }
 hr{
-    
-    border: 0.1px solid var(--textMain);
+    border: none;
+    background-color: var(--textMainAlpha);
+   height: 1.5px;
     margin: 2% 120px;
+    backdrop-filter: blur(5px);
 }
 
 /*!*******************************************************************************!*\
@@ -396,10 +399,79 @@ hr{
     font-size: 2.5rem;
     font-weight: 600;
     color: var(--textMain);
-    text-align: center;
+    margin: 0% ;
+
+}
+.hs4Sponsor{
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 .hs4body{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 0% 10%; */
+    height: auto;
 }
+.hs4text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 0%;
+    width: 40%;
+    height: auto;
+}
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/Footer.css ***!
+  \*************************************************************************/
+.fContainer{
+    background-color: var(--bgSecondary);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    bottom: 0;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ficons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ficons img{
+    width: 70%;
+    height: 70%;
+    margin: 10px;
+}
+/*!******************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/SearchPanel.css ***!
+  \******************************************************************************/
+.spContainer {
+  background-color: var(--bgSecondary);
+}
+.spLocation input,
+.spSuburb input {
+  background-color: var(--textSecondary);
+}
+.spRentMin input,
+.spRentMax input,
+.spBedrooms input,
+.spPropertyType input {
+  background-color: var(--textSecondary);
+}
+
 
 /*# sourceMappingURL=main.css.map*/

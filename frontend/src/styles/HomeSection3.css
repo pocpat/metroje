@@ -36,7 +36,9 @@
     padding: 5% 20%;
 }
 hr{
-    
-    border: 0.1px solid var(--textMain);
+    border: none;
+    background-color: var(--textMainAlpha);
+   height: 1.5px;
     margin: 2% 120px;
+    backdrop-filter: blur(5px);
 }

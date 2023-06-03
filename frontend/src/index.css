@@ -1,5 +1,6 @@
 :root{
   --textMain:  #410909;
+  --textMainAlpha: rgba(65, 9, 9, 0.5);
   --textSecondary: #ffffff;
   --bgSecondary:  #5EB1BF;
   --gray:  #D9D9D9;

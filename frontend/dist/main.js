@@ -4365,6 +4365,20 @@ function getTargetMatch(matches, location) {
 
 /***/ }),
 
+/***/ "./src/srcAssets/ba.jpg":
+/*!******************************!*\
+  !*** ./src/srcAssets/ba.jpg ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "ba.jpg");
+
+/***/ }),
+
 /***/ "./src/srcAssets/bannerTest_1.jpg":
 /*!****************************************!*\
   !*** ./src/srcAssets/bannerTest_1.jpg ***!
@@ -4376,6 +4390,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "bannerTest_1.jpg");
+
+/***/ }),
+
+/***/ "./src/srcAssets/fb.jpg":
+/*!******************************!*\
+  !*** ./src/srcAssets/fb.jpg ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "fb.jpg");
+
+/***/ }),
+
+/***/ "./src/srcAssets/homeSponsor.jpg":
+/*!***************************************!*\
+  !*** ./src/srcAssets/homeSponsor.jpg ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "homeSponsor.jpg");
 
 /***/ }),
 
@@ -4393,6 +4435,48 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/srcAssets/inst.jpg":
+/*!********************************!*\
+  !*** ./src/srcAssets/inst.jpg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "inst.jpg");
+
+/***/ }),
+
+/***/ "./src/srcAssets/kolos.jpg":
+/*!*********************************!*\
+  !*** ./src/srcAssets/kolos.jpg ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "kolos.jpg");
+
+/***/ }),
+
+/***/ "./src/srcAssets/li.jpg":
+/*!******************************!*\
+  !*** ./src/srcAssets/li.jpg ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "li.jpg");
+
+/***/ }),
+
 /***/ "./src/srcAssets/s2hands.jpg":
 /*!***********************************!*\
   !*** ./src/srcAssets/s2hands.jpg ***!
@@ -4404,6 +4488,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "s2hands.jpg");
+
+/***/ }),
+
+/***/ "./src/srcAssets/twit.jpg":
+/*!********************************!*\
+  !*** ./src/srcAssets/twit.jpg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "twit.jpg");
+
+/***/ }),
+
+/***/ "./src/srcAssets/waba.jpg":
+/*!********************************!*\
+  !*** ./src/srcAssets/waba.jpg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "waba.jpg");
 
 /***/ }),
 
@@ -4423,6 +4535,18 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************!*\
   !*** ./src/index.css ***!
   \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/styles/Footer.css":
+/*!*******************************!*\
+  !*** ./src/styles/Footer.css ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -4483,6 +4607,18 @@ __webpack_require__.r(__webpack_exports__);
 /*!**********************************!*\
   !*** ./src/styles/LilHeader.css ***!
   \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/styles/SearchPanel.css":
+/*!************************************!*\
+  !*** ./src/styles/SearchPanel.css ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -40474,19 +40610,76 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.css */ "./src/app.css");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _pages_home_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/home/Home */ "./src/pages/home/Home.tsx");
+/* harmony import */ var _pages_tenants_Tenants__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/tenants/Tenants */ "./src/pages/tenants/Tenants.tsx");
 
 
 // import styles from "./app.module.css"
 
 
+
 const App = () => {
     return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null,
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Routes, null,
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Route, { path: '/', element: react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_home_Home__WEBPACK_IMPORTED_MODULE_2__["default"], null) }))));
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Routes, null,
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, { path: '/', element: react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_home_Home__WEBPACK_IMPORTED_MODULE_2__["default"], null) }),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.Route, { path: '/tenants', element: react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_tenants_Tenants__WEBPACK_IMPORTED_MODULE_3__["default"], null) }))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
+
+
+/***/ }),
+
+/***/ "./src/common/footer/Footer.tsx":
+/*!**************************************!*\
+  !*** ./src/common/footer/Footer.tsx ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_Footer_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/Footer.css */ "./src/styles/Footer.css");
+/* harmony import */ var _srcAssets_waba_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../srcAssets/waba.jpg */ "./src/srcAssets/waba.jpg");
+/* harmony import */ var _srcAssets_kolos_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../srcAssets/kolos.jpg */ "./src/srcAssets/kolos.jpg");
+/* harmony import */ var _srcAssets_ba_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../srcAssets/ba.jpg */ "./src/srcAssets/ba.jpg");
+/* harmony import */ var _srcAssets_fb_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../srcAssets/fb.jpg */ "./src/srcAssets/fb.jpg");
+/* harmony import */ var _srcAssets_inst_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../srcAssets/inst.jpg */ "./src/srcAssets/inst.jpg");
+/* harmony import */ var _srcAssets_li_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../srcAssets/li.jpg */ "./src/srcAssets/li.jpg");
+/* harmony import */ var _srcAssets_twit_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../srcAssets/twit.jpg */ "./src/srcAssets/twit.jpg");
+
+
+
+
+
+
+
+
+
+const Footer = () => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "fContainer" },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "fsubscribe" },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "subscribe to our newsletter"),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "finput" },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", null, "Subscribe"),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", { type: "text", placeholder: "Enter your email address" }))),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "flogos" },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", { src: _srcAssets_waba_jpg__WEBPACK_IMPORTED_MODULE_2__["default"], alt: "waba" }),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", { src: _srcAssets_kolos_jpg__WEBPACK_IMPORTED_MODULE_3__["default"], alt: "kolos" }),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", { src: _srcAssets_ba_jpg__WEBPACK_IMPORTED_MODULE_4__["default"], alt: "ba" })),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "ficons" },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", { src: _srcAssets_fb_jpg__WEBPACK_IMPORTED_MODULE_5__["default"], alt: "fb" }),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", { src: _srcAssets_inst_jpg__WEBPACK_IMPORTED_MODULE_6__["default"], alt: "instagram" }),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", { src: _srcAssets_li_jpg__WEBPACK_IMPORTED_MODULE_7__["default"], alt: "linkedin" }),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", { src: _srcAssets_twit_jpg__WEBPACK_IMPORTED_MODULE_8__["default"], alt: "twitter" })),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "fcontact" },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Level 33, ANZ Centre, 23-29 Albert St, Auckland 1010, New Zealand"),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, " \u00A9 2022 Metro NZ Property Management"))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
 
 
 /***/ }),
@@ -40608,6 +40801,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HomeSection2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./HomeSection2 */ "./src/pages/home/HomeSection2.tsx");
 /* harmony import */ var _HomeSection3__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./HomeSection3 */ "./src/pages/home/HomeSection3.tsx");
 /* harmony import */ var _HomeSection4__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./HomeSection4 */ "./src/pages/home/HomeSection4.tsx");
+/* harmony import */ var _common_footer_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../common/footer/Footer */ "./src/common/footer/Footer.tsx");
+
 
 
 
@@ -40620,7 +40815,8 @@ const Home = () => {
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HomeSection1__WEBPACK_IMPORTED_MODULE_2__["default"], null),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HomeSection2__WEBPACK_IMPORTED_MODULE_3__["default"], null),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HomeSection3__WEBPACK_IMPORTED_MODULE_4__["default"], null),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HomeSection4__WEBPACK_IMPORTED_MODULE_5__["default"], null)));
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HomeSection4__WEBPACK_IMPORTED_MODULE_5__["default"], null),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common_footer_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], null)));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
 
@@ -40788,6 +40984,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_HomeSection4_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/HomeSection4.css */ "./src/styles/HomeSection4.css");
+/* harmony import */ var _srcAssets_homeSponsor_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../srcAssets/homeSponsor.jpg */ "./src/srcAssets/homeSponsor.jpg");
+
 
 
 const HomeSection4 = () => {
@@ -40795,12 +40993,89 @@ const HomeSection4 = () => {
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Social Responsibility"),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "hs4body" },
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "hs4Sponsor" },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Proud sponsor of I\u2019m Enough")),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Proud sponsor of I\u2019m Enough"),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", { src: _srcAssets_homeSponsor_jpg__WEBPACK_IMPORTED_MODULE_2__["default"], alt: "sponsor" })),
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "hs4text" },
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Dedicated to increasing recognition of the wide-reaching impact of digital addiction, digital anxiety, and it\u2019s potential causes; and to providing down to earth discussions and strategies that may support an individual struggling with these issues.")),
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomeSection4);
+
+
+/***/ }),
+
+/***/ "./src/pages/tenants/SearchPanel.tsx":
+/*!*******************************************!*\
+  !*** ./src/pages/tenants/SearchPanel.tsx ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_SearchPanel_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../styles/SearchPanel.css */ "./src/styles/SearchPanel.css");
+
+
+const SearchPanel = () => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "spContainer" },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Search our available listings"),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: "spWhiteSearch" },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "spLocation" },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", null, "Location"),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", { type: "text" })),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "spSuburb" },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", null, "Suburb"),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", { type: "text" }))),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: "spGraySearch" },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "spRentMin" },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", null, "Rent Min"),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", { type: "number" })),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "spRentMax" },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", null, "Rent Max"),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", { type: "number" })),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "spBedrooms" },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", null, "Bedrooms"),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", { type: "number" })),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: "spPropertyType" },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", null, "Property Type"),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", { type: "text" }))),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: "spSearchButton" },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", null, "Search"))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SearchPanel);
+
+
+/***/ }),
+
+/***/ "./src/pages/tenants/Tenants.tsx":
+/*!***************************************!*\
+  !*** ./src/pages/tenants/Tenants.tsx ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _common_header_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../common/header/Header */ "./src/common/header/Header.tsx");
+/* harmony import */ var _common_footer_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../common/footer/Footer */ "./src/common/footer/Footer.tsx");
+/* harmony import */ var _SearchPanel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SearchPanel */ "./src/pages/tenants/SearchPanel.tsx");
+
+
+
+
+const Tenants = () => {
+    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null,
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common_header_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SearchPanel__WEBPACK_IMPORTED_MODULE_3__["default"], null),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common_footer_Footer__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Tenants);
 
 
 /***/ })
