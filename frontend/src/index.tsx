@@ -10,7 +10,7 @@ const root = createRoot(container!)
 root.render(
    <Router>
 
-    <p>Hello from index.tsx</p>
+    {/* <p>Hello from index.tsx</p> */}
     <App />
 
   </Router>

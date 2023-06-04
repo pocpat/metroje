@@ -1,24 +1,22 @@
-import React from "react";
-import { useState } from "react"
- import '../../styles/WhiteHeader.css'
-import banner from '../../srcAssets/bannerTest_1.jpg'
-
+import React from 'react';
+import { useState } from 'react';
+import '../../styles/WhiteHeader.css';
+import banner from '../../srcAssets/bannerTest_1.jpg';
 
 export default function Navbar() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false)
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
     <div className="wh_navigation">
-
-     <img src={banner} alt="Image"className="whBanner" />
+      <img src={banner} alt="Image" className="wh_img" />
+      {/* wh_hamburger  */}
       <button
         className="wh_hamburger"
         onClick={() => {
-          setIsNavExpanded(!isNavExpanded)
+          setIsNavExpanded(!isNavExpanded);
         }}
       >
-        {/* wh_hamburger  */}
-    <svg
+        <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
           viewBox="0 0 20 20"
@@ -30,12 +28,11 @@ export default function Navbar() {
             clipRule="evenodd"
           />
         </svg>
-        
-        
       </button>
+
       <div
         className={
-          isNavExpanded ? "wh_navigation-menu expanded" : "wh_navigation-menu"
+          isNavExpanded ? 'wh_navigation-menu expanded' : 'wh_navigation-menu'
         }
       >
         <ul>
@@ -62,15 +59,3 @@ export default function Navbar() {
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
