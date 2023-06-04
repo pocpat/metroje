@@ -1,0 +1,44 @@
+.hcpContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0px 120px;
+    
+}
+.hpcText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0px 0px;
+    padding: 0px 20%;
+}
+.homePCardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    background-color:var(--gray);
+    border-radius: 10px;
+    margin: 0px 0px;
+    padding: 0;
+    width: 30%;
+    height: auto;
+    box-shadow: -4px 4px 4px 1px rgba(0,0,0,0.2);
+}
+
+.hpcText{
+    padding: 5% 20%;
+}
+hr{
+    border: none;
+    background-color: var(--textMainAlpha);
+   height: 1.5px;
+    margin: 2% 120px;
+    backdrop-filter: blur(5px);
+}

@@ -1,13 +1,16 @@
-.whBanner{
+.wh_img{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #29a85a;
-  height: 100%;
+  background-color: #294ba8;
+  width: 1040px;
+height: 100%;
+  /* height: 160px; */
   position: static;
   width: auto;
   box-sizing: border-box;
+  /* margin: 0px 120px; */
 }
  /* .container {
   max-width: 90%;
@@ -23,13 +26,15 @@
 
 .wh_navigation {
   height: 100px;
-  width: 100%;
+  width: auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: relative;
-  padding: 0.5rem 0rem;
+  margin: 0.5% 120px;
   background-color: #fff;
-  color: black;
+  color: rgb(65,9,9);
+  margin: 10px 120px;
   /* box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); */
 }
 
@@ -69,6 +74,7 @@
 .wh_hamburger:hover {
   background-color: #2642af;
 }
+ /*  390px */
 
 @media screen and (max-width: 768px) {
   .wh_hamburger {
@@ -107,6 +113,9 @@
   }
   .wh_navigation-menu li:hover {
     background-color: #eee;
+  }
+  .wh_navigation{
+    margin: 0px 0px;
   }
 }
 

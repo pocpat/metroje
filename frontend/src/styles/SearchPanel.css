@@ -1,0 +1,53 @@
+.spContainer {
+  background-color: var(--bgSecondary);
+  box-sizing: content-box;
+  margin: 0px 120px;
+  color: aliceblue;
+}
+.spLocation input,
+.spSuburb input {
+  background-color: var(--textSecondary);
+  height: 50px;
+}
+.spRentMin input,
+.spRentMax input,
+.spBedrooms input,
+.spPropertyType input {
+  background-color: var(--textSecondary);
+  height: 45px;
+}
+.spLocation,
+.spSuburb,
+.spRentMin,
+.spRentMax,
+.spBedrooms,
+.spPropertyType {
+  display: flex;
+  flex-direction: column;
+
+}
+.spRentMin input,
+.spRentMax input,
+.spBedrooms input,
+.spPropertyType input {
+    background-color: var(--gray);
+}
+.spLocation input,
+.spSuburb input,
+.spRentMin input,
+.spRentMax input,
+.spBedrooms input,
+.spPropertyType input{
+    border-radius: 10px;
+}
+
+.spWhiteSearch, .spGraySearch{
+    display: flex;
+    flex-direction: row;
+}
+.spSearchButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+}
