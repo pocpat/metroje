@@ -12,23 +12,22 @@ export const RentModel = mongoose.model("Rent", RentSchema);
 
 export const getRents = () => RentModel.find();
 
-export const getRentByLocation = (location: String) => RentModel.findOne({ location });
+export const getRentByLocation = (location: String) =>
+  RentModel.find({ location }).limit(50);
 
-export const getRentByPrice = (rentprice: Number) => RentModel.findOne({ rentprice });
+export const getRentByPrice = (rentprice: Number) =>
+  RentModel.find({ rentprice }).limit(50);
 
-export const getRentBySuburb = (suburb: String) => RentModel.findOne({ suburb });
+export const getRentBySuburb = (suburb: String) =>
+  RentModel.find({ suburb }).limit(50);
 
-export const getRentByBedrooms = (bedrooms: Number) => RentModel.findOne({ bedrooms });
+export const getRentByBedrooms = (bedrooms: Number) =>
+  RentModel.find({ bedrooms }).limit(50);
 
-export const getRentByPropertyType = (propertytype: String) => RentModel.findOne({ propertytype})
+export const getRentByPropertyType = (propertytype: String) =>
+  RentModel.find({ propertytype }).limit(50);
 
 export const getRentById = (id: string) => RentModel.findById(id);
 
 export const createRent = (values: Record<string, any>) =>
   new RentModel(values).save().then((Rent) => Rent.toObject());
-
-export const deleteRentById = (id: string) =>
-  RentModel.findOneAndDelete({ _id: id });
-
-export const updateUserById = (id: string, values: Record<string, any>) =>
-  RentModel.findByIdAndUpdate(id, values);

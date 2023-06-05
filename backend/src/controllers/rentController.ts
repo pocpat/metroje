@@ -1,4 +1,4 @@
-import { deleteRentById, getRentById, getRents } from "../db/rentsdb";
+import { RentModel, getRents } from "../db/rentsdb";
 import express from "express";
 
 
@@ -16,41 +16,39 @@ export const getAllRents = async (
   }
 };
 
-export const deleteRent = async (
+export const getFilteredRents = async (
   req: express.Request,
   res: express.Response
 ) => {
   try {
-    const { id } = req.params;
+    const location = req.query.location;
+    const suburb = req.query.suburb;
+    const rentmin = Number(req.query.rentmin);
+    const rentmax = Number(req.query.rentmax);
+    const bedrooms = Number(req.query.bedrooms);
+    const propertytype = req.query.propertytype;
 
-    const deletedRent = await deleteRentById(id);
-    return res.json(deletedRent);
-  } catch (error) {
-    console.log(error);
-    return res.sendStatus(400);
-  }
-};
+    
+    const filter: Record<string, any> = {};
 
-export const updateRent = async (
-  req: express.Request,
-  res: express.Response
-) => {
-  try {
-    const { id } = req.params;
-    const { Rent } = req.body;
+    if (location) filter.location = location;
+    if (suburb) filter.suburb = suburb;
+    if (bedrooms) filter.bedrooms = bedrooms;
+    if (propertytype) filter.propertytype = propertytype;
 
-    if (!Rent) {
-      return res.sendStatus(400);
+    let filteredRents = await RentModel.find(filter);
+
+    if (rentmin && rentmax) {
+       filteredRents = filteredRents.filter(rent => rent.rentprice >= rentmin && rent.rentprice <= rentmax);
     }
-
-    const rent = await getRentById(id);
-
-    Rent.location = rent;
-    await rent.save();
-
-    return res.status(200).json(Rent).end();
+    if (filteredRents.length === 0) {
+      return res.status(404).json({ message: "No rents found matching the provided criteria" });
+    }
+    return res.status(200).json(filteredRents);
   } catch (error) {
     console.log(error);
     return res.sendStatus(400);
   }
 };
+
+
