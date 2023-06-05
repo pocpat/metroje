@@ -1,7 +1,8 @@
-import React from 'react';
-import '../../styles/SearchPanel.css';
+import React, {useState} from 'react';
+// import '../../styles/SearchPanel.css';
 
 const SearchPanel = () => {
+  const[open, setOpen] = useState(false);
   return (
     <div className="spContainer">
       <p>Search our available listings</p>
@@ -18,7 +19,7 @@ const SearchPanel = () => {
       <section className="spGraySearch">
         <div className="spRentMin">
           <label>Rent Min</label>
-          <input type="number" />
+          <input type="number"  />
         </div>
         <div className="spRentMax">
           <label>Rent Max</label>

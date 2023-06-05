@@ -5,6 +5,10 @@ import banner from '../../srcAssets/bannerTest_1.jpg';
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+// const[open, setOpen] = useState(false);
+
+
+
 
   return (
     <div className="wh_navigation">
@@ -37,19 +41,22 @@ export default function Navbar() {
       >
         <ul>
           <li>
-            <a href="/#">Owners</a>
+            <a href="/#" 
+            // onClick={()=> setOpen(!open)}
+            >Owners</a>
+           
           </li>
           <li>
-            <a href="/#">Tenants</a>
+            <a href="/#" className='whTenants' >Tenants</a>
           </li>
           <li>
-            <a href="/#">Services</a>
+            <a href="/#" >Services</a>
           </li>
           <li>
-            <a href="/#">Listings</a>
+            <a href="/#" >Listings</a>
           </li>
           <li>
-            <a href="/#">About Us</a>
+            <a href="/#" >About Us</a>
           </li>
           <li>
             <a href="/#">News</a>

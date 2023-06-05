@@ -3,6 +3,8 @@
   box-sizing: content-box;
   margin: 0px 120px;
   color: aliceblue;
+  border-radius: 10px;
+  speed: 500ms;
 }
 .spLocation input,
 .spSuburb input {
@@ -51,3 +53,11 @@
     justify-content: end;
 
 }
+
+.spUl{
+  list-style: none;
+}
+
+.spContainer a{
+  text-decoration: none;
+  color: #000000;
