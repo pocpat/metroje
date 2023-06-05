@@ -53,3 +53,4 @@ export const updateUser = async (
     return res.sendStatus(400);
   }
 };
+
