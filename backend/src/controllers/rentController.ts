@@ -1,53 +1,54 @@
-import { deleteUserById, getUserById, getUsers } from "../db/usersdb";
+import { deleteRentById, getRentById, getRents } from "../db/rentsdb";
 import express from "express";
 
-export const getAllUsers = async (
+
+export const getAllRents = async (
   req: express.Request,
   res: express.Response
 ) => {
   try {
-    const users = await getUsers();
+    const Rents = await getRents();
 
-    return res.status(200).json(users);
+    return res.status(200).json(Rents);
   } catch (error) {
     console.log(error);
     return res.sendStatus(400);
   }
 };
 
-export const deleteUser = async (
+export const deleteRent = async (
   req: express.Request,
   res: express.Response
 ) => {
   try {
     const { id } = req.params;
 
-    const deletedUser = await deleteUserById(id);
-    return res.json(deletedUser);
+    const deletedRent = await deleteRentById(id);
+    return res.json(deletedRent);
   } catch (error) {
     console.log(error);
     return res.sendStatus(400);
   }
 };
 
-export const updateUser = async (
+export const updateRent = async (
   req: express.Request,
   res: express.Response
 ) => {
   try {
     const { id } = req.params;
-    const { username } = req.body;
+    const { Rent } = req.body;
 
-    if (!username) {
+    if (!Rent) {
       return res.sendStatus(400);
     }
 
-    const user = await getUserById(id);
+    const rent = await getRentById(id);
 
-    user.username = username;
-    await user.save();
+    Rent.location = rent;
+    await rent.save();
 
-    return res.status(200).json(user).end();
+    return res.status(200).json(Rent).end();
   } catch (error) {
     console.log(error);
     return res.sendStatus(400);
