@@ -5,8 +5,9 @@ import cookieParser from "cookie-parser";
 import compression from "compression";
 import cors from "cors";
 import mongoose from "mongoose";
-import router from "./router"
+import router from "./router/indexrouter"
 import env from "dotenv"
+
 
 env.config()
 
@@ -30,10 +31,12 @@ server.listen(PORT, () => {
 });
 
 const MONGO_URL =
-  "mongodb+srv://joesfound:joesfound@cluster0.nc35kze.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://joesfound:joesfound@cluster0.nc35kze.mongodb.net/?retryWrites=true&w=majority/test";
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
 mongoose.connection.on("error", (error: Error) => console.log(error));
+
+
 
 app.use("/", router())
