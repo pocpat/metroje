@@ -2,14 +2,20 @@
   background-color: var(--bgSecondary);
   box-sizing: content-box;
   margin: 0px 120px;
+  padding: 0.3% 1%;
   color: aliceblue;
-  border-radius: 10px;
-  speed: 500ms;
 }
 .spLocation input,
 .spSuburb input {
   background-color: var(--textSecondary);
   height: 50px;
+  width: 230%;
+}
+.spLocation{
+  margin-right: 15%;
+}
+.spSuburb{
+  margin-left: 13%;
 }
 .spRentMin input,
 .spRentMax input,
@@ -41,6 +47,7 @@
 .spBedrooms input,
 .spPropertyType input{
     border-radius: 10px;
+    border: none;
 }
 
 .spWhiteSearch, .spGraySearch{
@@ -53,11 +60,7 @@
     justify-content: end;
 
 }
-
-.spUl{
-  list-style: none;
+.spGraySearch{
+ margin: 0 -0.8%;
 }
 
-.spContainer a{
-  text-decoration: none;
-  color: #000000;

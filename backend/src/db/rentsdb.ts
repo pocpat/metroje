@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
 export const RentSchema = new mongoose.Schema({
-  location: { type: String, required: true },
-  suburb: { type: String, required: true },
+  location: { type: String, required: false },
+  suburb: { type: String, required: false },
   rentprice: { type: Number, required: true },
   bedrooms: { type: Number, required: true },
   propertytype: { type: String, required: true },

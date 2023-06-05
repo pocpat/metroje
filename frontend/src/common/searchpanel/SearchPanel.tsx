@@ -1,8 +1,15 @@
-import React, {useState} from 'react';
-// import '../../styles/SearchPanel.css';
+import React from 'react';
+import '../../styles/SearchPanel.css';
+import BedroomsSelectLabels from './BedroomsFadeMenu';
+import LocationFadeMenu from './LocationFadeMenu';
+import PropertytypeSelectLabels from './PropertytypeFadeMenu';
+import RentmaxSelectLabels from './RentmaxFadeMenu';
+import RentminSelectLabels from './RentminFadeMenu';
+
+
+
 
 const SearchPanel = () => {
-  const[open, setOpen] = useState(false);
   return (
     <div className="spContainer">
       <p>Search our available listings</p>
@@ -18,20 +25,16 @@ const SearchPanel = () => {
       </section>
       <section className="spGraySearch">
         <div className="spRentMin">
-          <label>Rent Min</label>
-          <input type="number"  />
+          <RentminSelectLabels/>
         </div>
         <div className="spRentMax">
-          <label>Rent Max</label>
-          <input type="number" />
+          <RentmaxSelectLabels/>
         </div>
-        <div className="spBedrooms">
-          <label>Bedrooms</label>
-          <input type="number" />
+        <div className="spBedrooms"> 
+        <BedroomsSelectLabels />
         </div>
         <div className="spPropertyType">
-          <label>Property Type</label>
-          <input type="text" />
+          <PropertytypeSelectLabels />
         </div>
       </section>
       <section className="spSearchButton">

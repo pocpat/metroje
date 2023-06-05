@@ -2,6 +2,13 @@ import React from 'react';
 import { useState } from 'react';
 import '../../styles/WhiteHeader.css';
 import banner from '../../srcAssets/bannerTest_1.jpg';
+import TenantsFadeMenu from './TenantsFadeMenu';
+import OwnersFadeMenu from './OwnersFadeMenu';
+import ServicesFadeMenu from './ServicesFadeMenu';
+import ListingsFadeMenu from './ListingsFadeMenu';
+import AboutFadeMenu from './AboutFadeMenu';  
+import NewsFadeMenu from './NewsFadeMenu';
+
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -33,33 +40,32 @@ export default function Navbar() {
           />
         </svg>
       </button>
-
+     
       <div
         className={
           isNavExpanded ? 'wh_navigation-menu expanded' : 'wh_navigation-menu'
         }
       >
         <ul>
+        
           <li>
-            <a href="/#" 
-            // onClick={()=> setOpen(!open)}
-            >Owners</a>
-           
+          <OwnersFadeMenu/>
+           {/* href="/#" className='whOwners' >Owners</a> */}
           </li>
           <li>
-            <a href="/#" className='whTenants' >Tenants</a>
+            <TenantsFadeMenu/>
           </li>
           <li>
-            <a href="/#" >Services</a>
+          <ServicesFadeMenu/> 
           </li>
           <li>
-            <a href="/#" >Listings</a>
+           <ListingsFadeMenu/>
           </li>
           <li>
-            <a href="/#" >About Us</a>
+          <AboutFadeMenu/>  
           </li>
           <li>
-            <a href="/#">News</a>
+           <NewsFadeMenu/>
           </li>
         </ul>
       </div>
