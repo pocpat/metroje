@@ -31,7 +31,7 @@ server.listen(PORT, () => {
 });
 
 const MONGO_URL =
-  "mongodb+srv://joesfound:joesfound@cluster0.nc35kze.mongodb.net/?retryWrites=true&w=majority/test";
+  "mongodb+srv://joesfound:joesfound@cluster0.nc35kze.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);

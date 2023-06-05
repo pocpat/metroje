@@ -1,4 +1,4 @@
-import { deleteRentById, getRentById, getRents } from "db/rentsdb";
+import { deleteRentById, getRentById, getRents } from "../db/rentsdb";
 import express from "express";
 
 
