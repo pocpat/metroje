@@ -3,6 +3,7 @@ import {
   deleteUser,
   getAllUsers,
   updateUser,
+
 } from "../controllers/userController";
 // import { isAuthenticated, isOwner } from "../middlewares";
 
