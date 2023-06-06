@@ -18,7 +18,10 @@ const SearchPanel = () => {
     propertytype: '',
   });
   const [rmin, setRmin] = useState(0);
- 
+  const [rmax, setRmax] = useState(0);
+  const [bed, setBed] = useState(0);
+
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
@@ -76,11 +79,11 @@ const SearchPanel = () => {
           <RentminSelectLabels rmin={rmin} setRmin={setRmin}/>
         </div>
         <div className="spRentMax">
-          <RentmaxSelectLabels
+          <RentmaxSelectLabels rmax={rmax} setRmax={setRmax}
           />
         </div>
         <div className="spBedrooms">
-          <BedroomsSelectLabels />
+          <BedroomsSelectLabels  bed={bed}  setBed={setBed}/>
         </div>
         <div className="spPropertyType">
           <PropertytypeSelectLabels />

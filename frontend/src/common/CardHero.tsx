@@ -78,7 +78,7 @@ export default function CardHero() {
                     {card.rentprice ? card.rentprice : 'Loading...'}
                     <img
                       src={wish}
-                      alt="bedroom number"
+                      alt="wish"
                       style={{ height: '100%' }}
                     />
                   </div>
@@ -101,7 +101,7 @@ export default function CardHero() {
                   <div style={{ marginRight: 40 }}>
                     <img
                       src={bfrNum}
-                      alt="bedroom number"
+                      alt="beathroom number"
                       style={{ marginRight: 8 }}
                     ></img>
                     {card.bathrooms}
@@ -109,7 +109,7 @@ export default function CardHero() {
                   <div style={{ marginRight: 40 }}>
                     <img
                       src={car}
-                      alt="bedroom number"
+                      alt="carparck number"
                       style={{ marginRight: 8 }}
                     ></img>
                     {card.carparks}
