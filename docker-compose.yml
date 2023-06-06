@@ -9,9 +9,9 @@ services:
     ports:
       - 8080:8080
     env_file:
-      - .env
+      - ./backend/.env
     environment:
-      DB_URL: ${MONGO_URL}
+      DB_URL: MONGO_URL
   
 volumes:
   metroje:

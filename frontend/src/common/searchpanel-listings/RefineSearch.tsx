@@ -10,12 +10,12 @@ import React from 'react';
 import { RefineSearchProps } from '../../../types';
 
 export default function RefineSearch({openModal, onCloseModal}: RefineSearchProps) {
-  
+   
     return (
    
     <div>
       <Modal open={openModal} onClose={onCloseModal}>
-        <Box>
+        <Box className="popupBox">
           <div className="titleSpace">
             <h1 className="popupTitle">Advanced Search</h1>
           </div>

@@ -7,6 +7,7 @@ import RentmaxSelectLabels from '../searchpanel-tenants/RentmaxFadeMenu';
 import RentminSelectLabels from '../searchpanel-tenants/RentminFadeMenu';
 import { FormData } from '../../../types';
 import axios from 'axios';
+import RefineSearch from './RefineSearch';
 
 const SearchPanel = () => {
   const [formData, setFormData] = useState<FormData>({
@@ -44,6 +45,9 @@ const SearchPanel = () => {
 
   const handleOpenModal = () => {
     setOpenModal(true);
+  };
+  const handleCloseModal = () => {
+    setOpenModal(false);
   };
   return (
     <div className="spContainer">
@@ -86,6 +90,7 @@ const SearchPanel = () => {
         <button type="submit" onClick={handleOpenModal}>
           Refine Search
         </button>
+        <RefineSearch openModal={openModal} onCloseModal={handleCloseModal} />
         <button type="submit" onClick={handleSubmit}>
           Search
         </button>
