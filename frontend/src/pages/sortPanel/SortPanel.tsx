@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../styles/SortPanel.css';
-import Sort from '../../srcAssets/smallIconsPng/sortArrow.png';
 import SortFadeMenu from '../../common/searchpanel/SortFadeMenu';
 
 
