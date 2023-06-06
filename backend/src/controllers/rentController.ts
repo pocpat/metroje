@@ -21,12 +21,12 @@ export const getFilteredRents = async (
   res: express.Response
 ) => {
   try {
-    const location = req.query.location;
-    const suburb = req.query.suburb;
-    const rentmin = Number(req.query.rentmin);
-    const rentmax = Number(req.query.rentmax);
-    const bedrooms = Number(req.query.bedrooms);
-    const propertytype = req.query.propertytype;
+    const location = req.body.location;
+    const suburb = req.body.suburb;
+    const rentmin = Number(req.body.rentmin);
+    const rentmax = Number(req.body.rentmax);
+    const bedrooms = Number(req.body.bedrooms);
+    const propertytype = req.body.propertytype;
 
     
     const filter: Record<string, any> = {};
