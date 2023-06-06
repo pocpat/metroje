@@ -1,13 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
 import '../../styles/SearchPanel.css';
-import BedroomsSelectLabels from './BedroomsFadeMenu';
-import PropertytypeSelectLabels from './PropertytypeFadeMenu';
-import RentmaxSelectLabels from './RentmaxFadeMenu';
-import RentminSelectLabels from './RentminFadeMenu';
+import BedroomsSelectLabels from '../searchpanel-tenants/BedroomsFadeMenu';
+import PropertytypeSelectLabels from '../searchpanel-tenants/PropertytypeFadeMenu';
+import RentmaxSelectLabels from '../searchpanel-tenants/RentmaxFadeMenu';
+import RentminSelectLabels from '../searchpanel-tenants/RentminFadeMenu';
 import { FormData } from '../../../types';
 import axios from 'axios';
-
 
 const SearchPanel = () => {
   const [formData, setFormData] = useState<FormData>({
@@ -41,6 +40,11 @@ const SearchPanel = () => {
       });
   };
 
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  };
   return (
     <div className="spContainer">
       <p>Search our available listings</p>
@@ -79,6 +83,9 @@ const SearchPanel = () => {
         </div>
       </section>
       <section className="spSearchButton">
+        <button type="submit" onClick={handleOpenModal}>
+          Refine Search
+        </button>
         <button type="submit" onClick={handleSubmit}>
           Search
         </button>
