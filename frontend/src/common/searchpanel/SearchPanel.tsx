@@ -1,59 +1,44 @@
 import React from 'react';
+import { useState } from 'react';
 import '../../styles/SearchPanel.css';
 import BedroomsSelectLabels from './BedroomsFadeMenu';
 import PropertytypeSelectLabels from './PropertytypeFadeMenu';
 import RentmaxSelectLabels from './RentmaxFadeMenu';
 import RentminSelectLabels from './RentminFadeMenu';
+import { FormData } from '../../../types';
+import axios from 'axios';
 
-
-interface FormData {
-  location: string;
-  suburb: string;
-  rentmin: number;
-  rentmax: number;
-  bedrooms: number;
-  propertytype: string;
-}
 const SearchPanel = () => {
-  // // const handleSubmit = () => {
-  //   // Get the values of the inputs and dropdown menus
-  //   const locationValue = document.querySelector('.spLocation input').value;
-  //   const suburbValue = document.querySelector('.spSuburb input').value;
-  //   const rentminValue = document.querySelector('.spRentMin input').value;
-  //   const rentmaxValue = document.querySelector('.spRentMax input').value;
-  //   const bedroomsValue = document.querySelector('.spBedrooms input').value;
-  //   const propertytypeValue = document.querySelector('.spPropertyType input').value;
+  const [formData, setFormData] = useState<FormData>({
+    location: '',
+    suburb: '',
+    rentmin: 0,
+    rentmax: 0,
+    bedrooms: 0,
+    propertytype: '',
+  });
 
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
 
-    // // Create an object with the form data
-    // const formData: FormData = {
-    //   location: locationValue,
-    //   suburb: suburbValue,
-    //   rentmin: rentminValue,
-    //   rentmax: rentmaxValue,
-    //   bedrooms: bedroomsValue,
-    //   propertytype: propertytypeValue
-    // };
-
-
-//  // Send the form data to the backend server
-//  fetch('http://localhost:8080/rents/filter', {
-//   method: 'POST',
-//   headers: {
-//     'Content-Type': 'application/json'
-//   },
-//   body: JSON.stringify(formData)
-// })
-// .then(response => response.json())
-// .then(data => {
-//   // Handle the response from the backend server
-//   console.log(data);
-// })
-// .catch(error => {
-//   // Handle any errors
-//   console.error(error);
-// });
-// };
+  const handleSubmit = () => {
+    // Send the form data to the backend server using Axios
+    axios
+      .post('http://localhost:8080/rents/results', formData)
+      .then((response) => {
+        // Handle the response from the backend server
+        console.log(response.data);
+      })
+      .catch((error) => {
+        // Handle any errors
+        console.error(error);
+      });
+  };
 
   return (
     <div className="spContainer">
@@ -61,36 +46,44 @@ const SearchPanel = () => {
       <section className="spWhiteSearch">
         <div className="spLocation">
           <label>Location</label>
-          <input type="text" />
+          <input
+            type="text"
+            name="location"
+            value={formData.location}
+            onChange={handleChange}
+          />
         </div>
         <div className="spSuburb">
           <label>Suburb</label>
-          <input type="text" />
+          <input
+            type="text"
+            name="suburb"
+            value={formData.suburb}
+            onChange={handleChange}
+          />
         </div>
       </section>
       <section className="spGraySearch">
         <div className="spRentMin">
-          <RentminSelectLabels/>
+          <RentminSelectLabels />
         </div>
         <div className="spRentMax">
-          <RentmaxSelectLabels/>
+          <RentmaxSelectLabels />
         </div>
-        <div className="spBedrooms"> 
-        <BedroomsSelectLabels />
+        <div className="spBedrooms">
+          <BedroomsSelectLabels />
         </div>
         <div className="spPropertyType">
           <PropertytypeSelectLabels />
         </div>
       </section>
       <section className="spSearchButton">
-        <button type='submit' 
-        // onClick={handleSubmit}
-        >Search</button>
+        <button type="submit" onClick={handleSubmit}>
+          Search
+        </button>
       </section>
     </div>
   );
 };
-
-
 
 export default SearchPanel;

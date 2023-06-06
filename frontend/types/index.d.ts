@@ -1,16 +1,24 @@
-import { ChangeHandler, RefCallBack } from "react-hook-form";
-
+import { ChangeHandler, RefCallBack } from 'react-hook-form';
 
 export interface FormRegisterReturn {
-    onChange: ChangeHandler;
-    onBlur: ChangeHandler;
-    ref: RefCallBack;
-    name: string;
-    min?: string | number;
-    max?: string | number;
-    maxLength?: number;
-    minLength?: number;
-    pattern?: string;
-    required?: boolean;
-    disabled?: boolean;
-  }
+  onChange: ChangeHandler;
+  onBlur: ChangeHandler;
+  ref: RefCallBack;
+  name: string;
+  min?: string | number;
+  max?: string | number;
+  maxLength?: number;
+  minLength?: number;
+  pattern?: string;
+  required?: boolean;
+  disabled?: boolean;
+}
+
+export interface FormData {
+  location: string;
+  suburb: string;
+  rentmin: number;
+  rentmax: number;
+  bedrooms: number;
+  propertytype: string;
+}
