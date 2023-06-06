@@ -5,8 +5,9 @@ export const RentSchema = new mongoose.Schema({
   suburb: { type: String, required: false },
   rentprice: { type: Number, required: true },
   bedrooms: { type: Number, required: true },
+  bathrooms: { type: Number, required: false },
   propertytype: { type: String, required: true },
-  carparking: { type: Number, required: false },
+  carparks: { type: Number, required: false },
 });
 
 export const RentModel = mongoose.model("Rent", RentSchema);

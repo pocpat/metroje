@@ -22,3 +22,13 @@ export interface FormData {
   bedrooms: number;
   propertytype: string;
 }
+
+export interface CardData {
+  location: string;
+  suburb: string;
+  rentprice: number;
+  bedrooms: number;
+  bathrooms: number;
+  carparks: number;
+  propertytype: string;
+}
