@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import '../../styles/WhiteHeader.css';
-import banner from '../../srcAssets/bannerTest_1.jpg';
+// import banner from '../../../srcAssets/IconPics/logosmall.png';
 import TenantsFadeMenu from './TenantsFadeMenu';
 import OwnersFadeMenu from './OwnersFadeMenu';
 import ServicesFadeMenu from './ServicesFadeMenu';
@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <div className="wh_navigation">
-      <img src={banner} alt="Image" className="wh_img" />
+      {/* <img src={banner} alt="Image" className="wh_img" /> */}
       {/* wh_hamburger  */}
       <button
         className="wh_hamburger"
