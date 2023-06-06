@@ -44,6 +44,8 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.2",
     "@mui/material": "^5.13.3",
+    "@mui/styled-engine": "^5.13.2",
+    "@mui/system": "^5.13.2",
     "@types/testing-library__jest-dom": "^5.14.6",
     "axios": "^1.4.0",
     "class-transformer": "^0.5.1",
