@@ -8,8 +8,10 @@ services:
     build: ./backend
     ports:
       - 8080:8080
+    env_file:
+      - .env
     environment:
-      DB_URL: mongodb+srv://joesfound:joesfound@cluster0.nc35kze.mongodb.net/?retryWrites=true&w=majority
+      DB_URL: ${MONGO_URL}
   
 volumes:
   metroje:
