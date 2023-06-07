@@ -1,15 +1,18 @@
 import * as React from 'react';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Card, CardActionArea } from '@mui/material';
+import { useEffect, useState } from 'react';
+import {
+  Card,
+  CardMedia,
+  CardContent,
+  CardActionArea,
+  Typography,
+} from '@mui/material';
 import homeImg from '../srcAssets/houses/h1.png';
 import bdrNum from '../srcAssets/smallIconsPng/bdr.png';
 import bfrNum from '../srcAssets/smallIconsPng/bfr.png';
 import car from '../srcAssets/smallIconsPng/car.png';
 import wish from '../srcAssets/smallIconsPng/wish.png';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
 import { CardData } from '../../types';
 
 let sortOption = 'h';

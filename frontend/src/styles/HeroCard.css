@@ -1,0 +1,12 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.__cards {
+  max-width: 300;
+  border-radius: 4;
+  margin-top: 1.5rem;
+}

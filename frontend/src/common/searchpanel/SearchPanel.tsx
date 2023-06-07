@@ -8,6 +8,7 @@ import RentminSelectLabels from './RentminFadeMenu';
 import { FormData } from '../../../types';
 import axios from 'axios';
 
+
 const SearchPanel = () => {
   const [formData, setFormData] = useState<FormData>({
     location: '',
