@@ -9,6 +9,7 @@ import { FormData } from '../../../types';
 import axios from 'axios';
 import RefineSearch from './RefineSearch';
 import { SearchPanelProps } from '../../../types/props';
+import ButtonHero from '../buttons/ButtonHero';
 
 const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
   const [formData, setFormData] = useState<FormData>({
@@ -96,13 +97,25 @@ const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
         </div>
       </section>
       <section className="spSearchButton">
-        <button type="submit" onClick={handleOpenModal}>
-          Refine Search
-        </button>
+        <ButtonHero
+        onClick={handleOpenModal}
+        backgroundColor="#ffffff"
+        border= " #410909"
+        color=" #410909"
+        text="REFINE SEARCH"
+        width="200px"
+        height='50px'
+        />
         <RefineSearch openModal={openModal} onCloseModal={handleCloseModal} />
-        <button type="submit" onClick={handleSubmit}>
-          Search
-        </button>
+        <ButtonHero
+        onClick={handleSubmit}
+        backgroundColor=" #E4353C"
+        border= "#E4353C"
+        color="#EFEFEF"
+        text="SEARCH"
+        width="140px"
+        height='50px'
+        />
       </section>
     </div>
   );

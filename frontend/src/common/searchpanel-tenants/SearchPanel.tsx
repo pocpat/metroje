@@ -7,6 +7,9 @@ import RentmaxSelectLabels from './RentmaxFadeMenu';
 import RentminSelectLabels from './RentminFadeMenu';
 import { FormData } from '../../../types';
 import axios from 'axios';
+import ButtonHero from '../buttons/ButtonHero';
+
+
 
 const SearchPanel = () => {
   const [formData, setFormData] = useState<FormData>({
@@ -92,14 +95,19 @@ const SearchPanel = () => {
           <PropertytypeSelectLabels />
         </div>
       </section>
-      <section className="spSearchButton">
-        <button type="submit" onClick={handleSubmit}>
-          Search
-        </button>
+      <section className="spSearchButtonTenants">
+        <ButtonHero
+        onClick={handleSubmit}
+        backgroundColor=" #E4353C"
+        border= "#E4353C"
+        color="#EFEFEF"
+        text="SEARCH"
+        width="140px"
+        height='50px'
+        />
       </section>
     </div>
   );
-  // TODO: <CardHero cardata={cardData} />;
 };
 
 export default SearchPanel;

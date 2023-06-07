@@ -1,12 +1,9 @@
 
 
-/* .tntsContainer, .tntsGraph { */
     .tntsCommon{
   box-sizing: content-box;
   margin: 10px 120px;
   border-radius: 8px;
-  /* background-image: url('../srcAssets/houses/tenantsimg.png'); */
-
 }
 .tntsText {
   font-size: 1.5rem;
@@ -17,6 +14,9 @@
 }
 .tntsContainer div{
 height: 300px;
+}
+.tntsContainer{
+  border-radius: 15px;
 }
 .tntsGraph img{
 width: 100%;

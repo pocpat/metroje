@@ -24,9 +24,6 @@ const LilHeader = () => {
   <input className="lh_search" type="text"  />
   <CiSearch style={{ position: 'absolute', right: '15px', top: '5px', color: 'red', fontSize: '20px', fontWeight:'bold' }} />
 </div>
-      {/* <input className="lh_search" type="text" placeholder="Search" />
-      <CiSearch style={{ color: 'red',fontSize:"25" }} /> */}
-
 
       <ButtonHero
         backgroundColor=" #E4353C"
