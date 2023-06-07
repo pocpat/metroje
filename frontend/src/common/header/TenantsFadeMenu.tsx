@@ -24,6 +24,7 @@ export default function TenantsFadeMenu() {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
+        sx={{color: ' #410909', fontWeight: 'bold'}}
       >
         Tenants
       </Button>

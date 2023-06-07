@@ -53,7 +53,6 @@ export default function Navbar() {
         
           <li>
           <OwnersFadeMenu/>
-           {/* href="/#" className='whOwners' >Owners</a> */}
           </li>
           <li>
             <TenantsFadeMenu/>

@@ -16,13 +16,17 @@ const LilHeader = () => {
   };
   return (
     <div className="rhBody">
-      <BsTelephone className="" style={{ color: 'red' }} />
+      <BsTelephone className="" style={{ color: 'red',fontSize:"25" }} />
       <p>09 391 4642</p>
-      <GoMail style={{ color: 'red' }} />
+      <GoMail style={{ color: 'red',fontSize:"25" }} />
       <p>info@metronz.co.nz</p>
-      <input className="lh_search" type="text" placeholder="Search" />
-      <CiSearch style={{ color: 'red' }} />
-      {/* <button className="rhBtn">LOGIN</button> */}
+      <div style={{ position: 'relative' }}>
+  <input className="lh_search" type="text"  />
+  <CiSearch style={{ position: 'absolute', right: '15px', top: '5px', color: 'red', fontSize: '20px', fontWeight:'bold' }} />
+</div>
+      {/* <input className="lh_search" type="text" placeholder="Search" />
+      <CiSearch style={{ color: 'red',fontSize:"25" }} /> */}
+
 
       <ButtonHero
         backgroundColor=" #E4353C"

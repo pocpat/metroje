@@ -19,6 +19,7 @@ const NewsFadeMenu = () => {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
+        sx={{color: ' #410909', fontWeight: 'bold'}}
       >
         News
       </Button>

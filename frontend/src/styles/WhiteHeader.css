@@ -11,9 +11,6 @@
   box-sizing: border-box;
 }
 
-/* article h1 {
-  margin: 1rem 0;
-} */
 
 .wh_navigation {
   height: 100px;
@@ -24,13 +21,13 @@
   position: relative;
   margin: 0.5% 120px;
   background-color: #fff;
-  color: rgb(65, 9, 9);
+  color:var( --textMain);
   margin: 10px 120px;
-  /* box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); */
 }
 
 .wh_navigation-menu {
   margin-left: auto;
+
 }
 
 .wh_navigation-menu ul {
@@ -40,6 +37,7 @@
 .wh_navigation-menu li {
   list-style-type: none;
   margin: 0 1rem;
+
 }
 .wh_navigation-menu li a {
   text-decoration: none;
