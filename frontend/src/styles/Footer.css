@@ -1,4 +1,4 @@
-.fContainer{
+.fContainer {
     background-color: var(--bgSecondary);
     color: white;
     padding: 20px;
@@ -14,15 +14,46 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.ficons{
+  }
+  
+  .ficons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-.ficons img{
+  }
+  
+  .ficons img {
     width: 70%;
     height: 70%;
     margin: 10px;
-}
+  }
+  
+  .finput {
+    display: flex;
+    align-items: center;
+  }
+  
+  .finput input {
+    margin-left: -8px;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    padding-left: 10px;
+    z-index: 2;
+  }
+  
+  /* .finput button {
+    margin-left: 5px;
+ 
+  } */
+  
+  .fsubscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  

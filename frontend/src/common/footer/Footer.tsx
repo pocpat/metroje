@@ -7,14 +7,35 @@ import fb from '../../srcAssets/fb.jpg';
 import insta from '../../srcAssets/inst.jpg';
 import li from '../../srcAssets/li.jpg';
 import twit from '../../srcAssets/twit.jpg';
+import ButtonHero from '../buttons/ButtonHero';
+
 
 const Footer = () => {
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
     <div className="fContainer">
       <div className="fsubscribe">
         <h2>subscribe to our newsletter</h2>
         <div className="finput">
-          <button>Subscribe</button>
+          {/* <button>Subscribe</button> */}
+
+          <ButtonHero
+        backgroundColor=" #E4353C"
+        border= "#E4353C"
+        color="#EFEFEF"
+        text="SUBSCRIBE"
+        width="150px"
+        onClick={handleClose}
+        height='50px'
+      />
+
           <input type="text" placeholder="Enter your email address" />
         </div>
       </div>
