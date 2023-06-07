@@ -6,11 +6,19 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { menuItemSelectStyle, formHelperTextSelectorStyle,selectInputGreyStyle } from './menuItemSelectStyle';    
 
-export default function BedroomsSelectLabels() {
-  const [bed, setBed] = React.useState('');
 
+
+interface BedroomsSelectProps {
+  bed: number;
+  setBed: (value: number) => void;
+}
+
+
+
+export default function BedroomsSelectLabels({ bed, setBed }: BedroomsSelectProps) {
+  
   const handleChange = (event: SelectChangeEvent) => {
-    setBed(event.target.value);
+    setBed(parseInt(event.target.value));
   };
 
   return (
@@ -20,7 +28,7 @@ export default function BedroomsSelectLabels() {
       sx={formHelperTextSelectorStyle}
       >Bedrooms</FormHelperText>
         <Select
-          value={bed}
+          value={bed.toString()}
           onChange={handleChange}
           displayEmpty
           inputProps={{ 'aria-label': 'Without label' }}
