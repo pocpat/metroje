@@ -5,11 +5,7 @@ import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { menuItemSelectStyle, formHelperTextSelectorStyle,selectInputGreyStyle } from './menuItemSelectStyle';    
-
-interface RentminSelectLabelsProps {
-  rmin: number;
-  setRmin: (value: number) => void;
-}
+import { RentminSelectLabelsProps } from '../../../types/props';
 
 export default function RentminSelectLabels({ rmin, setRmin }: RentminSelectLabelsProps) {
   

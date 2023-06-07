@@ -1,4 +1,4 @@
-.cards {
+.cardsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -6,7 +6,7 @@
   padding: 0.3% 1%;
 }
 
-.__cards {
+.cardsList {
   max-width: 300;
   border-radius: 4;
   margin-top: 1.5rem;
