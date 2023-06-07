@@ -17,6 +17,10 @@ const SearchPanel = () => {
     bedrooms: 0,
     propertytype: '',
   });
+  const [rmin, setRmin] = useState(0);
+  const [rmax, setRmax] = useState(0);
+  const [bed, setBed] = useState(0);
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -24,9 +28,16 @@ const SearchPanel = () => {
       ...prevFormData,
       [name]: value,
     }));
+    console.log(formData);
   };
 
+  // const handleRentMinChange = (value:) => {
+  //   setRmin(parseInt(e.target.value));
+  // }
+
   const handleSubmit = () => {
+    formData.rentmin = rmin;
+    console.log(formData);
     // Send the form data to the backend server using Axios
     axios
       .post('http://localhost:8080/rents/results', formData)
@@ -65,13 +76,14 @@ const SearchPanel = () => {
       </section>
       <section className="spGraySearch">
         <div className="spRentMin">
-          <RentminSelectLabels />
+          <RentminSelectLabels rmin={rmin} setRmin={setRmin}/>
         </div>
         <div className="spRentMax">
-          <RentmaxSelectLabels />
+          <RentmaxSelectLabels rmax={rmax} setRmax={setRmax}
+          />
         </div>
         <div className="spBedrooms">
-          <BedroomsSelectLabels />
+          <BedroomsSelectLabels  bed={bed}  setBed={setBed}/>
         </div>
         <div className="spPropertyType">
           <PropertytypeSelectLabels />
@@ -84,6 +96,7 @@ const SearchPanel = () => {
       </section>
     </div>
   );
+  // TODO: <CardHero cardata={cardData} />;
 };
 
 export default SearchPanel;

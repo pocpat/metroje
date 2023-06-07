@@ -14,25 +14,58 @@ import car from '../srcAssets/smallIconsPng/car.png';
 import wish from '../srcAssets/smallIconsPng/wish.png';
 import axios from 'axios';
 import { CardData } from '../../types';
-import '../styles/HeroCard.css';
+
+let sortOption = 'h';
 
 export default function CardHero() {
   const [cardData, setCardData] = useState<CardData[]>([]);
 
+  let responseHandler = (cardDataArray: CardData[]) => {
+    let sortedData = cardDataArray.sort((a: CardData, b: CardData) => {
+      //  switch case for sorting
+      switch (sortOption) {
+        case 'l': { // by lowest price
+          if (a.rentprice < b.rentprice) {
+            return -1;
+          }
+          if (a.rentprice > b.rentprice) {
+            return 1;
+          }
+          return 0;
+        }
+        case 'h': { // by highest price
+          if (a.rentprice > b.rentprice) {
+            return -1;
+          }
+          if (a.rentprice < b.rentprice) {
+            return 1;
+          }
+          return 0;
+        }
+        default: return 0;
+      }
+    });
+    setCardData(sortedData);
+  };
+
   useEffect(() => {
+   if( cardData != undefined && cardData.length === 0 ) {
+  
     axios
       .get('http://localhost:8080/rents')
-      .then((res) => setCardData(res.data))
+      .then((response) => {
+        responseHandler(response.data);
+      })
       .catch((error) => {
         console.error('Error fetching card data:', error);
       });
-  }, []);
+  }}, []);
 
   return (
-    <div className="cards">
+    <>
       {cardData &&
         cardData.map((card, index) => (
-          <Card key={index} className="__cards">
+          <Card key={index} sx={{ maxWidth: 300, borderRadius: 4 }}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -48,7 +81,7 @@ export default function CardHero() {
                     {card.rentprice ? card.rentprice : 'Loading...'}
                     <img
                       src={wish}
-                      alt="bedroom number"
+                      alt="wish"
                       style={{ height: '100%' }}
                     />
                   </div>
@@ -71,7 +104,7 @@ export default function CardHero() {
                   <div style={{ marginRight: 40 }}>
                     <img
                       src={bfrNum}
-                      alt="bedroom number"
+                      alt="beathroom number"
                       style={{ marginRight: 8 }}
                     ></img>
                     {card.bathrooms}
@@ -79,7 +112,7 @@ export default function CardHero() {
                   <div style={{ marginRight: 40 }}>
                     <img
                       src={car}
-                      alt="bedroom number"
+                      alt="carparck number"
                       style={{ marginRight: 8 }}
                     ></img>
                     {card.carparks}
@@ -89,6 +122,6 @@ export default function CardHero() {
             </CardActionArea>
           </Card>
         ))}
-    </div>
+    </>
   );
 }

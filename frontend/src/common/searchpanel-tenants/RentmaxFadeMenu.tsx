@@ -9,11 +9,15 @@ import {
   selectInputGreyStyle,
 } from './menuItemSelectStyle';
 
-export default function RentmaxSelectLabels() {
-  const [rmax, setRmax] = React.useState('');
+interface RentmaxSelectLabelsProps {
+  rmax: number;
+  setRmax: (value: number) => void;
+}
+
+export default function RentmaxSelectLabels({ rmax, setRmax }: RentmaxSelectLabelsProps) {
 
   const handleChange = (event: SelectChangeEvent) => {
-    setRmax(event.target.value);
+    setRmax(parseInt(event.target.value));
   };
 
   return (
@@ -24,7 +28,7 @@ export default function RentmaxSelectLabels() {
         </FormHelperText>
 
         <Select
-          value={rmax}
+          value={rmax.toString()}
           onChange={handleChange}
           displayEmpty
           inputProps={{ 'aria-label': 'Without label' }}
