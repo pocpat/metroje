@@ -11,3 +11,25 @@
   border-radius: 4;
   margin-top: 1.5rem;
 }
+
+.hidden {
+  display: none;
+}
+
+.showMore {
+  display: flex;
+  justify-content: center;
+}
+
+.showMore button {
+  margin: 1rem;
+  padding: 0.9375rem 2.125rem 0.9375rem 2.125rem;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #e4353c;
+  transition-duration: 0.4s;
+}
+
+.showMore button:hover {
+  background-color: #b32a2f;
+}

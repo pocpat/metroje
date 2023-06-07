@@ -62,3 +62,10 @@
 .spGraySearch {
   margin: 0 -0.8%;
 }
+.spButton {
+  margin: 1rem;
+  padding: 0.9375rem 2.125rem 0.9375rem 2.125rem;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #e4353c;
+}

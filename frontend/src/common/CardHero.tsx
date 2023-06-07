@@ -20,6 +20,7 @@ let sortOption = 'h';
 
 export default function CardHero() {
   const [cardData, setCardData] = useState<CardData[]>([]);
+  const [visibleCards, setVisibleCards] = useState(6);
 
   let responseHandler = (cardDataArray: CardData[]) => {
     let sortedData = cardDataArray.sort((a: CardData, b: CardData) => {
@@ -65,63 +66,78 @@ export default function CardHero() {
     }
   }, []);
 
+  const handleShowMore = () => {
+    setVisibleCards(visibleCards + 3); // Increase the number of visible cards as desired
+  };
+
   return (
-    <div className="cardsContainer">
-      {cardData &&
-        cardData.map((card, index) => (
-          <Card key={index} className="cardsList">
-            <CardActionArea>
-              <CardMedia
-                component="img"
-                height="140"
-                image={homeImg}
-                alt="house image"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  <div
-                    style={{ display: 'flex', justifyContent: 'space-between' }}
+    <div>
+      <div className="cardsContainer">
+        {cardData &&
+          cardData.map((card, index) => (
+            <Card
+              key={index}
+              className={`cardsList ${index >= visibleCards ? 'hidden' : ''}`}
+            >
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image={homeImg}
+                  alt="house image"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    <div
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                      }}
+                    >
+                      {card.rentprice ? card.rentprice : 'Loading...'}
+                      <img src={wish} alt="wish" style={{ height: '100%' }} />
+                    </div>
+                    <br></br>
+                    {card.location}, {card.suburb} <br></br>
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    sx={{ display: 'flex', flexDirection: 'row' }}
                   >
-                    {card.rentprice ? card.rentprice : 'Loading...'}
-                    <img src={wish} alt="wish" style={{ height: '100%' }} />
-                  </div>
-                  <br></br>
-                  {card.location}, {card.suburb} <br></br>
-                </Typography>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  sx={{ display: 'flex', flexDirection: 'row' }}
-                >
-                  <div style={{ marginRight: 40 }}>
-                    <img
-                      src={bdrNum}
-                      alt="bedroom number"
-                      style={{ marginRight: 8 }}
-                    ></img>
-                    {card.bedrooms}
-                  </div>
-                  <div style={{ marginRight: 40 }}>
-                    <img
-                      src={bfrNum}
-                      alt="beathroom number"
-                      style={{ marginRight: 8 }}
-                    ></img>
-                    {card.bathrooms}
-                  </div>
-                  <div style={{ marginRight: 40 }}>
-                    <img
-                      src={car}
-                      alt="carparck number"
-                      style={{ marginRight: 8 }}
-                    ></img>
-                    {card.carparks}
-                  </div>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        ))}
+                    <div style={{ marginRight: 40 }}>
+                      <img
+                        src={bdrNum}
+                        alt="bedroom number"
+                        style={{ marginRight: 8 }}
+                      ></img>
+                      {card.bedrooms}
+                    </div>
+                    <div style={{ marginRight: 40 }}>
+                      <img
+                        src={bfrNum}
+                        alt="beathroom number"
+                        style={{ marginRight: 8 }}
+                      ></img>
+                      {card.bathrooms}
+                    </div>
+                    <div style={{ marginRight: 40 }}>
+                      <img
+                        src={car}
+                        alt="carparck number"
+                        style={{ marginRight: 8 }}
+                      ></img>
+                      {card.carparks}
+                    </div>
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          ))}
+      </div>
+      <div className="showMore">
+        <button onClick={handleShowMore}>SHOW MORE</button>
+      </div>
     </div>
   );
 }

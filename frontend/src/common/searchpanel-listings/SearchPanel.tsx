@@ -45,6 +45,15 @@ const SearchPanel = () => {
       });
   };
 
+  const buttons = {
+    height: '2.875rem',
+    width: '11.72rem',
+    p: '0.9375rem, 2.125rem, 0.9375rem, 2.125rem',
+    borderRadius: '0.625rem',
+    color: '#ffffff',
+    bgColor: 'red',
+  };
+
   const [openModal, setOpenModal] = useState(false);
 
   const handleOpenModal = () => {
@@ -91,12 +100,12 @@ const SearchPanel = () => {
         </div>
       </section>
       <section className="spSearchButton">
-        <button type="submit" onClick={handleOpenModal}>
-          Refine Search
+        <button type="submit" onClick={handleOpenModal} className="spButton">
+          ADVANCED SEARCH
         </button>
         <RefineSearch openModal={openModal} onCloseModal={handleCloseModal} />
-        <button type="submit" onClick={handleSubmit}>
-          Search
+        <button type="submit" onClick={handleSubmit} className="spButton">
+          SEARCH
         </button>
       </section>
     </div>
