@@ -121,7 +121,7 @@ height: 100%;
   width: 40px;
   padding: 0.5rem;
   border-radius: 50%;
-  background-color: #283b8b;
+  /* background-color: #283b8b; */
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   position: absolute;
@@ -129,6 +129,7 @@ height: 100%;
   right: 25px;
   transform: translateY(-50%);
   display: none;
+  float: 'left';
 }
 .wh_hamburger:hover {
   background-color: #2642af;
@@ -497,21 +498,42 @@ justify-content: center;
 }
 
 
-.tntsContainer {
+
+
+/* .tntsContainer, .tntsGraph { */
+    .tntsCommon{
   box-sizing: content-box;
   margin: 10px 120px;
   border-radius: 8px;
-  background-image: url(e066102b3debd915f932.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  /* background-image: url('../srcAssets/houses/tenantsimg.png'); */
 
 }
 .tntsText {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: var(--textMain);
   margin: 10px 0;
-  padding: 0 10%;
+  padding: 1% 6% 0 6%;
 }
-
+.tntsContainer div{
+height: 300px;
+}
+.tntsGraph img{
+width: 100%;
+border-radius: 15px;
+border: 5px solid var(--red) ;
+}
+.tntsGraph{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 8px;
+  border: 5px solid var(--textMain) x;
+  background-image: url(e13002f7b4492af63335.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 4% 0  ;
+}

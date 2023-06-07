@@ -8,8 +8,10 @@ import ServicesFadeMenu from './ServicesFadeMenu';
 import ListingsFadeMenu from './ListingsFadeMenu';
 import AboutFadeMenu from './AboutFadeMenu';  
 import NewsFadeMenu from './NewsFadeMenu';
-
-
+// import hamburger from '../../srcAssets/IconPics/hamburger.png';
+// import logosmall from '../../srcAssets/IconPics/logosmall.png';
+import bannerTest_1 from '../../srcAssets/bannerTest_1.jpg';
+import hamburger from '../../srcAssets/hamburger.png';
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 // const[open, setOpen] = useState(false);
@@ -19,30 +21,21 @@ export default function Navbar() {
 
   return (
     <div className="wh_navigation">
-      {/* <img src={banner} alt="Image" className="wh_img" /> */}
+      <img src={bannerTest_1} alt="Image" className="wh_img" />
       {/* wh_hamburger  */}
       <button
         className="wh_hamburger"
-        style={{ float: 'left' }}
+      
         onClick={() => {
           setIsNavExpanded(!isNavExpanded);
         }}
       
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          viewBox="0 0 20 20"
-          fill="white"
-
-        >
-          <path
-            fillRule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-            clipRule="evenodd"
-
-          />
-        </svg>
+        <img
+          src={hamburger}
+          alt="Hamburger"
+          className="wh_hamburger-icon"
+        />
       </button>
      
       <div
