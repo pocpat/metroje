@@ -20,6 +20,7 @@ const SearchPanel = () => {
   const [rmin, setRmin] = useState(0);
   const [rmax, setRmax] = useState(0);
   const [bed, setBed] = useState(0);
+  const [propertytype, setPropertytype] = useState('');
 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -37,6 +38,8 @@ const SearchPanel = () => {
 
   const handleSubmit = () => {
     formData.rentmin = rmin;
+    formData.rentmax = rmax;
+    formData.bedrooms = bed;
     console.log(formData);
     // Send the form data to the backend server using Axios
     axios

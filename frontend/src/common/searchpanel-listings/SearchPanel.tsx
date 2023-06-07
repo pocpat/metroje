@@ -8,8 +8,9 @@ import RentminSelectLabels from '../searchpanel-tenants/RentminFadeMenu';
 import { FormData } from '../../../types';
 import axios from 'axios';
 import RefineSearch from './RefineSearch';
+import { SearchPanelProps } from '../../../types/props';
 
-const SearchPanel = () => {
+const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
   const [formData, setFormData] = useState<FormData>({
     location: '',
     suburb: '',
@@ -32,12 +33,16 @@ const SearchPanel = () => {
   };
 
   const handleSubmit = () => {
+    formData.rentmin = rmin;
+    formData.rentmax = rmax;
+    formData.bedrooms = bed;
     // Send the form data to the backend server using Axios
     axios
       .get('http://localhost:8080/rents/results', { params: formData })
       .then((response) => {
         // Handle the response from the backend server
         console.log(response.data);
+        setCardData(response.data);
       })
       .catch((error) => {
         // Handle any errors
