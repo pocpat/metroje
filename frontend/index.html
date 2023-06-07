@@ -1,31 +1,41 @@
 <html>
-<head lang="en">
-  <title>Hello React</title>
+  <head lang="en">
+    <title>Hello React</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 </html>
 <body>
-  <div id="app-root">App is loading...  this message is from root/index.html
-    make 
-    <h3>"npm start"</h3> 
+  <div id="app-root">
+    App is loading... this message is from root/index.html make
+    <h3>"npm start"</h3>
   </div>
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
   <df-messenger
-  df-cx="true"
-  location="australia-southeast1"
-  chat-title="MetroMate"
-  agent-id="ff250357-36e8-49c2-9cd3-62793005ffe6"
-  language-code="en"
-  chat-icon="https://icons.iconarchive.com/icons/iconarchive/robot-avatar/256/Red-1-Robot-Avatar-icon.png"
-> </df-messenger>
-<style>
-  df-messenger {
-   --df-messenger-bot-message: #c92a2a;
-   --df-messenger-button-titlebar-color: #b30000;
-   --df-messenger-button-titlebar-font-color: White;
-   --df-messenger-chat-background-color: #fafafa;
-   --df-messenger-font-color: black;
-   --df-messenger-send-icon: #f03e3e;
-   --df-messenger-user-message: #dee2e6;
-   --df-messenger-minimized-chat-close-icon-color:white;
-   }
-</style>
+    df-cx="true"
+    location="australia-southeast1"
+    chat-title="MetroMate"
+    agent-id="ff250357-36e8-49c2-9cd3-62793005ffe6"
+    language-code="en"
+    chat-icon="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj88uCJ12dbP6DgaNGmkjZwqdvYS2X-J4p2Q77SLIItLuSaaD3i3CC_MwKytG5Yjkg28k9ovpdzIfUlLYSEWQM0HTzI_DyX5bvzAZHPgwEHfP8PVSQMpfUMoAvyuV0J0Msy1sKUZHdFRqfv_i3Tcf9HFyYnL5E-j9HXBnUR_oA7q4kvuLFABA9q409LcQ/s118/MetroMate.png"
+  >
+  </df-messenger>
+  <style>
+    df-messenger {
+      --df-messenger-bot-message: #c92a2a;
+      --df-messenger-button-titlebar-color: #b30000;
+      --df-messenger-button-titlebar-font-color: Black;
+      --df-messenger-chat-background-color: #fafafa;
+      --df-messenger-font-color: black;
+      --df-messenger-send-icon: #f03e3e;
+      --df-messenger-user-message: #dee2e6;
+      --df-messenger-minimized-chat-close-icon-color: white;
+      --df-messenger-minimized-chat-background-color: white;
+    }
+  </style>
 </body>

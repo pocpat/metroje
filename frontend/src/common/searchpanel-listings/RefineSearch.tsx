@@ -8,31 +8,46 @@ import {
 } from '@mui/material';
 import React from 'react';
 import { RefineSearchProps } from '../../../types';
+import '../../styles/popup.css';
 
-export default function RefineSearch({openModal, onCloseModal}: RefineSearchProps) {
+export default function RefineSearch({
+  openModal,
+  onCloseModal,
+}: RefineSearchProps) {
   const style = {
-    position: 'absolute' as 'absolute',
+    position: 'absolute',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 800,
+    width: '30vw',
+    height: '80vh',
     bgcolor: 'background.paper',
     border: '2px solid #000',
+    borderRadius: '8px',
     boxShadow: 24,
-    p: 4,
+    pl: 4,
+    pr: 4,
   };
-    return (
-   
+
+  const checkStyle = {
+    fontFamily: 'Open Sans',
+    fontSize: '1.125rem',
+    color: 'black',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 3fr)',
+    gap: '0.25, 0.5',
+  };
+
+  return (
     <div>
       <Modal open={openModal} onClose={onCloseModal}>
         <Box sx={style}>
           <div className="titleSpace">
-            <h1 className="popupTitle">Advanced Search</h1>
+            <h3>Advanced Search</h3>
           </div>
           <div>
-            <h1>Property Requirements</h1>
-            <br />
-            <FormGroup>
+            <h3>Property Requirements</h3>
+            <FormGroup sx={checkStyle}>
               <FormControlLabel control={<Checkbox />} label="Furnished" />
               <FormControlLabel control={<Checkbox />} label="Pets OK" />
               <FormControlLabel control={<Checkbox />} label="Available Now" />
@@ -41,9 +56,8 @@ export default function RefineSearch({openModal, onCloseModal}: RefineSearchProp
           <br />
           <br />
           <div>
-            <h1>Nearby Amenities</h1>
-            <br />
-            <FormGroup>
+            <h3>Nearby Amenities</h3>
+            <FormGroup sx={checkStyle}>
               <FormControlLabel control={<Checkbox />} label="Supermarket" />
               <FormControlLabel control={<Checkbox />} label="Gym" />
               <FormControlLabel control={<Checkbox />} label="Park" />
@@ -53,9 +67,8 @@ export default function RefineSearch({openModal, onCloseModal}: RefineSearchProp
           <br />
           <br />
           <div>
-            <h1>Outdoor Features</h1>
-            <br />
-            <FormGroup>
+            <h3>Outdoor Features</h3>
+            <FormGroup sx={checkStyle}>
               <FormControlLabel control={<Checkbox />} label="Garage" />
               <FormControlLabel control={<Checkbox />} label="Balcony" />
               <FormControlLabel control={<Checkbox />} label="Fully Fenced" />
@@ -67,9 +80,8 @@ export default function RefineSearch({openModal, onCloseModal}: RefineSearchProp
           <br />
           <br />
           <div>
-            <h1>Indoor Features</h1>
-            <br />
-            <FormGroup>
+            <h3>Indoor Features</h3>
+            <FormGroup sx={checkStyle}>
               <FormControlLabel control={<Checkbox />} label="Dishwasher" />
               <FormControlLabel control={<Checkbox />} label="Fibre" />
               <FormControlLabel control={<Checkbox />} label="Heating" />
@@ -83,8 +95,13 @@ export default function RefineSearch({openModal, onCloseModal}: RefineSearchProp
           </div>
           <br />
           <br />
-          <div className='popupFooter'>
-          <Button href="#text-buttons">Clear Filters</Button><Button variant="contained">Apply Filters</Button>
+          <div className="popupFooter">
+            <Button href="#text-buttons" sx={{ color: 'black' }}>
+              CLEAR FILTERS
+            </Button>
+            <Button variant="contained" sx={{ bgcolor: '#e4353c' }}>
+              APPLY FILTERS
+            </Button>
           </div>
         </Box>
       </Modal>
