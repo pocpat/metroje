@@ -4,6 +4,9 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import pkg from 'mini-css-extract-plugin';
 const { loader } = pkg;
+
+
+console.log('Webpack config loaded');
  export const mode = prod ? 'production' : 'development';
 
 export const entry = './src/index.tsx';
