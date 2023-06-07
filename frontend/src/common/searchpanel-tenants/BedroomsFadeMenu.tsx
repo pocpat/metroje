@@ -5,14 +5,7 @@ import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { menuItemSelectStyle, formHelperTextSelectorStyle,selectInputGreyStyle } from './menuItemSelectStyle';    
-
-
-
-interface BedroomsSelectProps {
-  bed: number;
-  setBed: (value: number) => void;
-}
-
+import { BedroomsSelectProps } from '../../../types/props';
 
 
 export default function BedroomsSelectLabels({ bed, setBed }: BedroomsSelectProps) {

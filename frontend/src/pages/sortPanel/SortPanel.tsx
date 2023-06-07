@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/SortPanel.css';
-import SortFadeMenu from '../../common/searchpanel/SortFadeMenu';
+import SortFadeMenu from '../../common/searchpanel-tenants/SortFadeMenu';
 
 
 

@@ -8,11 +8,7 @@ import {
   formHelperTextSelectorStyle,
   selectInputGreyStyle,
 } from './menuItemSelectStyle';
-
-interface RentmaxSelectLabelsProps {
-  rmax: number;
-  setRmax: (value: number) => void;
-}
+import { RentmaxSelectLabelsProps } from '../../../types/props';
 
 export default function RentmaxSelectLabels({ rmax, setRmax }: RentmaxSelectLabelsProps) {
 
