@@ -5,14 +5,13 @@ import cookieParser from "cookie-parser";
 import compression from "compression";
 import cors from "cors";
 import mongoose from "mongoose";
-import router from "./router/indexrouter"
-import env from "dotenv"
+import router from "./router/indexrouter";
+import env from "dotenv";
 
-
-env.config()
+env.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 
 app.use(
   cors({
@@ -26,16 +25,14 @@ app.use(bodyParser.json());
 
 const server = http.createServer(app);
 
-server.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}/`);
-});
-
-const MONGO_URL =process.env.MONGO_URL;
+const MONGO_URL = process.env.MONGO_URL;
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
 mongoose.connection.on("error", (error: Error) => console.log(error));
 
+app.use("/", router());
 
-
-app.use("/", router())
+server.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}/`);
+});

@@ -11,10 +11,10 @@
   height: 50px;
   width: 230%;
 }
-.spLocation{
+.spLocation {
   margin-right: 15%;
 }
-.spSuburb{
+.spSuburb {
   margin-left: 13%;
 }
 .spRentMin input,
@@ -32,35 +32,33 @@
 .spPropertyType {
   display: flex;
   flex-direction: column;
-
 }
 .spRentMin input,
 .spRentMax input,
 .spBedrooms input,
 .spPropertyType input {
-    background-color: var(--gray);
+  background-color: var(--gray);
 }
 .spLocation input,
 .spSuburb input,
 .spRentMin input,
 .spRentMax input,
 .spBedrooms input,
-.spPropertyType input{
-    border-radius: 10px;
-    border: none;
+.spPropertyType input {
+  border-radius: 10px;
+  border: none;
 }
 
-.spWhiteSearch, .spGraySearch{
-    display: flex;
-    flex-direction: row;
+.spWhiteSearch,
+.spGraySearch {
+  display: flex;
+  flex-direction: row;
 }
-.spSearchButton{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-
+.spSearchButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.spGraySearch{
- margin: 0 -0.8%;
+.spGraySearch {
+  margin: 0 -0.8%;
 }
-

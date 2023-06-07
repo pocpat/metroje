@@ -32,3 +32,12 @@ export interface CardData {
   carparks: number;
   propertytype: string;
 }
+
+export interface SearchPanelProps {
+  onSearchResults: (results: any) => void;
+}
+
+export interface RefineSearchProps {
+  openModal: boolean;
+  onCloseModal: () => void;
+}
