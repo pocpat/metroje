@@ -1,16 +1,43 @@
 import React from 'react';
+import star from '../../srcAssets/IconsPics/star.png';
+import '../../styles/HomeSection3.css';
+// import person1 from '../../srcAssets/section3Imgs/person1.png';
+import quote from '../../srcAssets/IconsPics/quote.png';
 
-const HomeCardPeople = () => {
+interface HomeCardPeopleProps {
+  name: string;
+  city: string;
+  image: string;
+  text: string;
+}
+const HomeCardPeople: React.FC<HomeCardPeopleProps> = ({ name, city, image, text }) => {
   return (
     <div className="homePCardContainer">
-   
-      <p className='hpcName'>Jane</p>
-      <p className='hpcCity'>Auckland</p>
-      <p className='hpcText'>
-        My experience was really good from start to finish. Frank and Zsuzsanna
-        have both gone over and above my expectations as property managers. They
-        are the main reason I was able to leave both my properties as rentals
-        instead of selling them. Thank you so much.
+      {/* <header className="homePCardHeader"> */}
+
+      <section className="homePCardHeaderStarsContainer">
+        <div className="homePCardHeaderStars">
+          <img src={star} alt="star" />
+          <img src={star} alt="star" />
+          <img src={star} alt="star" />
+          <img src={star} alt="star" />
+          <img src={star} alt="star" />
+        </div>
+      </section>
+      <img className="quote-img" src={quote} alt="quote" />
+      <section className="homePCardImgTitle">
+        <div className="homePCardImg">
+          <img src={image} alt="person" />
+        </div>
+        <div className="homePCardTitle">
+          <p className="hpcName">{name}</p>
+          <p className="hpcCity">{city}</p>
+        </div>
+      </section>
+
+      {/* </header> */}
+      <p className="hpcText">
+        {text}
       </p>
     </div>
   );

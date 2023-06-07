@@ -1,12 +1,13 @@
 import React from 'react';
 import '../../styles/Footer.css';
-import waba from '../../srcAssets/waba.jpg';
-import kolos from '../../srcAssets/kolos.jpg';
-import ba from '../../srcAssets/ba.jpg';
-import fb from '../../srcAssets/fb.jpg';
-import insta from '../../srcAssets/inst.jpg';
-import li from '../../srcAssets/li.jpg';
-import twit from '../../srcAssets/twit.jpg';
+import waba from '../../srcAssets/footer/waba3.png';
+import kolos from '../../srcAssets/footer/kolos3.png';
+import ba from '../../srcAssets/footer/ba3.png';
+import fb from '../../srcAssets/IconsPics/fbicon.png';
+import insta from '../../srcAssets/IconsPics/insta.png';
+import li from '../../srcAssets/IconsPics/li.png';
+import twit from '../../srcAssets/IconsPics/tw.png';
+import location from '../../srcAssets/IconsPics/location.png';
 import ButtonHero from '../buttons/ButtonHero';
 
 
@@ -22,7 +23,7 @@ const Footer = () => {
   return (
     <div className="fContainer">
       <div className="fsubscribe">
-        <h2>subscribe to our newsletter</h2>
+        <p>subscribe to our newsletter</p>
         <div className="finput">
           {/* <button>Subscribe</button> */}
 
@@ -33,10 +34,10 @@ const Footer = () => {
         text="SUBSCRIBE"
         width="150px"
         onClick={handleClose}
-        height='50px'
+        height='40px'
       />
 
-          <input type="text" placeholder="Enter your email address" />
+          <input type="text"  />
         </div>
       </div>
 
@@ -52,7 +53,8 @@ const Footer = () => {
         <img src={twit} alt="twitter" />
       </div>
       <div className="fcontact">
-        <p>Level 33, ANZ Centre, 23-29 Albert St, Auckland 1010, New Zealand</p>
+        <p><img src={location} alt="location" />
+        Level 33, ANZ Centre, 23-29 Albert St, Auckland 1010, New Zealand</p>
         <p> © 2022 Metro NZ Property Management</p>
     </div>
     </div>
