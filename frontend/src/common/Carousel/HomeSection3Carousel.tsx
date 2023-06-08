@@ -7,17 +7,21 @@ import person3 from '../../srcAssets/section3Imgs/person3.png';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faChevronLeft,
-  faChevronRight,
-} from '@fortawesome/free-solid-svg-icons';
 
 const HomeSection3Carousel = () => {
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    initialSlide: 0,
+  };
+
   return (
     <>
       <div className="hcpContainer">
-        <Slider>
+        <Slider {...settings}>
           <HomeCardPeople
             name="Jane"
             city="Auckland"
