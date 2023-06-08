@@ -34,6 +34,7 @@ export const isAuthenticated = async (
   try {
     const cookie = process.env.COOKIE;
     const sessionToken = req.cookies[cookie];
+
     if (!sessionToken) {
       return res.sendStatus(403);
     }

@@ -25,7 +25,9 @@ const HomeSection3 = () => {
           name="Stephen"
           city="Auckland"
           image={person3}
+
           text="Metro NZ Property Management has been a game-changer for me. From finding tenants to handling  requests , they excel in every aspect of property management. Their transparent communication and personalized service make them stand out."
+
         />
       </div>
       <hr />

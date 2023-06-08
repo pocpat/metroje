@@ -32,6 +32,7 @@ export const login = async (req: express.Request, res: express.Response) => {
 
     await user.save();
     const cookie = process.env.COOKIE;
+
     res.cookie(cookie, user.authentication.sessionToken, {
       domain: 'localhost',
       path: '/',
@@ -72,4 +73,3 @@ export const register = async (req: express.Request, res: express.Response) => {
     return res.sendStatus(400);
   }
 };
-

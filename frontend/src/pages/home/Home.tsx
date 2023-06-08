@@ -9,10 +9,13 @@ import Footer from '../../common/footer/Footer';
 
 
 
+
 import '../../styles/Home.css'
 const Home = () => {
   return (
     <div className='homePageContainer'>
+
+
       <Header />
       <HomeSection1 />
       <HomeSection2 />
@@ -23,5 +26,6 @@ const Home = () => {
     </div>
   );
 };
+
 
 export default Home;
