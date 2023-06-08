@@ -1,7 +1,7 @@
 .hcpContainer {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   justify-content: space-between;
   margin: 0px 120px;
@@ -73,9 +73,9 @@ hr {
 @media screen and (max-width: 768px) {
   .hcpContainer {
     display: grid;
-    justify-items: center;
+    /* justify-items: center; */
     grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-    margin: 0;
+    /* width: 100%;
+    margin: 0; */
   }
 }
