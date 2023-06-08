@@ -1,0 +1,22 @@
+.titleSpace {
+  justify-content: center;
+  border-bottom: 0.15rem solid black;
+  padding-left: 0;
+}
+.titleSpace {
+  display: flex;
+  color: black;
+  align-items: center;
+}
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.popupFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-top: 0.15rem solid black;
+}

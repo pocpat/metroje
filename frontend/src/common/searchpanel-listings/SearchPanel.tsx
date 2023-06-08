@@ -51,6 +51,7 @@ const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
       });
   };
 
+
   const [openModal, setOpenModal] = useState(false);
 
   const handleOpenModal = () => {
