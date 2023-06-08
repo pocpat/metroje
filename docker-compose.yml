@@ -1,6 +1,6 @@
 version: "Compose specification"
 services:
-  metro-app:
+  metro-web:
     build: ./frontend
     ports:
       - 3000:3000
@@ -12,7 +12,11 @@ services:
       - ./backend/.env
     environment:
       DB_URL: MONGO_URL
-  
+  db:
+    image: mongo
+    ports:
+      - 27107:27107
+    volumes:
+      - metroje:/data/db  
 volumes:
   metroje:
-  mongodb:

@@ -5,7 +5,9 @@
     justify-content: center;
     align-items: center;
     background-color: var(--bgSecondary);
-    color: white;
+    /* background-color: #5EB1BF; */
+    
+    color: #FFFFFF;
     padding: 0px 3%;
     margin: 0px 120px;
     width: auto;

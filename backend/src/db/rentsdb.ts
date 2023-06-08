@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 export const RentSchema = new mongoose.Schema({
   location: { type: String, required: false },
@@ -10,7 +10,7 @@ export const RentSchema = new mongoose.Schema({
   carparks: { type: Number, required: false },
 });
 
-export const RentModel = mongoose.model("Rent", RentSchema);
+export const RentModel = mongoose.model('Rent', RentSchema);
 
 export const getRents = () => RentModel.find();
 
@@ -20,8 +20,7 @@ export const getRentByLocation = (location: String) =>
 export const getRentByPrice = (rentprice: Number) =>
   RentModel.find({ rentprice });
 
-export const getRentBySuburb = (suburb: String) =>
-  RentModel.find({ suburb });
+export const getRentBySuburb = (suburb: String) => RentModel.find({ suburb });
 
 export const getRentByBedrooms = (bedrooms: Number) =>
   RentModel.find({ bedrooms });

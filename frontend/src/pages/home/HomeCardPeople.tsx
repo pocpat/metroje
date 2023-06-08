@@ -1,8 +1,8 @@
 import React from 'react';
-import star from '../../srcAssets/IconsPics/star.png';
+import star from '../../srcAssets/IconsPics/Star.png';
 import '../../styles/HomeSection3.css';
 // import person1 from '../../srcAssets/section3Imgs/person1.png';
-import quote from '../../srcAssets/IconsPics/quote.png';
+import quote from '../../srcAssets/IconsPics/Quote.png';
 
 interface HomeCardPeopleProps {
   name: string;

@@ -7,7 +7,7 @@ import fb from '../../srcAssets/IconsPics/fbicon.png';
 import insta from '../../srcAssets/IconsPics/insta.png';
 import li from '../../srcAssets/IconsPics/li.png';
 import twit from '../../srcAssets/IconsPics/tw.png';
-import location from '../../srcAssets/IconsPics/location.png';
+import location from '../../srcAssets/IconsPics/Location.png';
 import ButtonHero from '../buttons/ButtonHero';
 
 

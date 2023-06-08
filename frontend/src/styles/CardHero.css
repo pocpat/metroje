@@ -11,3 +11,37 @@
   border-radius: 4;
   margin-top: 1.5rem;
 }
+
+.hidden {
+  display: none;
+}
+
+.showMore {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 600px) {
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardsList {
+    display: flex;
+    flex-direction: column;
+  }
+  .hidden {
+    display: flex;
+    flex-direction: column;
+  }
+}
