@@ -51,14 +51,6 @@ const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
       });
   };
 
-  const buttons = {
-    height: '2.875rem',
-    width: '11.72rem',
-    p: '0.9375rem, 2.125rem, 0.9375rem, 2.125rem',
-    borderRadius: '0.625rem',
-    color: '#ffffff',
-    bgColor: 'red',
-  };
 
   const [openModal, setOpenModal] = useState(false);
 

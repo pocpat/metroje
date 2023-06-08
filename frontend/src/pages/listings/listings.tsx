@@ -12,7 +12,7 @@ const Listings = () => {
   return (
     <div>
       <Header />
-      <SearchPanel cardData={cardData} setCardData={setCardData} />
+      <SearchPanel   cardData={cardData} setCardData={setCardData} />
       <SortPanel />
       <ActionAreaCard cardData={cardData} setCardData={setCardData} />
       <Footer />

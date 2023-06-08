@@ -12,6 +12,11 @@ services:
       - ./backend/.env
     environment:
       DB_URL: MONGO_URL
-    
+  db:
+    image: mongo
+    ports:
+      - 27107:27107
+    volumes:
+      - metroje:/data/db  
 volumes:
-  mongodb:
+  metroje:

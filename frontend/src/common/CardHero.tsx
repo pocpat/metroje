@@ -16,6 +16,7 @@ import axios from 'axios';
 import { CardData } from '../../types';
 import '../styles/CardHero.css';
 import { CardHeroProps } from '../../types/props';
+import ButtonHero from './buttons/ButtonHero';
 
 let sortOption = 'h';
 
@@ -136,7 +137,15 @@ export default function CardHero({ cardData, setCardData }: CardHeroProps) {
           ))}
       </div>
       <div className="showMore">
-        <button onClick={handleShowMore}>SHOW MORE</button>
+        <ButtonHero
+          onClick={handleShowMore}
+          backgroundColor=" #E4353C"
+          border="#E4353C"
+          color="#EFEFEF"
+          text="SHOW MORE"
+          width="158px"
+          height="37px"
+        />
       </div>
     </div>
   );

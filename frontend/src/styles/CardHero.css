@@ -19,17 +19,29 @@
 .showMore {
   display: flex;
   justify-content: center;
+  margin-top: 1.5rem;
 }
 
-.showMore button {
-  margin: 1rem;
-  padding: 0.9375rem 2.125rem 0.9375rem 2.125rem;
-  border-radius: 8px;
-  color: #ffffff;
-  background-color: #e4353c;
-  transition-duration: 0.4s;
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.showMore button:hover {
-  background-color: #b32a2f;
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 600px) {
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardsList {
+    display: flex;
+    flex-direction: column;
+  }
+  .hidden {
+    display: flex;
+    flex-direction: column;
+  }
 }
