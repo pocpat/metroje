@@ -1,56 +1,82 @@
-#s1container{
-    box-sizing: content-box;
-    display: flex ! important;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bgSecondary);
-    /* background-color: #5EB1BF; */
-    
-    color: #FFFFFF;
-    padding: 0px 3%;
-    margin: 0px 120px;
-    width: auto;
-    position: relative;
-    justify-content: center; 
-    font-size: 2rem;
+#s1container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgSecondary);
+  color: #ffffff;
+  padding: 0px 3%;
+  margin: 0px 120px;
+  width: auto;
+  position: relative;
+  justify-content: center;
+  font-size: 2rem;
 }
-.s1house{
-    margin: 0%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
- width: 90%;
+
+.s1house {
+  margin: 0%;
+  width: 90%;
+}
+
+.s1BTNs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .s1BTNs button {
-    margin: 0px 1rem;
+  margin:  1rem;
 }
-.s1Title p{
-   font-size: 1.4rem;
-}
-.s1Right{
-    display: flex;
-    flex-direction: row-reverse;
-}
-.s1Left{
-    width:60% ;
-}
-@media screen and (max-width: 768px) {
 
-      #s1container{
-        margin: 0px 0;
-        flex-direction: column;
-        align-items: flex-start;
-        width:"100%";
-      }
-      .s1BTNs {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .s1Title p,
-      .s1Title h1{
-        font-size: 2.5rem;
-      }
+.s1Title p {
+  font-size: 1.4rem;
+}
+
+.s1Right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.s1Left {
+  width: 60%;
+}
+
+@media screen 
+and (min-width: 390px) 
+and (max-width: 768px) {
+  #s1container {
+    margin: 0px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .s1BTNs {
+    flex-direction: row;
+    margin: 1rem 0;
+    justify-content: space-evenly;
+    justify-content: flex-start;
+  }
+  .s1BTNs button {
+    margin: 0.5rem 1rem;
+  }
+  .s1Title h1 {
+    font-size: 2.5rem;
+  }
+
+  .s1Title p {
+    font-size: 1.2rem;
+  }
+
+  .s1Title {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+/* house pic */
+  .s1Right {
+    flex-direction: column;
+    margin: 0px ;
+    padding: 0px;
+  }
 }

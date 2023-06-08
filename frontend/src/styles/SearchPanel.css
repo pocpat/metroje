@@ -63,8 +63,37 @@
 .spGraySearch {
   margin: 0 -0.8%;
 }
-.spSearchButtonTenants{
+.spSearchButtonTenants {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+@media screen and (max-width: 1190px) {
+  .spContainer {
+    width: 100%;
+    margin: 0px;
+  }
+  .spGraySearch {
+    display: none;
+  }
+  .spWhiteSearch {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+  }
+  .spWhiteSearch input {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  .spSuburb {
+    margin-left: 0%;
+    margin-right: 15%;
+    margin-top: 4%;
+  }
+  .spSearchButtonTenants {
+    margin: 5% 0 0 0;
+  }
 }

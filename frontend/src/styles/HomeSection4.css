@@ -42,9 +42,23 @@
     margin: 0% 0%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
   .hs4Sponsor img{
     width: 100%;
     height: auto;
+    padding: 0%;
   }
+  .hs4Sponsor{
+    padding: 0%;
+    margin: 0%;
+  }
+  .hs4text{
+width: 100%;
+justify-items: center;
+  }
+.hs4text p{
+ text-align: center;
 }
+  }
+

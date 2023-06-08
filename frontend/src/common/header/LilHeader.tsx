@@ -30,7 +30,7 @@ const LilHeader = () => {
   <input className="lh_search" type="text"  />
   <CiSearch className="rhicon" style={{ position: 'absolute', right: '15px', top: '5px', color: 'red', fontSize: '20px', fontWeight:'bold' }} />
 </div>
-
+<div className="lilnavBarBTN" >
       <ButtonHero
         backgroundColor=" #E4353C"
         border= "#E4353C"
@@ -40,6 +40,7 @@ const LilHeader = () => {
         onClick={handleClose}
         height="40px"
       />
+      </div>
 
     </div>
   );

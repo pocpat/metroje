@@ -81,4 +81,27 @@
     margin: 1% 0%;
     width : 100%;
   }
+  .flogos,
+  .fcontact img{
+    display:none;
+
+  }
+  .ficons{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    margin: 0 ;
+  }
+  .ficons img{
+    width: 30%;
+    height: auto;
+    margin:0  30%;
+    padding: 0%;
+  }
+  .fcontact p{
+text-align: left;
+
+
+
+  }
 }

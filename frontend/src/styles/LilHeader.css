@@ -33,30 +33,31 @@
   font-size: 1.2rem;
 }
 .rhContent {
-    width : 100%;
+  width: 100%;
 }
 
-.rhiconCastomer{
-    display: none;
+.rhiconCastomer {
+  display: none;
 }
-@media screen and (max-width: 768px) {
-    .rhBody {
-        /* padding: 5px 10px; */
-        padding: 0%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    .rhBody p, 
-   .lh_search,
-   button ,
-   .rhicon{
+@media screen and (max-width: 1031px) {
+  .rhBody {
+    /* padding: 5px 10px; */
+    padding: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .rhBody p,
+  .lh_search,
+  .lilnavBarBTN,
+  .rhicon {
     display: none;
-   }
- 
-    .rhiconS , .rhiconCastomer{
-        margin: 0 1%;
-        display: inline-block;
-    }
+  }
+
+  .rhiconS,
+  .rhiconCastomer {
+    margin: 0 1%;
+    display: inline-block;
+  }
 }

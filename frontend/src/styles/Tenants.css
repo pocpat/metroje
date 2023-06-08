@@ -37,3 +37,28 @@ border: 5px solid var(--red) ;
   background-repeat: no-repeat;
   margin: 4% 0  ;
 }
+
+@media screen and (max-width: 1190px) {
+  .tntsText h1,
+  .tntsText p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--textMain);
+    margin:  0;
+    padding: 1% ;
+    width:100%;
+    text-align: center;
+  }
+  .tntsCommon{
+
+margin: 0%;
+  }
+  .tntsText h1{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--textMain);
+    margin:  0;
+    padding: 1% ;
+    width:100%;
+  }
+}
