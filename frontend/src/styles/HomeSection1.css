@@ -11,9 +11,10 @@
     padding: 0px 3%;
     margin: 0px 120px;
     width: auto;
-    height: 522px;
+    /* height: 522px; */
     position: relative;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center; 
     font-size: 2rem;
     /* z-index: 1; */
 }
@@ -25,10 +26,11 @@
 .s1Title p{
    font-size: 1.4rem;
 }
-.s1Right img{
-width: auto;
-height: 70%;
-}
+.s1Right img {
+    width: 50%;
+    height: auto;
+    display: flex;
+  }
 @media screen and (max-width: 768px) {
     .s1container{
         flex-direction: column;
@@ -39,4 +41,17 @@ height: 70%;
     .s1Title{
         margin: 0px;
     }
+    .s1Right {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .s1RightCenter {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .s1RightAlign {
+        display: flex;
+        justify-content: flex-end;
+      }
 }

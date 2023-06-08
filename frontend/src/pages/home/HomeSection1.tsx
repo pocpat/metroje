@@ -44,9 +44,9 @@ const HomeSection1 = () => {
       />
         </div>
       </section>
-      <section className="s1Right">
-        <img src={house} alt="house pic" className="s1house" />
-      </section>
+      <section className={`s1Right ${open ? "s1RightCenter" : "s1RightAlign"}`}>
+  <img src={house} alt="house pic" className="s1house" />
+</section>
     </div>
   );
 };

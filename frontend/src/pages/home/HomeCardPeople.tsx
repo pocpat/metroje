@@ -24,7 +24,7 @@ const HomeCardPeople: React.FC<HomeCardPeopleProps> = ({ name, city, image, text
           <img src={star} alt="star" />
         </div>
       </section>
-      <img className="quote-img" src={quote} alt="quote" />
+    
       <section className="homePCardImgTitle">
         <div className="homePCardImg">
           <img src={image} alt="person" />
@@ -36,6 +36,7 @@ const HomeCardPeople: React.FC<HomeCardPeopleProps> = ({ name, city, image, text
       </section>
 
       {/* </header> */}
+      <img className="quote-img" src={quote} alt="quote" />
       <p className="hpcText">
         {text}
       </p>
