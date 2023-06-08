@@ -5,6 +5,7 @@
   justify-content: center;
   justify-content: space-between;
   margin: 0px 120px;
+
 }
 .hpcText {
   display: flex;
@@ -28,7 +29,7 @@
   border-radius: 10px;
   margin: 0;
   padding: 0;
-  width: 30%;
+  width: 300px;
   height: auto;
   box-shadow: -4px 4px 4px 1px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -73,7 +74,11 @@ hr {
 @media screen and (max-width: 768px) {
   .hcpContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    justify-items: center; 
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin: 0;
+
   }
 
 }

@@ -41,7 +41,12 @@
 }
 @media screen and (max-width: 768px) {
     .rhBody {
-        padding: 5px 10px;
+        /* padding: 5px 10px; */
+        padding: 0%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
     }
     .rhBody p, 
    .lh_search,
@@ -50,11 +55,6 @@
     display: none;
    }
  
-    .rhBody {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
     .rhiconS , .rhiconCastomer{
         margin: 0 1%;
         display: inline-block;

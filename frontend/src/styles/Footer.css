@@ -78,5 +78,7 @@
   .fContainer {
     display: flex;
     flex-direction: column;
+    margin: 1% 0%;
+    width : 100%;
   }
 }

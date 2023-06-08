@@ -19,7 +19,7 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  margin: 0.5% 120px;
+  /* margin: 0.5% 120px; */
   background-color: #fff;
   color:var( --textMain);
   margin: 10px 120px;
@@ -104,6 +104,7 @@
   }
   .wh_navigation {
     margin: 0px 0px;
+    width: 100%;
   }
 }
 

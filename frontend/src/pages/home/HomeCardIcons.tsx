@@ -1,5 +1,5 @@
 import React from 'react';
-import redimg from '../../srcAssets/s2hands.jpg';
+// import redimg from '../../srcAssets/s2hands.jpg';
 
 interface HomeCardIconsProps {
   image: string;
@@ -10,7 +10,7 @@ interface HomeCardIconsProps {
 const HomeCardIcons: React.FC<HomeCardIconsProps> = ({image, text}) => {
   return (
     <div className="hsiContainer">
-      <img src={redimg} alt="redimg" className="hciImg" />
+      <img src={image} alt="redimg" className="hciImg" />
       <p>
        {text}
       </p>
