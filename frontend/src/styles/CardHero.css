@@ -22,12 +22,12 @@
   margin-top: 1.5rem;
 }
 
-.carousel {
+/* .carousel {
   display: flex;
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
-}
+} */
 
 /* Media queries for responsiveness */
 

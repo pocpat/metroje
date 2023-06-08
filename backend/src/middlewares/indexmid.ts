@@ -1,6 +1,6 @@
-import express from "express";
-import { get, merge } from "lodash";
-import { getUserBySessionToken } from "../db/usersdb";
+import express from 'express';
+import { get, merge } from 'lodash';
+import { getUserBySessionToken } from '../db/usersdb';
 
 export const isOwner = async (
   req: express.Request,
@@ -9,7 +9,7 @@ export const isOwner = async (
 ) => {
   try {
     const { id } = req.params;
-    const currentUserId = get(req, "identity._id") as string;
+    const currentUserId = get(req, 'identity._id') as string;
 
     if (!currentUserId) {
       return res.sendStatus(403);
@@ -32,8 +32,8 @@ export const isAuthenticated = async (
   next: express.NextFunction
 ) => {
   try {
-    const sessionToken = req.cookies["JOJO-AUTH"];
-
+    const cookie = process.env.COOKIE;
+    const sessionToken = req.cookies[cookie];
     if (!sessionToken) {
       return res.sendStatus(403);
     }

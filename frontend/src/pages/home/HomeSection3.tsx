@@ -29,7 +29,6 @@ const HomeSection3 = () => {
         />
       </div>
       <hr />
-
     </>
   );
 };

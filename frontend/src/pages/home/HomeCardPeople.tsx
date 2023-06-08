@@ -10,7 +10,12 @@ interface HomeCardPeopleProps {
   image: string;
   text: string;
 }
-const HomeCardPeople: React.FC<HomeCardPeopleProps> = ({ name, city, image, text }) => {
+const HomeCardPeople: React.FC<HomeCardPeopleProps> = ({
+  name,
+  city,
+  image,
+  text,
+}) => {
   return (
     <div className="homePCardContainer">
       {/* <header className="homePCardHeader"> */}
@@ -24,7 +29,7 @@ const HomeCardPeople: React.FC<HomeCardPeopleProps> = ({ name, city, image, text
           <img src={star} alt="star" />
         </div>
       </section>
-    
+
       <section className="homePCardImgTitle">
         <div className="homePCardImg">
           <img src={image} alt="person" />
@@ -37,9 +42,7 @@ const HomeCardPeople: React.FC<HomeCardPeopleProps> = ({ name, city, image, text
 
       {/* </header> */}
       <img className="quote-img" src={quote} alt="quote" />
-      <p className="hpcText">
-        {text}
-      </p>
+      <p className="hpcText">{text}</p>
     </div>
   );
 };
