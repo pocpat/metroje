@@ -8,7 +8,8 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding: 5px 120px;   
+    padding: 5px 120px; 
+    width:100%;  
 }
 
 .lh_search{
@@ -32,4 +33,32 @@
     margin: 0 10px;
     font-size: 1.2rem;
 
+}
+.rhContent {
+    width : 100%;
+}
+
+.rhiconCastomer{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .rhBody {
+        padding: 5px 10px;
+    }
+    .rhBody p, 
+   .lh_search,
+   button ,
+   .rhicon{
+    display: none;
+   }
+ 
+    .rhBody {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .rhiconS , .rhiconCastomer{
+        margin: 0 1%;
+        display: inline-block;
+    }
 }

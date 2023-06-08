@@ -73,13 +73,12 @@
     display: none;
   }
   .wh_navigation-menu ul {
-    /* // wh_navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
+     /* wh_navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
     position: absolute;
     top: 60px;
     left: 0;
-    /* // stacks the li tags vertically  */
     flex-direction: column;
-    /* // makes menu span full height and width */
+    /* makes menu span full height and width */
     width: 100%;
     height: calc(100vh - 77px);
     background-color: white;
@@ -90,13 +89,13 @@
     display: block;
   }
   .wh_navigation-menu li {
-    /* // centers link text and strips off margin */
+     /* centers link text and strips off margin */
     text-align: center;
     margin: 0;
   }
   .wh_navigation-menu li a {
     color: black;
-    /* // increases the surface area of the anchor tag to span the full width of the menu */
+     /* increases the surface area of the anchor tag to span the full width of the menu */
     width: 100%;
     padding: 1.5rem 0;
   }
