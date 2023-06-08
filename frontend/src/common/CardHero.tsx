@@ -125,7 +125,7 @@ export default function CardHero({ cardData, setCardData }: CardHeroProps) {
                     <div style={{ marginRight: 40 }}>
                       <img
                         src={car}
-                        alt="carparck number"
+                        alt="carpark number"
                         style={{ marginRight: 8 }}
                       ></img>
                       {card.carparks}

@@ -1,6 +1,6 @@
-import { createUser, getUserByEmail } from "../db/usersdb";
-import express from "express";
-import { authentication, random } from "../helpers/indexhelp";
+import { createUser, getUserByEmail } from '../db/usersdb';
+import express from 'express';
+import { authentication, random } from '../helpers/indexhelp';
 
 export const login = async (req: express.Request, res: express.Response) => {
   try {
@@ -11,7 +11,7 @@ export const login = async (req: express.Request, res: express.Response) => {
     }
 
     const user = await getUserByEmail(email).select(
-      "+authentication.salt +authentication.password"
+      '+authentication.salt +authentication.password'
     );
 
     if (!user) {
@@ -31,10 +31,11 @@ export const login = async (req: express.Request, res: express.Response) => {
     );
 
     await user.save();
+    const cookie = process.env.COOKIE;
 
-    res.cookie("JOJO-AUTH", user.authentication.sessionToken, {
-      domain: "localhost",
-      path: "/",
+    res.cookie(cookie, user.authentication.sessionToken, {
+      domain: 'localhost',
+      path: '/',
     });
 
     return res.status(200).json(user).end();
@@ -72,4 +73,3 @@ export const register = async (req: express.Request, res: express.Response) => {
     return res.sendStatus(400);
   }
 };
-
