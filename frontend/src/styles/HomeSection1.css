@@ -34,19 +34,7 @@
     width:60% ;
 }
 @media screen and (max-width: 768px) {
-    /* .s1container{
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 0px 0;
-        margin: 0px 0 ;
-    } */
-    /* .s1Title{
-        margin: 0px;
-    } */
-    /* .s1Right {
-        display: flex;
-        justify-content: center;
-      } */
+
       #s1container{
         margin: 0px 0;
         flex-direction: column;
