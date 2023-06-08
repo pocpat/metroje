@@ -12,7 +12,7 @@ const HomeSection1 = () => {
     setAnchorEl(null);
   };
   return (
-    <div className="s1container">
+    <div className="s1container"  id="s1container"  style={{ display: "flex" }}>
       <section className="s1Left">
         <div className="s1Title">
           <h1>
@@ -44,7 +44,7 @@ const HomeSection1 = () => {
       />
         </div>
       </section>
-      <section className={`s1Right ${open ? "s1RightCenter" : "s1RightAlign"}`}>
+      <section className={`s1Right `}>
   <img src={house} alt="house pic" className="s1house" />
 </section>
     </div>
