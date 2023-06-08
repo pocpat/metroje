@@ -18,12 +18,16 @@
     /* z-index: 1; */
 }
 
-.btn{
-    text-transform: uppercase;
+.s1BTNs button {
+    margin: 0px 1rem;
+   
+}
+.s1Title p{
+   font-size: 1.4rem;
 }
 .s1Right img{
 width: auto;
-height: 90%;
+height: 70%;
 }
 @media screen and (max-width: 768px) {
     .s1container{

@@ -8,8 +8,10 @@ import RentminSelectLabels from '../searchpanel-tenants/RentminFadeMenu';
 import { FormData } from '../../../types';
 import axios from 'axios';
 import RefineSearch from './RefineSearch';
+import { SearchPanelProps } from '../../../types/props';
+import ButtonHero from '../buttons/ButtonHero';
 
-const SearchPanel = () => {
+const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
   const [formData, setFormData] = useState<FormData>({
     location: '',
     suburb: '',
@@ -32,12 +34,16 @@ const SearchPanel = () => {
   };
 
   const handleSubmit = () => {
+    formData.rentmin = rmin;
+    formData.rentmax = rmax;
+    formData.bedrooms = bed;
     // Send the form data to the backend server using Axios
     axios
       .get('http://localhost:8080/rents/results', { params: formData })
       .then((response) => {
         // Handle the response from the backend server
         console.log(response.data);
+        setCardData(response.data);
       })
       .catch((error) => {
         // Handle any errors
@@ -100,13 +106,25 @@ const SearchPanel = () => {
         </div>
       </section>
       <section className="spSearchButton">
-        <button type="submit" onClick={handleOpenModal} className="spButton">
-          ADVANCED SEARCH
-        </button>
+        <ButtonHero
+        onClick={handleOpenModal}
+        backgroundColor="#ffffff"
+        border= " #410909"
+        color=" #410909"
+        text="REFINE SEARCH"
+        width="200px"
+        height='50px'
+        />
         <RefineSearch openModal={openModal} onCloseModal={handleCloseModal} />
-        <button type="submit" onClick={handleSubmit} className="spButton">
-          SEARCH
-        </button>
+        <ButtonHero
+        onClick={handleSubmit}
+        backgroundColor=" #E4353C"
+        border= "#E4353C"
+        color="#EFEFEF"
+        text="SEARCH"
+        width="140px"
+        height='50px'
+        />
       </section>
     </div>
   );

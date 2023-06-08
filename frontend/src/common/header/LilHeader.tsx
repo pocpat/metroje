@@ -3,36 +3,37 @@ import '../../styles/LilHeader.css';
 import { CiSearch } from 'react-icons/ci';
 import { BsTelephone } from 'react-icons/bs';
 import { GoMail } from 'react-icons/go';
+import ButtonHero from '../buttons/ButtonHero';
 
 const LilHeader = () => {
-  const phone = {
-    color: 'red',
-    width: '1.15rem',
-    height: '1.15rem',
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
   };
-
-  const mail = {
-    color: 'red',
-    width: '1.5rem',
-    height: '1.25rem',
-    pr: 0,
+  const handleClose = () => {
+    setAnchorEl(null);
   };
-
-  const search = {
-    color: 'red',
-    width: '1.25rem',
-    height: '1.25rem',
-  };
-
   return (
     <div className="rhBody">
-      <BsTelephone style={phone} />
+      <BsTelephone className="" style={{ color: 'red',fontSize:"25" }} />
       <p>09 391 4642</p>
-      <GoMail style={mail} />
+      <GoMail style={{ color: 'red',fontSize:"25" }} />
       <p>info@metronz.co.nz</p>
-      <input className="lh_search" type="text" placeholder="Search" />
-      <CiSearch style={search} />
-      <button className="rhBtn">LOGIN</button>
+      <div style={{ position: 'relative' }}>
+  <input className="lh_search" type="text"  />
+  <CiSearch style={{ position: 'absolute', right: '15px', top: '5px', color: 'red', fontSize: '20px', fontWeight:'bold' }} />
+</div>
+
+      <ButtonHero
+        backgroundColor=" #E4353C"
+        border= "#E4353C"
+        color="#EFEFEF"
+        text="LOGIN"
+        width="100px"
+        onClick={handleClose}
+        height="40px"
+      />
     </div>
   );
 };

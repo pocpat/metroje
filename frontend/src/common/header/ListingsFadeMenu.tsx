@@ -19,8 +19,10 @@ const ListingsFadeMenu = () => {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
+        className ='linkedText'
+        sx={{color: ' #410909', fontWeight: 'bold'}}
       >
-        Listings
+       <a href="/listings">Listings</a>
       </Button>
     </div>
   )

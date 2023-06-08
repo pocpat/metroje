@@ -15,11 +15,11 @@ import wish from '../srcAssets/smallIconsPng/wish.png';
 import axios from 'axios';
 import { CardData } from '../../types';
 import '../styles/CardHero.css';
+import { CardHeroProps } from '../../types/props';
 
 let sortOption = 'h';
 
-export default function CardHero() {
-  const [cardData, setCardData] = useState<CardData[]>([]);
+export default function CardHero({ cardData, setCardData }: CardHeroProps) {
   const [visibleCards, setVisibleCards] = useState(6);
 
   let responseHandler = (cardDataArray: CardData[]) => {

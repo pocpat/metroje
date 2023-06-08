@@ -32,16 +32,3 @@
   margin: 0 10px;
   font-size: 1.2rem;
 }
-
-.rhBtn {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding: 0.25rem 1.25rem;
-  width: 5.5rem;
-  height: 1.75rem;
-  background: #e4353c;
-  color: #ffffff;
-  border-radius: 10px;
-  }

@@ -12,6 +12,10 @@ import NewsFadeMenu from './NewsFadeMenu';
 // import logosmall from '../../srcAssets/IconPics/logosmall.png';
 import bannerTest_1 from '../../srcAssets/bannerTest_1.jpg';
 import hamburger from '../../srcAssets/hamburger.png';
+
+
+
+
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 // const[open, setOpen] = useState(false);
@@ -21,7 +25,9 @@ export default function Navbar() {
 
   return (
     <div className="wh_navigation">
-      <img src={bannerTest_1} alt="Image" className="wh_img" />
+     <a href="/" title="Home">
+  <img src={bannerTest_1} alt="Image" className="wh_img" />
+</a>
       {/* wh_hamburger  */}
       <button
         className="wh_hamburger"
@@ -47,7 +53,6 @@ export default function Navbar() {
         
           <li>
           <OwnersFadeMenu/>
-           {/* href="/#" className='whOwners' >Owners</a> */}
           </li>
           <li>
             <TenantsFadeMenu/>

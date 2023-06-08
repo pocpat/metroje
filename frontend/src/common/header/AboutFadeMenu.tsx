@@ -22,6 +22,7 @@ export default function AboutFadeMenu() {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
+        sx={{color: ' #410909', fontWeight: 'bold'}}
       >
         About Us
       </Button>
