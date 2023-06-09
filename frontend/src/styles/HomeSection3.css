@@ -1,11 +1,11 @@
-.hcpContainer {
+/* .hcpContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  justify-content: space-between;
-  margin: 0px 120px;
-}
+  justify-content: space-evenly;
+  margin: 6.25rem 7.5rem;
+} */
 .hpcText {
   display: flex;
   flex-direction: column;
