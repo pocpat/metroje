@@ -1,7 +1,8 @@
 .hcpContainer {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
+
   justify-content: center;
   justify-content: space-evenly;
   margin: 6.25rem 7.5rem;
@@ -26,7 +27,7 @@
   align-items: flex-start;
   background-color: var(--gray);
   border-radius: 10px;
-  margin: 0;
+  margin: 1rem;
   padding: 0;
   width: 300px;
   height: auto;
@@ -70,12 +71,20 @@ hr {
   backdrop-filter: blur(5px);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hcpContainer {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-    margin: 0;
+    margin: 4rem 2rem;
+    /* display: none; */
+    /* width: 100%;
+    margin: 0; */
   }
 }
+
+/* @media (max-width: 750px) {
+  .hcpContainer { 
+    display: none;
+}
+} */

@@ -2,12 +2,12 @@
   justify-content: center;
   align-items: center;
   width: 30%;
-  height: 40vh;
-  margin: auto;
+  height: 40vh; 
+ margin: auto; 
 }
 
 .cardsList {
   position: relative;
-  width: 36rem;
-  height: 22rem;
+ width: 36rem;
+  height: 22rem; 
 }
