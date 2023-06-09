@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 
-import styles from "../../styles/ButtonHero.module.css";
+import styles from '../../styles/ButtonHero.module.css';
 
 interface ButtonHeroProps {
-    onClick: () => void;
-    backgroundColor: string;
-    border: string;
-    color: string;
-    width: string;
-    text: string;
-    height: string;
+  onClick: () => void;
+  backgroundColor: string;
+  border: string;
+  color: string;
+  width: string;
+  text: string;
+  height: string;
 }
 const ButtonHero: React.FC<ButtonHeroProps> = (props) => {
   return (

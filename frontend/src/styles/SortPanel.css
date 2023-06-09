@@ -2,12 +2,11 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin:2% 120px;
+  margin: 2% 120px;
   height: 60px;
-  font-size: 1.5rem ;
+  font-size: 1.5rem;
 }
 .spListingsContainer img {
-height: 50%;
-margin-left: 8;
+  height: 50%;
+  margin-left: 8;
 }
-

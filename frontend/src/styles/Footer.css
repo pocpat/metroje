@@ -1,10 +1,9 @@
 .fContainer {
   background-color: var(--bgSecondary);
-  color: #ffffff;
+  color: var(--textSecondary);
   padding: 20px;
   text-align: center;
   font-size: 20px;
-  /* font-family: 'Roboto', sans-serif; */
   font-weight: 300;
   margin-top: 20px;
   margin-bottom: 0px;
@@ -48,7 +47,6 @@
 }
 
 .fsubscribe {
-  /* display: flex; */
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -79,29 +77,25 @@
     display: flex;
     flex-direction: column;
     margin: 1% 0%;
-    width : 100%;
+    width: 100%;
   }
   .flogos,
-  .fcontact img{
-    display:none;
-
+  .fcontact img {
+    display: none;
   }
-  .ficons{
-    display:flex;
-    flex-direction:row;
+  .ficons {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin: 0 ;
+    margin: 0;
   }
-  .ficons img{
+  .ficons img {
     width: 30%;
     height: auto;
-    margin:0  30%;
+    margin: 0 30%;
     padding: 0%;
   }
-  .fcontact p{
-text-align: left;
-
-
-
+  .fcontact p {
+    text-align: left;
   }
 }

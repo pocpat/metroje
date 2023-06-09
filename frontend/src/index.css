@@ -1,19 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
-:root{
-  --textMain:  #410909;
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+:root {
+  --textMain: #410909;
   --textMainAlpha: rgba(65, 9, 9, 0.5);
   --textSecondary: #ffffff;
-  --bgSecondary:  #5EB1BF;
-  --gray:  #D9D9D9;
-  --red: #E4353C;
+  --bgSecondary: #5eb1bf;
+  --gray: #d9d9d9;
+  --red: #e4353c;
 }
-
 
 body {
   box-sizing: border-box;
   height: auto;
   margin: 0;
   padding: 0;
-  color:  #410909;
-  font-family: "open sans", sans-serif;
+  color: #410909;
+  font-family: 'open sans', sans-serif;
 }

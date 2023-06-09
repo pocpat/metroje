@@ -22,7 +22,6 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  /* margin: 0% 10%; */
   height: auto;
 }
 .hs4text {
@@ -44,21 +43,20 @@
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
-  .hs4Sponsor img{
+  .hs4Sponsor img {
     width: 100%;
     height: auto;
     padding: 0%;
   }
-  .hs4Sponsor{
+  .hs4Sponsor {
     padding: 0%;
     margin: 0%;
   }
-  .hs4text{
-width: 100%;
-justify-items: center;
+  .hs4text {
+    width: 100%;
+    justify-items: center;
   }
-.hs4text p{
- text-align: center;
+  .hs4text p {
+    text-align: center;
+  }
 }
-  }
-

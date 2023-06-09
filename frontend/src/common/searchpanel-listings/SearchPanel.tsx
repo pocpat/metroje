@@ -46,11 +46,9 @@ const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
         setCardData(response.data);
       })
       .catch((error) => {
-        // Handle any errors
         console.error(error);
       });
   };
-
 
   const [openModal, setOpenModal] = useState(false);
 
@@ -99,23 +97,23 @@ const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
       </section>
       <section className="spSearchButton">
         <ButtonHero
-        onClick={handleOpenModal}
-        backgroundColor="#ffffff"
-        border= " #410909"
-        color=" #410909"
-        text="REFINE SEARCH"
-        width="200px"
-        height='50px'
+          onClick={handleOpenModal}
+          backgroundColor="#ffffff"
+          border=" #410909"
+          color=" #410909"
+          text="REFINE SEARCH"
+          width="200px"
+          height="50px"
         />
         <RefineSearch openModal={openModal} onCloseModal={handleCloseModal} />
         <ButtonHero
-        onClick={handleSubmit}
-        backgroundColor=" #E4353C"
-        border= "#E4353C"
-        color="#EFEFEF"
-        text="SEARCH"
-        width="140px"
-        height='50px'
+          onClick={handleSubmit}
+          backgroundColor=" #E4353C"
+          border="#E4353C"
+          color="#EFEFEF"
+          text="SEARCH"
+          width="140px"
+          height="50px"
         />
       </section>
     </div>

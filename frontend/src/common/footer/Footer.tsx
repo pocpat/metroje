@@ -10,7 +10,6 @@ import twit from '../../srcAssets/IconsPics/tw.png';
 import location from '../../srcAssets/IconsPics/Location.png';
 import ButtonHero from '../buttons/ButtonHero';
 
-
 const Footer = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -28,16 +27,16 @@ const Footer = () => {
           {/* <button>Subscribe</button> */}
 
           <ButtonHero
-        backgroundColor=" #E4353C"
-        border= "#E4353C"
-        color="#EFEFEF"
-        text="SUBSCRIBE"
-        width="150px"
-        onClick={handleClose}
-        height='40px'
-      />
+            backgroundColor=" #E4353C"
+            border="#E4353C"
+            color="#EFEFEF"
+            text="SUBSCRIBE"
+            width="150px"
+            onClick={handleClose}
+            height="40px"
+          />
 
-          <input type="text"  />
+          <input type="text" />
         </div>
       </div>
 
@@ -53,10 +52,12 @@ const Footer = () => {
         <img src={twit} alt="twitter" />
       </div>
       <div className="fcontact">
-        <p><img src={location} alt="location" />
-        Level 33, ANZ Centre, 23-29 Albert St, Auckland 1010, New Zealand</p>
+        <p>
+          <img src={location} alt="location" />
+          Level 33, ANZ Centre, 23-29 Albert St, Auckland 1010, New Zealand
+        </p>
         <p> © 2022 Metro NZ Property Management</p>
-    </div>
+      </div>
     </div>
   );
 };

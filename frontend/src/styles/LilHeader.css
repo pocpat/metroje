@@ -1,6 +1,6 @@
 .rhBody {
-  background-color: rgb(94, 177, 191);
-  color: #ffffff;
+  background-color: var(--bgSecondary);
+  color: var(--textSecondary);
   font-size: 1rem;
   text-align: center;
   font-weight: bold;
@@ -14,17 +14,16 @@
 .lh_search {
   display: flex;
   flex-direction: row;
-  /* justify-content: flex-start; */
   align-items: center;
   width: 250px;
   height: 28px;
   box-sizing: border-box;
-  background-color: rgb(217, 217, 217);
-  color: white;
+  background-color: var(--textSecondary);
+  color: var(--textSecondary);
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
-  border: 0px solid red;
+  border: 0px solid var(--red);
   border-radius: 10px;
   margin: 0px 10px;
 }
@@ -41,7 +40,6 @@
 }
 @media screen and (max-width: 1031px) {
   .rhBody {
-    /* padding: 5px 10px; */
     padding: 0%;
     width: 100%;
     display: flex;

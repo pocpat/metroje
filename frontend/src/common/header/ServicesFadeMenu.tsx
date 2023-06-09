@@ -22,9 +22,9 @@ export default function ServicesFadeMenu() {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        sx={{color: ' #410909', fontWeight: 'bold'}}
+        sx={{ color: ' #410909', fontWeight: 'bold' }}
       >
-       Services
+        Services
       </Button>
       <Menu
         id="fade-menu"
@@ -38,10 +38,11 @@ export default function ServicesFadeMenu() {
       >
         <MenuItem onClick={handleClose}>Building Management</MenuItem>
         <MenuItem onClick={handleClose}>Property Management</MenuItem>
-        <MenuItem onClick={handleClose}>Investment Property Management</MenuItem>
+        <MenuItem onClick={handleClose}>
+          Investment Property Management
+        </MenuItem>
         <MenuItem onClick={handleClose}>Decluttering Service</MenuItem>
       </Menu>
-
     </div>
   );
 }

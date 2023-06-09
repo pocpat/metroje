@@ -16,9 +16,6 @@ const Home = () => {
       <Header />
       <HomeSection1 />
       <HomeSection2 />
-
-    
-      {/* <br /> */}
       <HomeSection3 />
       {/* <HomeSection3Carousel/> */}
       <HomeSection4 />

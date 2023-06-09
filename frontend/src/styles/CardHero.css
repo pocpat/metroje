@@ -5,25 +5,19 @@
   margin: 0px 120px;
   padding: 0.3% 1%;
 }
-
 .cardsList {
   max-width: 300;
   border-radius: 4;
   margin-top: 1.5rem;
 }
-
 .hidden {
   display: none;
 }
-
 .showMore {
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
 }
-
-
-/* Media queries for responsiveness */
 
 @media screen and (max-width: 600px) {
   .cardsContainer {

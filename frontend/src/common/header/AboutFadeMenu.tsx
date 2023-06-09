@@ -22,7 +22,7 @@ export default function AboutFadeMenu() {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        sx={{color: ' #410909', fontWeight: 'bold'}}
+        sx={{ color: ' #410909', fontWeight: 'bold' }}
       >
         About Us
       </Button>
@@ -41,7 +41,6 @@ export default function AboutFadeMenu() {
         <MenuItem onClick={handleClose}>Careers</MenuItem>
         <MenuItem onClick={handleClose}>Disputes Process</MenuItem>
       </Menu>
-
     </div>
   );
 }

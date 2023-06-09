@@ -1,83 +1,84 @@
 .wh_navigation {
-    height: 100px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    margin: 10px 120px;
-  }
-  
-  .wh_navigation-menu {
-    position: absolute;
-    top: 100%; 
-    left: 0;
+  height: 100px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 10px 120px;
+}
+
+.wh_navigation-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  /* display: none; */
+}
+
+.wh_navigation-menu ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  background-color: white;
+  border-top: 1px solid black;
+}
+
+.wh_navigation-menu.expanded {
+  display: block;
+  position: fixed;
+  top: 25;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.wh_navigation-menu li {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+}
+
+.wh_navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding: 1.5rem 0;
+}
+
+.wh_navigation-menu li:hover {
+  background-color: #eee;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+@media screen and (max-width: 1288px) {
+  .wh_hamburger {
+    /* display: block; */
     display: none;
   }
-  
+
   .wh_navigation-menu ul {
+    position: static;
+    width: auto;
+    height: auto;
+    border: none;
+  }
+
+  .wh_navigation-menu.expanded ul {
     display: flex;
-    flex-direction: column;
-    padding: 0;
-    background-color: white;
-    border-top: 1px solid black;
   }
-  
-  .wh_navigation-menu.expanded {
-    display: block;
-    position: fixed;
-  top:25;
-  bottom: 0;
-    background-color: white; 
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
-    z-index: 2;
-  }
-  
-  .wh_navigation-menu li {
-    list-style-type: none;
-    text-align: center;
+
+  .wh_navigation {
     margin: 0;
-  }
-  
-  .wh_navigation-menu li a {
-    text-decoration: none;
-    display: block;
-    color: black;
-    padding: 1.5rem 0;
-  }
-  
-  .wh_navigation-menu li:hover {
-    background-color: #eee;
-  }
-  
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark background color */
-    z-index: 1;
   }
-  
-  @media screen and (max-width: 1288px) {
-    .wh_hamburger {
-      display: block;
-    }
-  
-    .wh_navigation-menu ul {
-      position: static;
-      width: auto;
-      height: auto;
-      border: none;
-    }
-  
-    .wh_navigation-menu.expanded ul {
-      display: flex;
-    }
-  
-    .wh_navigation {
-      margin: 0;
-      width: 100%;
-    }
-  }
+}

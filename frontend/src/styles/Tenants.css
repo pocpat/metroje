@@ -1,6 +1,4 @@
-
-
-    .tntsCommon{
+.tntsCommon {
   box-sizing: content-box;
   margin: 10px 120px;
   border-radius: 8px;
@@ -12,18 +10,18 @@
   margin: 10px 0;
   padding: 1% 6% 0 6%;
 }
-.tntsContainer div{
-height: 300px;
+.tntsContainer div {
+  height: 300px;
 }
-.tntsContainer{
+.tntsContainer {
   border-radius: 15px;
 }
-.tntsGraph img{
-width: 100%;
-border-radius: 15px;
-border: 5px solid var(--red) ;
+.tntsGraph img {
+  width: 100%;
+  border-radius: 15px;
+  border: 5px solid var(--red);
 }
-.tntsGraph{
+.tntsGraph {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +33,7 @@ border: 5px solid var(--red) ;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 4% 0  ;
+  margin: 4% 0;
 }
 
 @media screen and (max-width: 1190px) {
@@ -44,21 +42,20 @@ border: 5px solid var(--red) ;
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--textMain);
-    margin:  0;
-    padding: 1% ;
-    width:100%;
+    margin: 0;
+    padding: 1%;
+    width: 100%;
     text-align: center;
   }
-  .tntsCommon{
-
-margin: 0%;
+  .tntsCommon {
+    margin: 0%;
   }
-  .tntsText h1{
+  .tntsText h1 {
     font-size: 1.5rem;
     font-weight: 800;
     color: var(--textMain);
-    margin:  0;
-    padding: 1% ;
-    width:100%;
+    margin: 0;
+    padding: 1%;
+    width: 100%;
   }
 }

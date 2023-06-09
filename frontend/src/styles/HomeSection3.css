@@ -20,7 +20,6 @@
 .hpcText {
   padding: 5% 20%;
 }
-
 .homePCardContainer {
   display: flex;
   flex-direction: column;
@@ -37,7 +36,6 @@
 .homePCardHeaderStarsContainer {
   width: 100%;
 }
-
 .homePCardHeaderStars {
   display: flex;
   flex-direction: row;
@@ -77,14 +75,5 @@ hr {
     justify-items: center;
     grid-template-columns: repeat(1, 1fr);
     margin: 4rem 2rem;
-    /* display: none; */
-    /* width: 100%;
-    margin: 0; */
   }
 }
-
-/* @media (max-width: 750px) {
-  .hcpContainer { 
-    display: none;
-}
-} */

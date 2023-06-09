@@ -9,8 +9,6 @@ import { FormData } from '../../../types';
 import axios from 'axios';
 import ButtonHero from '../buttons/ButtonHero';
 
-
-
 const SearchPanel = () => {
   const [formData, setFormData] = useState<FormData>({
     location: '',
@@ -25,7 +23,6 @@ const SearchPanel = () => {
   const [bed, setBed] = useState(0);
   const [propertytype, setPropertytype] = useState('');
 
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
@@ -34,10 +31,6 @@ const SearchPanel = () => {
     }));
     console.log(formData);
   };
-
-  // const handleRentMinChange = (value:) => {
-  //   setRmin(parseInt(e.target.value));
-  // }
 
   const handleSubmit = () => {
     formData.rentmin = rmin;
@@ -82,14 +75,13 @@ const SearchPanel = () => {
       </section>
       <section className="spGraySearch">
         <div className="spRentMin">
-          <RentminSelectLabels rmin={rmin} setRmin={setRmin}/>
+          <RentminSelectLabels rmin={rmin} setRmin={setRmin} />
         </div>
         <div className="spRentMax">
-          <RentmaxSelectLabels rmax={rmax} setRmax={setRmax}
-          />
+          <RentmaxSelectLabels rmax={rmax} setRmax={setRmax} />
         </div>
         <div className="spBedrooms">
-          <BedroomsSelectLabels  bed={bed}  setBed={setBed}/>
+          <BedroomsSelectLabels bed={bed} setBed={setBed} />
         </div>
         <div className="spPropertyType">
           <PropertytypeSelectLabels />
@@ -97,13 +89,13 @@ const SearchPanel = () => {
       </section>
       <section className="spSearchButtonTenants">
         <ButtonHero
-        onClick={handleSubmit}
-        backgroundColor=" #E4353C"
-        border= "#E4353C"
-        color="#EFEFEF"
-        text="SEARCH"
-        width="140px"
-        height='50px'
+          onClick={handleSubmit}
+          backgroundColor=" #E4353C"
+          border="#E4353C"
+          color="#EFEFEF"
+          text="SEARCH"
+          width="140px"
+          height="50px"
         />
       </section>
     </div>

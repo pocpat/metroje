@@ -14,8 +14,6 @@ export default function LocationSelectLabels() {
 
   return (
     <div>
-     
-     
       <FormControl sx={{ m: 1, minWidth: 120 }}>
         <Select
           value={age}
@@ -23,9 +21,7 @@ export default function LocationSelectLabels() {
           displayEmpty
           inputProps={{ 'aria-label': 'Without label' }}
         >
-          <MenuItem value="">
-            {/* <em></em> */}
-          </MenuItem>
+          <MenuItem value="">{/* <em></em> */}</MenuItem>
           <MenuItem value={1}>1</MenuItem>
           <MenuItem value={2}>2</MenuItem>
           <MenuItem value={3}>3</MenuItem>

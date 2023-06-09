@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--bgSecondary);
-  color: #ffffff;
+  color: var(--textSecondary);
   padding: 0px 3%;
   margin: 0px 120px;
   width: auto;
@@ -11,39 +11,31 @@
   justify-content: center;
   font-size: 2rem;
 }
-
 .s1house {
   margin: 0%;
   width: 90%;
 }
-
 .s1BTNs {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 1rem;
 }
-
 .s1BTNs button {
-  margin:  1rem;
+  margin: 1rem;
 }
-
 .s1Title p {
   font-size: 1.4rem;
 }
-
 .s1Right {
   display: flex;
   flex-direction: row-reverse;
 }
-
 .s1Left {
   width: 60%;
 }
 
-@media screen 
-and (min-width: 390px) 
-and (max-width: 768px) {
+@media screen and (min-width: 390px) and (max-width: 768px) {
   #s1container {
     margin: 0px 0;
     flex-direction: column;
@@ -63,20 +55,18 @@ and (max-width: 768px) {
   .s1Title h1 {
     font-size: 2.5rem;
   }
-
   .s1Title p {
     font-size: 1.2rem;
   }
-
   .s1Title {
     margin: 0px;
     padding: 0px;
     width: 100%;
   }
-/* house pic */
+  /* house pic */
   .s1Right {
     flex-direction: column;
-    margin: 0px ;
+    margin: 0px;
     padding: 0px;
   }
 }

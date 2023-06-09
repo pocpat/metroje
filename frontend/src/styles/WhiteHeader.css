@@ -61,7 +61,7 @@
   /* display: none; */
   float: 'left';
   background-color: transparent;
-  display: none;
+  /* display: none; */
 }
 .wh_hamburger:hover {
   background-color:var(--bgSecondary);

@@ -3,7 +3,6 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
-import { fontWeight } from '@mui/system';
 
 export default function OwnersFadeMenu() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -23,7 +22,7 @@ export default function OwnersFadeMenu() {
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        sx={{color: ' #410909', fontWeight: 'bold'}}
+        sx={{ color: ' #410909', fontWeight: 'bold' }}
       >
         Owners
       </Button>
@@ -43,7 +42,6 @@ export default function OwnersFadeMenu() {
         <MenuItem onClick={handleClose}>Tenanted Property Sales</MenuItem>
         <MenuItem onClick={handleClose}>Body Corp Administration</MenuItem>
       </Menu>
-
     </div>
   );
 }

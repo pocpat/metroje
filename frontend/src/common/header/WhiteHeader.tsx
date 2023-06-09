@@ -13,7 +13,6 @@ import hamburger from '../../srcAssets/hamburger.png';
 
 export default function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  // const[open, setOpen] = useState(false);
 
   return (
     <div className="wh_navigation">
@@ -29,7 +28,9 @@ export default function Navbar() {
       >
         <img src={hamburger} alt="Hamburger" className="wh_hamburger-icon" />
       </button>
-      {isNavExpanded && <div className="overlay" onClick={() => setIsNavExpanded(false)} />}
+      {isNavExpanded && (
+        <div className="overlay" onClick={() => setIsNavExpanded(false)} />
+      )}
       <div
         className={
           isNavExpanded ? 'wh_navigation-menu expanded' : 'wh_navigation-menu'

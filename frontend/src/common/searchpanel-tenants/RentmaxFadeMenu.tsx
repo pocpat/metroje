@@ -10,8 +10,10 @@ import {
 } from './menuItemSelectStyle';
 import { RentmaxSelectLabelsProps } from '../../../types/props';
 
-export default function RentmaxSelectLabels({ rmax, setRmax }: RentmaxSelectLabelsProps) {
-
+export default function RentmaxSelectLabels({
+  rmax,
+  setRmax,
+}: RentmaxSelectLabelsProps) {
   const handleChange = (event: SelectChangeEvent) => {
     setRmax(parseInt(event.target.value));
   };
