@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import '../../styles/WhiteHeader.css';
+import '../../styles/HamburgerMenu.css';
 import TenantsFadeMenu from './TenantsFadeMenu';
 import OwnersFadeMenu from './OwnersFadeMenu';
 import ServicesFadeMenu from './ServicesFadeMenu';

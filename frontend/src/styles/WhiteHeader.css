@@ -25,25 +25,28 @@
   margin: 10px 120px;
 }
 
-.wh_navigation-menu {
-  margin-left: auto;
-  z-index: 2;
-}
+/* .wh_navigation-menu { */
+  /* margin-left: auto; */
+  /* position: absolute;
+  top: 100%; 
+  left: 0;
+  display: none;
+} */
 
-.wh_navigation-menu ul {
+/* .wh_navigation-menu ul {
   display: flex;
   padding: 0;
-}
-.wh_navigation-menu li {
+} */
+/* .wh_navigation-menu li {
   list-style-type: none;
   margin: 0 1rem;
 
-}
-.wh_navigation-menu li a {
+} */
+/* .wh_navigation-menu li a {
   text-decoration: none;
   display: block;
   width: 100%;
-}
+} */
 
 .wh_hamburger {
   border: 0;
@@ -54,7 +57,7 @@
   transition: 
   background-color 0.2s ease-in-out;
   position: absolute;
-  transform: translateY(-175%);
+  transform: translateY(-178%);
   /* display: none; */
   float: 'left';
   background-color: transparent;
@@ -67,28 +70,28 @@
 /*  390px  768px */
 
 @media screen and (max-width: 1288px) {
-  .wh_hamburger {
+  /* .wh_hamburger {
     display: block;
-  }
-  .wh_navigation-menu ul {
+  } */
+  /* .wh_navigation-menu ul {
     display: none;
-  }
-  .wh_navigation-menu ul {
+  } */
+  /* .wh_navigation-menu ul {
      /* wh_navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
-    position: absolute;
+    /* position: absolute;
     top: 60px;
     left: 0;
-    flex-direction: column;
+    flex-direction: column; */
     /* makes menu span full height and width */
-    width: 100%;
+    /* width: 100%;
     height: calc(100vh - 77px);
     background-color: white;
     border-top: 1px solid black;
-    display: none;
-  }
-  .wh_navigation-menu.expanded ul {
+    display: none; */
+  /* }  */
+  /* .wh_navigation-menu.expanded ul {
     display: block;
-  }
+  } */
   .wh_navigation-menu li {
      /* centers link text and strips off margin */
     text-align: center;
@@ -103,10 +106,10 @@
   .wh_navigation-menu li:hover {
     background-color: #eee;
   }
-  .wh_navigation {
+  /* .wh_navigation {
     margin: 0px 0px;
     width: 100%;
-  }
+  } */
 }
 
 .linkedText a:-webkit-any-link {
