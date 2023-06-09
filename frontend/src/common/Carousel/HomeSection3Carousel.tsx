@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../styles/HomeSection3Carousel.css';
+// import '../../stylesHomeSection3.css ';
 import HomeCardPeople from '../../pages/home/HomeCardPeople';
 import person1 from '../../srcAssets/section3Imgs/person1.png';
 import person2 from '../../srcAssets/section3Imgs/person2.png';
@@ -7,6 +8,7 @@ import person3 from '../../srcAssets/section3Imgs/person3.png';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+
 
 
 export default class HomeSection3Carousel extends Component {

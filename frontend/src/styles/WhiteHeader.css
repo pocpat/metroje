@@ -27,7 +27,7 @@
 
 .wh_navigation-menu {
   margin-left: auto;
-
+  z-index: 2;
 }
 
 .wh_navigation-menu ul {
@@ -54,14 +54,15 @@
   transition: 
   background-color 0.2s ease-in-out;
   position: absolute;
-  transform: translateY(-170%);
+  transform: translateY(-175%);
   /* display: none; */
   float: 'left';
   background-color: transparent;
   display: none;
 }
 .wh_hamburger:hover {
-  background-color: #2642af;
+  background-color:var(--bgSecondary);
+  box-shadow: #000103;
 }
 /*  390px  768px */
 
