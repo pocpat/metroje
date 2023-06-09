@@ -11,7 +11,7 @@ const HomeSection2 = () => {
     <div className="s2Container">
       <HomeCardIcons
         image={Fr1}
-        text="Changing to Metro NZ is easy. Just give us a few details and we’ll do the rest. We work with landlords, renters, building owners, and property investors."
+        text="Changing to Metro NZ is easy. Just give us a few details and we’ll do the rest. We work with landlords,and property investors."
       />
       <HomeCardIcons
         image={Fr2}

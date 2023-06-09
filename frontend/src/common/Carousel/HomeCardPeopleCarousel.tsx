@@ -9,8 +9,9 @@ interface HomeCardPeopleProps {
   city: string;
   image: string;
   text: string;
+  id: number;
 }
-const HomeCardPeople: React.FC<HomeCardPeopleProps> = ({ name, city, image, text }) => {
+const HomeCardPeople: React.FC<HomeCardPeopleProps> = ({ name, city, image, text, id }) => {
   return (
     <div className="homePCardContainer">
       {/* <header className="homePCardHeader"> */}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import '../../styles/WhiteHeader.css';
+import '../../styles/HamburgerMenu.css';
 import TenantsFadeMenu from './TenantsFadeMenu';
 import OwnersFadeMenu from './OwnersFadeMenu';
 import ServicesFadeMenu from './ServicesFadeMenu';
@@ -28,7 +29,7 @@ export default function Navbar() {
       >
         <img src={hamburger} alt="Hamburger" className="wh_hamburger-icon" />
       </button>
-
+      {isNavExpanded && <div className="overlay" onClick={() => setIsNavExpanded(false)} />}
       <div
         className={
           isNavExpanded ? 'wh_navigation-menu expanded' : 'wh_navigation-menu'

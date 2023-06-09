@@ -1,3 +1,4 @@
+
 .hcpContainer {
   /* justify-content: space-between; */
   /* align-items: center; */
@@ -5,7 +6,7 @@
   height: 40vh;
   padding: 40px;
   margin: auto;
-}
+} 
 .hpcText {
   display: flex;
   flex-direction: column;
@@ -69,3 +70,9 @@ hr {
   margin: 2% 120px;
   backdrop-filter: blur(5px);
 }
+
+/* @media (min-width: 800px) {
+.hcpContainer {
+  display: none;
+}
+} */
