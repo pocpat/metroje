@@ -8,25 +8,23 @@ import HomeSection4 from './HomeSection4';
 import Footer from '../../common/footer/Footer';
 import HomeSection3Carousel2 from './HomeSection3Carousel2';
 
-
-
-
-import '../../styles/Home.css'
+import '../../styles/Home.css';
 const Home = () => {
   return (
-    <div className='homePageContainer'>
-
-
+    <div className="homePageContainer">
       <Header />
       <HomeSection1 />
       <HomeSection2 />
+
+      <br />
+      <br />
+      <br />
       {/* <HomeSection3 /> */}
-      <HomeSection3Carousel2/>
+      <HomeSection3Carousel/>
       <HomeSection4 />
       <Footer />
     </div>
   );
 };
-
 
 export default Home;
