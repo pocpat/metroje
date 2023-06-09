@@ -30,7 +30,7 @@ const HomeCardPeople: React.FC<HomeCardPeopleProps> = ({
         </div>
       </section>
 
-      <section className="homePCardImgTitle">
+      <section className="homePCardImgTitle">+
         <div className="homePCardImg">
           <img src={image} alt="person" />
         </div>
