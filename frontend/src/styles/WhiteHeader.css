@@ -10,8 +10,6 @@
   width: auto;
   box-sizing: border-box;
 }
-
-
 .wh_navigation {
   height: 100px;
   width: auto;
@@ -19,9 +17,8 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
-  /* margin: 0.5% 120px; */
   background-color: #fff;
-  color:var( --textMain);
+  color: var(--textMain);
   margin: 10px 120px;
 }
 
@@ -37,7 +34,6 @@
 .wh_navigation-menu li {
   list-style-type: none;
   margin: 0 1rem;
-
 }
 .wh_navigation-menu li a {
   text-decoration: none;
@@ -51,20 +47,17 @@
   width: 40px;
   padding: 0.5rem;
   cursor: pointer;
-  transition: 
-  background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
   position: absolute;
   transform: translateY(-175%);
-  /* display: none; */
   float: 'left';
   background-color: transparent;
   display: none;
 }
 .wh_hamburger:hover {
-  background-color:var(--bgSecondary);
+  background-color: var(--bgSecondary);
   box-shadow: #000103;
 }
-/*  390px  768px */
 
 @media screen and (max-width: 1288px) {
   .wh_hamburger {
@@ -74,12 +67,10 @@
     display: none;
   }
   .wh_navigation-menu ul {
-     /* wh_navigation menu is positioned to start 60px from the top of the document (which is directly below the navbar) */
     position: absolute;
-    top: 60px;
+    top: -15px;
     left: 0;
     flex-direction: column;
-    /* makes menu span full height and width */
     width: 100%;
     height: calc(100vh - 77px);
     background-color: white;
@@ -88,16 +79,14 @@
   }
   .wh_navigation-menu.expanded ul {
     display: block;
-    width: 15%;
+    width: 100px;
   }
   .wh_navigation-menu li {
-     /* centers link text and strips off margin */
     text-align: center;
     margin: 0;
   }
   .wh_navigation-menu li a {
     color: black;
-     /* increases the surface area of the anchor tag to span the full width of the menu */
     width: 100%;
     padding: 1.5rem 0;
   }
@@ -113,4 +102,13 @@
 .linkedText a:-webkit-any-link {
   text-decoration: none !important;
   color: inherit !important;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
