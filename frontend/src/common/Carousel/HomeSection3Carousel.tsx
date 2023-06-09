@@ -16,13 +16,32 @@ const HomeSection3Carousel = () => {
     slidesToShow: 2,
     slidesToScroll: 1,
     initialSlide: 0,
+    nextArrow: (
+      <Arrow className={undefined} style={undefined} onClick={undefined} />
+    ),
+    prevArrow: (
+      <Arrow className={undefined} style={undefined} onClick={undefined} />
+    ),
   };
-
+  function Arrow(props: { className: any; style: any; onClick: any }) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: 'block', background: '#5eb1bf' }}
+        onClick={onClick}
+      />
+    );
+  }
   return (
     <>
       <div className="hcpContainer">
         <Slider {...settings}>
+   
+
+
           <HomeCardPeople
+         
             name="Jane"
             city="Auckland"
             image={person1}
@@ -40,11 +59,13 @@ const HomeSection3Carousel = () => {
             image={person3}
             text="Metro NZ Property Management has been a game-changer for me. From finding reliable tenants to handling maintenance requests promptly, they excel in every aspect of property management. Their transparent communication and personalized service make them stand out."
           />
+        {/* ))} */}
         </Slider>
       </div>
       <hr />
     </>
   );
 };
+
 
 export default HomeSection3Carousel;

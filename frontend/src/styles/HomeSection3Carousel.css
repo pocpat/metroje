@@ -1,10 +1,10 @@
-.hcpContainer {
+/* .hcpContainer {
   justify-content: center;
   align-items: center;
   width: 30%;
   height: 40vh;
   margin: auto;
-}
+} */
 .hpcText {
   display: flex;
   flex-direction: column;
