@@ -29,7 +29,7 @@ export default function Navbar() {
       >
         <img src={hamburger} alt="Hamburger" className="wh_hamburger-icon" />
       </button>
-
+      {isNavExpanded && <div className="overlay" onClick={() => setIsNavExpanded(false)} />}
       <div
         className={
           isNavExpanded ? 'wh_navigation-menu expanded' : 'wh_navigation-menu'
