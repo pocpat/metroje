@@ -15,16 +15,16 @@ export default class HomeSection3Carousel extends Component {
   render() {
     const settings = {
       infinite: true,
-      speed: 500,
+      speed: 1000,
       slidesToShow: 3,
-      slidesToScroll: 1,
+      slidesToScroll: 3,
       initialSlide: 0,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
             infinite: true,
-            speed: 500,
+            speed: 1000,
             slidesToShow: 1,
             slidesToScroll: 1,
             initialSlide: 0,

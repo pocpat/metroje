@@ -21,7 +21,6 @@ export const isOwner = async (
 
     next();
   } catch (error) {
-    console.log(error);
     return res.sendStatus(400);
   }
 };
@@ -48,7 +47,6 @@ export const isAuthenticated = async (
 
     return next();
   } catch (error) {
-    console.log(error);
     return res.sendStatus(400);
   }
 };

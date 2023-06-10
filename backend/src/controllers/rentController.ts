@@ -1,5 +1,5 @@
-import { RentModel, getRents } from "../db/rentsdb";
-import express from "express";
+import { RentModel, getRents } from '../db/rentsdb';
+import express from 'express';
 
 export const getAllRents = async (
   req: express.Request,
@@ -10,7 +10,6 @@ export const getAllRents = async (
 
     return res.status(200).json(Rents);
   } catch (error) {
-    console.log(error);
     return res.sendStatus(400);
   }
 };
@@ -44,11 +43,10 @@ export const getFilteredRents = async (
     if (filteredRents.length === 0) {
       return res
         .status(404)
-        .json({ message: "No rents found matching the provided criteria" });
+        .json({ message: 'No rents found matching the provided criteria' });
     }
     return res.status(200).json(filteredRents);
   } catch (error) {
-    console.log(error);
     return res.sendStatus(400);
   }
 };
