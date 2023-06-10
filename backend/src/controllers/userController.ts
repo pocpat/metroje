@@ -1,5 +1,5 @@
-import { deleteUserById, getUserById, getUsers } from "../db/usersdb";
-import express from "express";
+import { deleteUserById, getUserById, getUsers } from '../db/usersdb';
+import express from 'express';
 
 export const getAllUsers = async (
   req: express.Request,
@@ -10,7 +10,6 @@ export const getAllUsers = async (
 
     return res.status(200).json(users);
   } catch (error) {
-    console.log(error);
     return res.sendStatus(400);
   }
 };
@@ -25,7 +24,6 @@ export const deleteUser = async (
     const deletedUser = await deleteUserById(id);
     return res.json(deletedUser);
   } catch (error) {
-    console.log(error);
     return res.sendStatus(400);
   }
 };
@@ -49,8 +47,6 @@ export const updateUser = async (
 
     return res.status(200).json(user).end();
   } catch (error) {
-    console.log(error);
     return res.sendStatus(400);
   }
 };
-
