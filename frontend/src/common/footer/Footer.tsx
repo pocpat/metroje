@@ -22,9 +22,9 @@ const Footer = () => {
   };
   return (
     <div className="fContainer">
-      <div className="fsubscribe">
+      <div className="fContainer__subscribe">
         <p>subscribe to our newsletter</p>
-        <div className="finput">
+        <div className="fContainer__subscribe--input">
           {/* <button>Subscribe</button> */}
 
           <ButtonHero
@@ -41,18 +41,18 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flogos">
+      <div className="fContainer__logos">
         <img src={waba} alt="waba" />
         <img src={kolos} alt="kolos" />
         <img src={ba} alt="ba" />
       </div>
-      <div className="ficons">
+      <div className="fContainer__icons">
         <img src={fb} alt="fb" />
         <img src={insta} alt="instagram" />
         <img src={li} alt="linkedin" />
         <img src={twit} alt="twitter" />
       </div>
-      <div className="fcontact">
+      <div className="fContainer__contact">
         <p><img src={location} alt="location" />
         Level 33, ANZ Centre, 23-29 Albert St, Auckland 1010, New Zealand</p>
         <p> © 2022 Metro NZ Property Management</p>

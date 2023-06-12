@@ -12,13 +12,13 @@ const Tenants = () => {
     <div>
       <Header />
       <SearchPanel />
-      <div className="tntsCommon">
-      <main className="tntsContainer"  
+      <div className="tenantsContainer">
+      <main className=""  
       style={{ backgroundImage: `url(${tenantsimg})`, 
       backgroundSize: 'cover', backgroundPosition: 'center bottom'
      }} 
       >
-        <article className="tntsText">
+        <article className="tenantsContainer__main--text">
           <h1>Happy Tenants - Our Mission</h1>
           <p>
             At Metro NZ Property Management we pride ourselves on the superior
@@ -37,8 +37,8 @@ const Tenants = () => {
         </article>
         
       </main>
-      <article className="tntsGraph"> 
-        <img src={grfLndsc} alt="tenants graph" className="tntsGrf" />
+      <article className="tenantsContainer__Graph"> 
+        <img src={grfLndsc} alt="tenants graph" className="tenantsContainer__Graph--img" />
         </article>  
 {/* <img src={tenantsimg} alt="tenantsimg" className="tntsImg" /> */}
 </div>

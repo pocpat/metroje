@@ -1,29 +1,26 @@
-
-
-    .tntsCommon{
+.tenantsContainer {
   box-sizing: content-box;
   margin: 10px 120px;
   border-radius: 8px;
 }
-.tntsText {
+
+.tenantsContainer__main {
+  border-radius: 15px;
+}
+
+.tenantsContainer__main div {
+  height: 300px;
+}
+
+.tenantsContainer__main--text {
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--textMain);
   margin: 10px 0;
   padding: 1% 6% 0 6%;
 }
-.tntsContainer div{
-height: 300px;
-}
-.tntsContainer{
-  border-radius: 15px;
-}
-.tntsGraph img{
-width: 100%;
-border-radius: 15px;
-border: 5px solid var(--red) ;
-}
-.tntsGraph{
+
+.tenantsContainer__Graph {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,30 +32,37 @@ border: 5px solid var(--red) ;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 4% 0  ;
+  margin: 4% 0;
+}
+
+.tenantsContainer__Graph--img {
+  width: 100%;
+  border-radius: 15px;
+  border: 5px solid var(--red);
 }
 
 @media screen and (max-width: 1190px) {
-  .tntsText h1,
-  .tntsText p {
+  .tenantsContainer {
+    margin: 0%;
+  }
+
+  .tenantsContainer__main--text h1,
+  .tenantsContainer__main--text p {
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--textMain);
-    margin:  0;
-    padding: 1% ;
-    width:100%;
+    margin: 0;
+    padding: 1%;
+    width: 100%;
     text-align: center;
   }
-  .tntsCommon{
 
-margin: 0%;
-  }
-  .tntsText h1{
+  .tenantsContainer__main--text h1 {
     font-size: 1.5rem;
     font-weight: 800;
     color: var(--textMain);
-    margin:  0;
-    padding: 1% ;
-    width:100%;
+    margin: 0;
+    padding: 1%;
+    width: 100%;
   }
 }

@@ -12,9 +12,9 @@ const HomeSection1 = () => {
     setAnchorEl(null);
   };
   return (
-    <div className="s1container" id="s1container">
-       <section className={`s1Left`}>
-        <div className="s1Title">
+    <div className="s1container">
+      <section className="s1container__left">
+        <div className="s1container__left--title">
           <h1>
             Expertise.
             <br /> Integrity.
@@ -22,7 +22,7 @@ const HomeSection1 = () => {
           </h1>
           <p>Property Management Auckland</p>
         </div>
-        <div className="s1BTNs">
+        <div className="s1container__left--buttons">
           <ButtonHero
             backgroundColor=" #E4353C"
             border="#E4353C"
@@ -43,8 +43,12 @@ const HomeSection1 = () => {
           />
         </div>
       </section>
-      <section className={`s1Right`}>
-        <img src={house} alt="house pic" className="s1house" />
+      <section className="s1container__right">
+        <img
+          src={house}
+          alt="house pic"
+          className="s1container__right--house"
+        />
       </section>
     </div>
   );

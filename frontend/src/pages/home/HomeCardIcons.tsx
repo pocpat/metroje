@@ -6,14 +6,11 @@ interface HomeCardIconsProps {
   text: string;
 }
 
-
-const HomeCardIcons: React.FC<HomeCardIconsProps> = ({image, text}) => {
+const HomeCardIcons: React.FC<HomeCardIconsProps> = ({ image, text }) => {
   return (
     <div className="hsiContainer">
       <img src={image} alt="redimg" className="hciImg" />
-      <p>
-       {text}
-      </p>
+      <p>{text}</p>
     </div>
   );
 };

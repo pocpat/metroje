@@ -1,4 +1,4 @@
-#s1container {
+.s1container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,72 +11,71 @@
   justify-content: center;
   font-size: 2rem;
 }
-
-.s1house {
-  margin: 0%;
-  width: 90%;
+.s1container__left {
+  width: 60%;
 }
 
-.s1BTNs {
+.s1container__left--buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 1rem;
 }
 
-.s1BTNs button {
-  margin:  1rem;
+.s1container__left--buttons button {
+  margin: 1rem;
 }
 
-.s1Title p {
+.s1container__Left--title p {
   font-size: 1.4rem;
 }
 
-.s1Right {
+.s1container__right {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.s1Left {
-  width: 60%;
+.s1container__right--house {
+  margin: 0%;
+  width: 90%;
 }
 
-@media screen 
-and (min-width: 390px) 
-and (max-width: 768px) {
-  #s1container {
+@media screen and (min-width: 390px) and (max-width: 768px) {
+  .s1container {
     margin: 0px 0;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
   }
 
-  .s1BTNs {
+  .s1container__left--buttons {
     flex-direction: row;
     margin: 1rem 0;
     justify-content: space-evenly;
     justify-content: flex-start;
   }
-  .s1BTNs button {
+  .s1container__left--buttons button {
     margin: 0.5rem 1rem;
   }
-  .s1Title h1 {
-    font-size: 2.5rem;
-  }
 
-  .s1Title p {
-    font-size: 1.2rem;
-  }
-
-  .s1Title {
+  .s1container__left--title {
     margin: 0px;
     padding: 0px;
     width: 100%;
   }
-/* house pic */
-  .s1Right {
+
+  .s1container__left--title h1 {
+    font-size: 2.5rem;
+  }
+
+  .s1container__left--title p {
+    font-size: 1.2rem;
+  }
+
+  /* house pic */
+  .s1container__right {
     flex-direction: column;
-    margin: 0px ;
+    margin: 0px;
     padding: 0px;
   }
 }

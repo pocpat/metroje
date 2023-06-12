@@ -16,26 +16,30 @@
   align-items: center;
 }
 
-.ficons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.fContainer__subscribe {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.ficons img {
-  width: 70%;
-  height: 70%;
-  margin: 10px;
+.fContainer__subscribe p {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: flex-start !important;
+  align-items: flex-end !important;
 }
 
-.finput {
+.fContainer__subscribe--input {
   display: flex;
   align-items: center;
   margin: 0 0 5% 0;
 }
 
-.finput input {
+.fContainer__subscribe--input input {
   margin-left: -8px;
   z-index: 1;
   width: 100%;
@@ -47,31 +51,28 @@
   background-color: var(--gray);
 }
 
-.fsubscribe {
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.fsubscribe p {
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-  font-weight: 300;
-  display: flex;
-  justify-content: flex-start !important;
-  align-items: flex-end !important;
-}
-.flogos {
+.fContainer__logos {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
-.flogos img {
+.fContainer__logos img {
   height: 60px;
   margin: 0 3%;
+}
+
+.fContainer__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fContainer__icons img {
+  width: 70%;
+  height: 70%;
+  margin: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -79,29 +80,29 @@
     display: flex;
     flex-direction: column;
     margin: 1% 0%;
-    width : 100%;
+    width: 100%;
   }
-  .flogos,
-  .fcontact img{
-    display:none;
 
+  .fContainer__logos,
+  .fcontact img {
+    display: none;
   }
-  .ficons{
-    display:flex;
-    flex-direction:row;
+
+  .fContainer__icons {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin: 0 ;
+    margin: 0;
   }
-  .ficons img{
+
+  .fContainer__icons img {
     width: 30%;
     height: auto;
-    margin:0  30%;
+    margin: 0 30%;
     padding: 0%;
   }
-  .fcontact p{
-text-align: left;
 
-
-
+  .fContainer__contact p {
+    text-align: left;
   }
 }
