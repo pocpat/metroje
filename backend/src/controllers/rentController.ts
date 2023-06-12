@@ -19,19 +19,25 @@ export const getFilteredRents = async (
   res: express.Response
 ) => {
   try {
-    const location = req.query.location;
-    const suburb = req.query.suburb;
+    const { location, suburb, propertytype } = req.query;
     const rentmin = Number(req.query.rentmin);
     const rentmax = Number(req.query.rentmax);
     const bedrooms = Number(req.query.bedrooms);
-    const propertytype = req.query.propertytype;
 
     let filter: Record<string, any> = {};
 
-    if (location) filter.location = location;
-    if (suburb) filter.suburb = suburb;
-    if (bedrooms) filter.bedrooms = bedrooms;
-    if (propertytype) filter.propertytype = propertytype;
+    if (location) {
+      filter.location = location;
+    }
+    if (suburb) {
+      filter.suburb = suburb;
+    }
+    if (bedrooms) {
+      filter.bedrooms = bedrooms;
+    }
+    if (propertytype) {
+      filter.propertytype = propertytype;
+    }
 
     let filteredRents = await RentModel.find(filter);
 
