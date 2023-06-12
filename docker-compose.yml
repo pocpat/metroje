@@ -15,7 +15,7 @@ services:
   db:
     image: mongo
     ports:
-      - 27107:27107
+      - 27017:27017
     volumes:
       - metroje:/data/db  
 volumes:
