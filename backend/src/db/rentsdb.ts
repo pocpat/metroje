@@ -14,18 +14,18 @@ export const RentModel = mongoose.model('Rent', RentSchema);
 
 export const getRents = () => RentModel.find();
 
-export const getRentByLocation = (location: String) =>
+export const getRentByLocation = (location: string) =>
   RentModel.find({ location });
 
-export const getRentByPrice = (rentprice: Number) =>
+export const getRentByPrice = (rentprice: number) =>
   RentModel.find({ rentprice });
 
-export const getRentBySuburb = (suburb: String) => RentModel.find({ suburb });
+export const getRentBySuburb = (suburb: string) => RentModel.find({ suburb });
 
-export const getRentByBedrooms = (bedrooms: Number) =>
+export const getRentByBedrooms = (bedrooms: number) =>
   RentModel.find({ bedrooms });
 
-export const getRentByPropertyType = (propertytype: String) =>
+export const getRentByPropertyType = (propertytype: string) =>
   RentModel.find({ propertytype });
 
 export const getRentById = (id: string) => RentModel.findById(id);
