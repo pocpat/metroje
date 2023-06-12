@@ -35,10 +35,6 @@ const SearchPanel = () => {
     console.log(formData);
   };
 
-  // const handleRentMinChange = (value:) => {
-  //   setRmin(parseInt(e.target.value));
-  // }
-
   const handleSubmit = () => {
     formData.rentmin = rmin;
     formData.rentmax = rmax;
