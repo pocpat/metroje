@@ -1,9 +1,5 @@
-import { RentModel, 
-  getRents,
- getRentByPrice
-} from '../db/rentsdb';
+import { RentModel, getRents } from '../db/rentsdb';
 import express from 'express';
-
 
 export const getAllRents = async (
   req: express.Request,
@@ -14,10 +10,7 @@ export const getAllRents = async (
 
     return res.status(200).json(Rents);
   } catch (error) {
-    return res.json({
-      message:
-        ' line 13 : the res status is 400 . this message is from rentControllers.ts ',
-    });
+    return res.sendStatus(400);
   }
 };
 
@@ -26,14 +19,10 @@ export const getFilteredRents = async (
   res: express.Response
 ) => {
   try {
-    const {
-      location,
-      suburb,
-      propertytype,
-      rentmin,
-      rentmax,
-      bedrooms
-    } = req.query;
+    const { location, suburb, propertytype } = req.query;
+    const rentmin = Number(req.query.rentmin);
+    const rentmax = Number(req.query.rentmax);
+    const bedrooms = Number(req.query.bedrooms);
 
     let filter: Record<string, any> = {};
 
@@ -50,16 +39,20 @@ export const getFilteredRents = async (
       filter.propertytype = propertytype;
     }
 
-    const filteredRents = await getRentByPrice({
-      rentmin: Number(rentmin),
-      rentmax: Number(rentmax)
-    });
+    let filteredRents = await RentModel.find(filter);
 
+    if (rentmin && rentmax) {
+      filteredRents = filteredRents.filter(
+        (rent) => rent.rentprice >= rentmin && rent.rentprice <= rentmax
+      );
+    }
+    if (filteredRents.length === 0) {
+      return res
+        .status(404)
+        .json({ message: 'No rents found matching the provided criteria' });
+    }
     return res.status(200).json(filteredRents);
   } catch (error) {
-    return  res.status(400).json({
-      message:
-        'An error occurred while fetching filtered rents: ' + (error as Error).message,
-    });
+    return res.sendStatus(400);
   }
 };
