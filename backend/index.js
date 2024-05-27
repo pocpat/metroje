@@ -1,5 +1,6 @@
 import {mongoose} from "mongoose";
+import env from 'dotenv';
 
-const uri = process.env.MONGODB_URI;
+const uri = env.config().parsed?.MONGODB_URI;
 await mongoose.connect(uri);
 console.log ("Connected to MongoDB Atlas from the index.ls !");

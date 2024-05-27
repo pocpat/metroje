@@ -27,6 +27,7 @@ const MONGO_URL = process.env.MONGO_URL;
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
-mongoose.connection.on('error', (error: Error) => console.log(error));
+mongoose.connection.on('error', (error: Error) => console.log("Elena error: " + error));
+mongoose.connection.on('connection', ()=>{console.log("connected from app.ts")})
 
 export default app;
