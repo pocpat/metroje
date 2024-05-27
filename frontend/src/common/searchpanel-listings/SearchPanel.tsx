@@ -10,6 +10,7 @@ import axios from 'axios';
 import RefineSearch from './RefineSearch';
 import { SearchPanelProps } from '../../../types/props';
 import ButtonHero from '../buttons/ButtonHero';
+import { Select, MenuItem, FormControl, InputLabel } from '@mui/material';  // new 1
 
 const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
   const [formData, setFormData] = useState<FormData>({
@@ -33,16 +34,28 @@ const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
     }));
   };
 
+  // const handleSubmit = () => {
+  //   formData.rentmin = rmin;
+  //   formData.rentmax = rmax;
+  //   formData.bedrooms = bed;
+
   const handleSubmit = () => {
-    formData.rentmin = rmin;
-    formData.rentmax = rmax;
-    formData.bedrooms = bed;
+    const searchParams = {
+      ...formData,
+      rentmin: rmin,
+      rentmax: rmax,
+      bedrooms: bed,
+    };
+    console.log('Form Data from SearchPanel.tsx :', searchParams);
+
+
     // Send the form data to the backend server using Axios
     axios
-      .get('http://localhost:8080/rents/results', { params: formData })
+      .get('http://localhost:8080/rents/results', { params: searchParams })
       .then((response) => {
-        // Handle the response from the backend server
-        console.log(response.data);
+          console.log(
+            'Response Data from SearchPanel.tsx. Handle the response from the backend server :', 
+            response.data);
         setCardData(response.data);
       })
       .catch((error) => {

@@ -1,13 +1,15 @@
+
+
 import router from './router/indexrouter';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import compression from 'compression';
 import cors from 'cors';
 import mongoose from 'mongoose';
-import env from 'dotenv';
+import dotenv from 'dotenv';
 import express from 'express';
 
-env.config();
+dotenv.config();
 
 const app = express();
 
