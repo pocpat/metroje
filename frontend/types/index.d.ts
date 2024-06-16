@@ -23,7 +23,7 @@ export interface FormData {
   rentmin: number;
   rentmax: number;
   bedrooms: number;
-  propertytype: string;
+  propertytype: number;
 }
 
 export interface CardData {
@@ -33,7 +33,7 @@ export interface CardData {
   bedrooms: number;
   bathrooms: number;
   carparks: number;
-  propertytype: string;
+  propertytype: number;
 }
 
 export interface SearchPanelProps {

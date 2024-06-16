@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
+  "type": "module",
   "scripts": {
     "test": "jest",
     "dev": "nodemon ./src/index.ts",
@@ -60,6 +61,6 @@
     "express": "^4.18.2",
     "lodash": "^4.17.21",
     "mongodb": "^5.9.2",
-    "mongoose": "^7.6.12"
+    "mongoose": "^8.4.1"
   }
 }

@@ -19,25 +19,22 @@ const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
     rentmin: 0,
     rentmax: 0,
     bedrooms: 0,
-    propertytype: '',
+    propertytype: 0,
   });
   const [rmin, setRmin] = useState(0);
   const [rmax, setRmax] = useState(0);
   const [bed, setBed] = useState(0);
   const [results, setResults] = useState<any[]>([]);
+  const [propertytype, setPropertytype] = useState(0);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [name]: value,
+      [name]: value.trim(),
     }));
   };
 
-  // const handleSubmit = () => {
-  //   formData.rentmin = rmin;
-  //   formData.rentmax = rmax;
-  //   formData.bedrooms = bed;
 
   const handleSubmit = () => {
     const searchParams = {
@@ -107,7 +104,7 @@ const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
           <BedroomsSelectLabels bed={bed} setBed={setBed} />
         </div>
         <div className="spPropertyType">
-          <PropertytypeSelectLabels />
+          <PropertytypeSelectLabels propertytype={propertytype}  setPropertytype={setPropertytype}/>
         </div>
       </section>
       <section className="spSearchButton">

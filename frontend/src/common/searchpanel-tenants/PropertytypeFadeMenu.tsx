@@ -9,12 +9,14 @@ import {
   formHelperTextSelectorStyle,
   selectInputGreyStyle,
 } from './menuItemSelectStyle';
+import { PropertytypeSelectLabelsProps } from '../../../types/props';
 
-export default function PropertytypeSelectLabels() {
-  const [proptype, setProptype] = React.useState('');
-
-  const handleChange = (event: SelectChangeEvent) => {
-    setProptype(event.target.value);
+  
+export default function PropertytypeSelectLabels  ({ propertytype, setPropertytype }: PropertytypeSelectLabelsProps)  {  
+  const handleChange = (event: SelectChangeEvent<number>) => {
+    if (typeof event.target.value === 'number') {
+    setPropertytype(event.target.value);
+    }
   };
 
   return (
@@ -24,13 +26,13 @@ export default function PropertytypeSelectLabels() {
           Property Type
         </FormHelperText>
         <Select
-          value={proptype}
+          value={propertytype} 
           onChange={handleChange}
           displayEmpty
           inputProps={{ 'aria-label': 'Without label' }}
           sx={selectInputGreyStyle}
         >
-          <MenuItem value="" sx={menuItemSelectStyle}>
+          <MenuItem value={0} sx={menuItemSelectStyle}>
             <em> </em>
           </MenuItem>
           <MenuItem value={1} sx={menuItemSelectStyle}>
@@ -56,3 +58,4 @@ export default function PropertytypeSelectLabels() {
     </div>
   );
 }
+

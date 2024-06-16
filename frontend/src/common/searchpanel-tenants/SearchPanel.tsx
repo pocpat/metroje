@@ -8,31 +8,32 @@ import RentminSelectLabels from './RentminFadeMenu';
 import { FormData } from '../../../types';
 import axios from 'axios';
 import ButtonHero from '../buttons/ButtonHero';
-
+//import { PropertytypeSelectLabelsProps } from '../../../types/props';
 
 
 const SearchPanel = () => {
   const [formData, setFormData] = useState<FormData>({
-    location: '',
+    location:'',
     suburb: '',
     rentmin: 0,
     rentmax: 0,
     bedrooms: 0,
-    propertytype: '',
+    propertytype: 0,
   });
   const [rmin, setRmin] = useState(0);
   const [rmax, setRmax] = useState(0);
   const [bed, setBed] = useState(0);
-  const [propertytype, setPropertytype] = useState('');
+  const [propertytype, setPropertytype] = useState(0);
 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+    const trimmedValue = value.trim();
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [name]: value,
+      [name]:trimmedValue,
     }));
-    console.log(formData);
+    console.log("line 36 form data to check: ",formData);
   };
 
   const handleSubmit = () => {
@@ -88,8 +89,8 @@ const SearchPanel = () => {
           <BedroomsSelectLabels  bed={bed}  setBed={setBed}/>
         </div>
         <div className="spPropertyType">
-          <PropertytypeSelectLabels />
-        </div>
+        <PropertytypeSelectLabels propertytype={propertytype} setPropertytype={setPropertytype} /> 
+               </div>
       </section>
       <section className="spSearchButtonTenants">
         <ButtonHero

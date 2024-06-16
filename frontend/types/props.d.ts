@@ -5,6 +5,10 @@ export interface BedroomsSelectProps {
     setBed: (value: number) => void;
   }
   
+  export interface PropertytypeSelectLabelsProps {
+    propertytype: number;
+    setPropertytype:  (value: number) => void;
+  }
   export interface RentmaxSelectLabelsProps {
     rmax: number;
     setRmax: (value: number) => void;
