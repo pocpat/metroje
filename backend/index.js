@@ -47,52 +47,52 @@
 // });
 
 // ============================ mongoose V4 =========================
-import mongoose from 'mongoose';
-import { config } from 'dotenv';
-//import { property } from 'lodash';
+// import mongoose from 'mongoose';
+// import { config } from 'dotenv';
+// //import { property } from 'lodash';
 
-config();
+// config();
 
-const uri = config().parsed?.MONGODB_URI;
+// const uri = config().parsed?.MONGODB_URI;
 
-mongoose.connect(uri, { ssl: true })
-  .then(() => console.log('Connected to MongoDB Atlas! The first note. '))
-  .catch(err => console.error('Error connecting to MongoDB Atlas:', err));
+// mongoose.connect(uri, { ssl: true })
+//   .then(() => console.log('Connected to MongoDB Atlas! The first note. '))
+//   .catch(err => console.error('Error connecting to MongoDB Atlas:', err));
 
-mongoose.connection.on('connected', () => {
-  console.log('Connected to MongoDB Atlas!');
-});
+// mongoose.connection.on('connected', () => {
+//   console.log('Connected to MongoDB Atlas!');
+// });
 
-mongoose.connection.on('error', (err) => {
-  console.log('Error connecting to MongoDB Atlas:', err);
-});
+// mongoose.connection.on('error', (err) => {
+//   console.log('Error connecting to MongoDB Atlas:', err);
+// });
 
-mongoose.connection.once('open', async () => {
-  const RentSchema = new mongoose.Schema({
-location: String,
-suburb: String,
-rentprice: Number,
-bedrooms: Number,
-propertytype: String,
-  }, { strict: false });
+// mongoose.connection.once('open', async () => {
+//   const RentSchema = new mongoose.Schema({
+// location: String,
+// suburb: String,
+// rentprice: Number,
+// bedrooms: Number,
+// propertytype: String,
+//   }, { strict: false });
 
-  // Create a model from the schema
-  const Rent = mongoose.model('Rent', RentSchema, 'rents');
+//   // Create a model from the schema
+//   const Rent = mongoose.model('Rent', RentSchema, 'rents');
 
-  // Fetch data using the model
-  try {
-    const doc = await Rent.find({}).exec();
-    console.log(doc);
-  } catch (err) {
-    console.error('Error fetching data from MongoDB:', err);
-  }
-});
+//   // Fetch data using the model
+//   try {
+//     const doc = await Rent.find({}).exec();
+//     console.log(doc);
+//   } catch (err) {
+//     console.error('Error fetching data from MongoDB:', err);
+//   }
+// });
 
 // ============================ mongoDB Atlas V5 =========================
 import { MongoClient, ServerApiVersion } from 'mongodb';
 import env from 'dotenv';
 
-// const uri = env.config().parsed?.MONGODB_URI ;
+const uri = env.config().parsed?.MONGODB_URI ;
 console.log("uri: ", uri);
   //'mongodb+srv://elenamongodb:<password>@cluster0.og4lx1s.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
