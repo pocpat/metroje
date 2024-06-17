@@ -19,7 +19,7 @@ const debugMongoose = async()=> {
   let newRec: Record<string, any> = {
     location: "Auckland",
     suburb: "Mt Eden",
-    rentprice: 11111,
+    rentprice: 3333,
     bedrooms: 2,
     bathrooms: 1,
     propertytype: "House",
@@ -75,3 +75,7 @@ export const getFilteredRents = async (
     return res.sendStatus(400);
   }
 };
+
+// update happence in db test/ rents/Documents 1 (there is 1 object in the array). 
+// suppose to create in db metroje/rents/Documents 17 (thereare 17 objects in the array).
+// TO DO - to find the wrong path to db.

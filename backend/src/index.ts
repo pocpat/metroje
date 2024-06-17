@@ -22,7 +22,10 @@ app.use(
 app.use(compression());
 app.use(cookieParser());
 app.use(bodyParser.json());
-
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.path}`);
+  next();
+});
 const server = http.createServer(app);
 
 const MONGO_URL = process.env.MONGO_URL;
