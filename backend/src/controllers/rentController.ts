@@ -1,4 +1,4 @@
-import { RentModel, getRents } from "../db/rentsdb";
+import { RentModel, createRent, getRents } from "../db/rentsdb";
 import express from "express";
 
 export const getAllRents = async (
@@ -15,11 +15,33 @@ export const getAllRents = async (
   }
 };
 
+const debugMongoose = async()=> {
+  let newRec: Record<string, any> = {
+    location: "Auckland",
+    suburb: "Mt Eden",
+    rentprice: 11111,
+    bedrooms: 2,
+    bathrooms: 1,
+    propertytype: "House",
+    carparks: 1,
+  };
+  createRent(newRec);
+
+
+  let  allRents = await RentModel.find();
+  console.log(allRents);
+
+
+}
+
 export const getFilteredRents = async (
   req: express.Request,
   res: express.Response
 ) => {
   try {
+
+    debugMongoose();
+
     const location = req.query.location;
     const suburb = req.query.suburb;
     const rentmin = Number(req.query.rentmin);
@@ -28,6 +50,7 @@ export const getFilteredRents = async (
     const propertytype = req.query.propertytype;
 
     let filter: Record<string, any> = {};
+
 
     if (location) filter.location = location;
     if (suburb) filter.suburb = suburb;
