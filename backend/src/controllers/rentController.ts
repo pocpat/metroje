@@ -42,20 +42,23 @@ export const getFilteredRents = async (
 
     debugMongoose();
 
-    const location = req.query.location;
-    const suburb = req.query.suburb;
+    const location = req.query.location?.toString().trim();
+    const suburb = req.query.suburb?.toString().trim();
     const rentmin = Number(req.query.rentmin);
     const rentmax = Number(req.query.rentmax);
     const bedrooms = Number(req.query.bedrooms);
-    const propertytype = req.query.propertytype;
+    const propertytype = req.query.propertytype?.toString().trim();
 
     let filter: Record<string, any> = {};
 
 
-    if (location) filter.location = location;
+
+    if (location) filter.location = { $regex: new RegExp(`^${location}$`, 'i') };
     if (suburb) filter.suburb = suburb;
     if (bedrooms) filter.bedrooms = bedrooms;
     if (propertytype) filter.propertytype = propertytype;
+    if (rentmin) filter.rentprice = { $gte: rentmin };
+    if (rentmax) filter.rentprice = { ...filter.rentprice, $lte: rentmax };
 
     let filteredRents = await RentModel.find(filter);
 
@@ -64,10 +67,13 @@ export const getFilteredRents = async (
         (rent) => rent.rentprice >= rentmin && rent.rentprice <= rentmax
       );
     }
-    if (filteredRents.length === 0) {
-      return res
-        .status(404)
-        .json({ message: "No rents found matching the provided criteria" });
+    // if (filteredRents.length === 0) {
+    //   return res
+    //     .status(404)
+    //     .json({ message: "No rents found matching the provided criteria" });
+     // If no rents match the filter, get all rents
+     if (filteredRents.length === 0) {
+      filteredRents = await RentModel.find();
     }
     return res.status(200).json(filteredRents);
   } catch (error) {
