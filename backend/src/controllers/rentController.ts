@@ -16,17 +16,17 @@ export const getAllRents = async (
 };
 
 const debugMongoose = async()=> {
-  let newRec: Record<string, any> = {
-    location: "Auckland",
-    suburb: "Mt Eden",
-    rentprice: 3333,
-    bedrooms: 2,
-    bathrooms: 1,
-    propertytype: "House",
-    carparks: 1,
-  };
-  createRent(newRec);
-
+  // let newRec: Record<string, any> = {
+  //   location: "Auckland",
+  //   suburb: "Mt Eden",
+  //   rentprice: 3333,
+  //   bedrooms: 2,
+  //   bathrooms: 1,
+  //   propertytype: "House",
+  //   carparks: 1,
+  // };
+  //createRent(newRec);
+  await RentModel.deleteMany({ rentprice: 2222 });
 
   let  allRents = await RentModel.find();
   console.log(allRents);
@@ -40,7 +40,7 @@ export const getFilteredRents = async (
 ) => {
   try {
 
-    debugMongoose();
+   debugMongoose();
 
     const location = req.query.location?.toString().trim();
     const suburb = req.query.suburb?.toString().trim();
@@ -74,6 +74,7 @@ export const getFilteredRents = async (
      // If no rents match the filter, get all rents
      if (filteredRents.length === 0) {
       filteredRents = await RentModel.find();
+      console.log(filteredRents);
     }
     return res.status(200).json(filteredRents);
   } catch (error) {
@@ -82,6 +83,3 @@ export const getFilteredRents = async (
   }
 };
 
-// update happence in db test/ rents/Documents 1 (there is 1 object in the array). 
-// suppose to create in db metroje/rents/Documents 17 (thereare 17 objects in the array).
-// TO DO - to find the wrong path to db.
