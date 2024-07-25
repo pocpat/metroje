@@ -27,7 +27,7 @@ export default function BedroomsSelectLabels({ bed, setBed }: BedroomsSelectProp
           inputProps={{ 'aria-label': 'Without label' }}
           sx={selectInputGreyStyle}
         >
-          <MenuItem value=""> <em></em> </MenuItem>
+          <MenuItem value={0}> <em></em> </MenuItem>
           <MenuItem value={1}sx={menuItemSelectStyle}>1</MenuItem>
           <MenuItem value={2}sx={menuItemSelectStyle}>2</MenuItem>
           <MenuItem value={3}sx={menuItemSelectStyle}>3</MenuItem>

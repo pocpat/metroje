@@ -29,4 +29,8 @@ export interface BedroomsSelectProps {
     cardData: CardData[];
     setCardData: (value: CardData[]) => void;
   }
+  export interface PropertyTypesSelectProps {
+    propertytype: string;
+    setPropertytype: (value: string) => void;
+  }
   

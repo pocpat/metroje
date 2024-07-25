@@ -23,6 +23,7 @@ const SearchPanel = () => {
   const [rmin, setRmin] = useState(0);
   const [rmax, setRmax] = useState(0);
   const [bed, setBed] = useState(0);
+  
   const [propertytype, setPropertytype] = useState('');
 
 
@@ -92,7 +93,7 @@ const SearchPanel = () => {
           <BedroomsSelectLabels  bed={bed}  setBed={setBed}/>
         </div>
         <div className="spPropertyType">
-          <PropertytypeSelectLabels />
+        <PropertytypeSelectLabels propertytype={propertytype} setPropertytype={setPropertytype}/>
         </div>
       </section>
       <section className="spSearchButtonTenants">

@@ -10,6 +10,7 @@ import axios from 'axios';
 import RefineSearch from './RefineSearch';
 import { SearchPanelProps } from '../../../types/props';
 import ButtonHero from '../buttons/ButtonHero';
+import { PropertyTypesSelectProps } from '../../../types/props';
 
 const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
   const [formData, setFormData] = useState<FormData>({
@@ -23,6 +24,7 @@ const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
   const [rmin, setRmin] = useState(0);
   const [rmax, setRmax] = useState(0);
   const [bed, setBed] = useState(0);
+  const [propertytype, setPropertytype] = useState('');
   const [results, setResults] = useState<any[]>([]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -94,7 +96,7 @@ const SearchPanel = ({ cardData, setCardData }: SearchPanelProps) => {
           <BedroomsSelectLabels bed={bed} setBed={setBed} />
         </div>
         <div className="spPropertyType">
-          <PropertytypeSelectLabels />
+          <PropertytypeSelectLabels propertytype={propertytype} setPropertytype={setPropertytype}/>
         </div>
       </section>
       <section className="spSearchButton">
