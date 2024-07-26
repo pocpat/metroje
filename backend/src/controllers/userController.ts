@@ -43,7 +43,9 @@ export const updateUser = async (
     }
 
     const user = await getUserById(id);
-
+    if (!user) {
+      return res.sendStatus(404); // User not found
+    }
     user.username = username;
     await user.save();
 

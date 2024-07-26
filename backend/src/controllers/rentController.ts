@@ -64,7 +64,7 @@ export const getFilteredRents = async (
 
     if (rentmin && rentmax) {
       filteredRents = filteredRents.filter(
-        (rent) => rent.rentprice >= rentmin && rent.rentprice <= rentmax
+        (rent) => (rent.rentprice ?? 0) >= rentmin && (rent.rentprice ?? 0) <= rentmax
       );
     }
     // if (filteredRents.length === 0) {

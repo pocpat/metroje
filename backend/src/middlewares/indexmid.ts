@@ -9,7 +9,7 @@ export const isOwner = async (
 ) => {
   try {
     const { id } = req.params;
-    const currentUserId = get(req, 'identity._id') as string;
+    const currentUserId = get(req, 'identity._id') as unknown as string;
 
     if (!currentUserId) {
       return res.sendStatus(403);
@@ -33,7 +33,7 @@ export const isAuthenticated = async (
 ) => {
   try {
     const cookie = process.env.COOKIE;
-    const sessionToken = req.cookies[cookie];
+    const sessionToken = cookie ? req.cookies[cookie] : undefined;
 
     if (!sessionToken) {
       return res.sendStatus(403);

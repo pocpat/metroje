@@ -14,11 +14,11 @@ export const login = async (req: express.Request, res: express.Response) => {
       '+authentication.salt +authentication.password'
     );
 
-    if (!user) {
+    if (!user || !user.authentication) {
       return res.sendStatus(400);
     }
 
-    const expectedHash = authentication(user.authentication.salt, password);
+    const expectedHash = authentication(user.authentication?.salt || '', password);
 
     if (user.authentication.password !== expectedHash) {
       return res.sendStatus(403);
@@ -31,7 +31,7 @@ export const login = async (req: express.Request, res: express.Response) => {
     );
 
     await user.save();
-    const cookie = process.env.COOKIE;
+    const cookie = process.env.COOKIE ?? 'defaultCookieName';
 
     res.cookie(cookie, user.authentication.sessionToken, {
       domain: 'localhost',

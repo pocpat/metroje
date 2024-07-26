@@ -22,13 +22,16 @@ app.use(
 app.use(compression());
 app.use(cookieParser());
 app.use(bodyParser.json());
-app.use((req, res, next) => {
-  console.log(`${req.method} ${req.path}`);
+app.use((req: express.Request, res: express.Response, next: express.NextFunction) => {
+  const method = req.method ?? 'UNKNOWN_METHOD';
+  const path = req.path ?? 'UNKNOWN_PATH';
+  
+  console.log(`${method} ${path}`);
   next();
 });
 const server = http.createServer(app);
 
-const MONGO_URL = process.env.MONGO_URL;
+const MONGO_URL = process.env.MONGO_URL ?? 'mongodb://localhost:27017/defaultdb';
 
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
