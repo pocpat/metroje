@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "noImplicitAny": true,
+    // "target": "ES5",
+    //  "module": "ES2015",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+
+    "lib": ["dom", "esnext"],
+    "strict": true,
+    "sourceMap": true,
+    "target": "esnext"
+  },
+
+  "include": ["src", "typings.d.ts"],
+  "exclude": ["node_modules"]
+}

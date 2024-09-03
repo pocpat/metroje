@@ -1,0 +1,64 @@
+
+
+    .tntsCommon{
+  box-sizing: content-box;
+  margin: 10px 120px;
+  border-radius: 8px;
+}
+.tntsText {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--textMain);
+  margin: 10px 0;
+  padding: 1% 6% 0 6%;
+}
+.tntsContainer div{
+height: 300px;
+}
+.tntsContainer{
+  border-radius: 15px;
+}
+.tntsGraph img{
+width: 100%;
+border-radius: 15px;
+border: 5px solid var(--red) ;
+}
+.tntsGraph{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  border-radius: 8px;
+  border: 5px solid var(--textMain) x;
+  background-image: url('../srcAssets/houses/tenantsimg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 4% 0  ;
+}
+
+@media screen and (max-width: 1190px) {
+  .tntsText h1,
+  .tntsText p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--textMain);
+    margin:  0;
+    padding: 1% ;
+    width:100%;
+    text-align: center;
+  }
+  .tntsCommon{
+
+margin: 0%;
+  }
+  .tntsText h1{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--textMain);
+    margin:  0;
+    padding: 1% ;
+    width:100%;
+  }
+}

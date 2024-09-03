@@ -1,0 +1,114 @@
+.wh_img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #294ba8;
+  width: 1040px;
+  height: 100%;
+  position: static;
+  width: auto;
+  box-sizing: border-box;
+}
+.wh_navigation {
+  height: 100px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  background-color: #fff;
+  color: var(--textMain);
+  margin: 10px 120px;
+}
+
+.wh_navigation-menu {
+  margin-left: auto;
+  z-index: 2;
+}
+
+.wh_navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+.wh_navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+.wh_navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.wh_hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  transform: translateY(-175%);
+  float: 'left';
+  background-color: transparent;
+  display: none;
+}
+.wh_hamburger:hover {
+  background-color: var(--bgSecondary);
+  box-shadow: #000103;
+}
+
+@media screen and (max-width: 1288px) {
+  .wh_hamburger {
+    display: block;
+  }
+  .wh_navigation-menu ul {
+    display: none;
+  }
+  .wh_navigation-menu ul {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: white;
+    border-top: 1px solid black;
+    display: none;
+  }
+  .wh_navigation-menu.expanded ul {
+    display: block;
+    width: 100px;
+  }
+  .wh_navigation-menu li {
+    text-align: center;
+    margin: 0;
+  }
+  .wh_navigation-menu li a {
+    color: black;
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+  .wh_navigation-menu li:hover {
+    background-color: #eee;
+  }
+  .wh_navigation {
+    margin: 0px 0px;
+    width: 100%;
+  }
+}
+
+.linkedText a:-webkit-any-link {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}

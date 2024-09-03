@@ -1,0 +1,8 @@
+.homePageContainer{
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .homePageContainer{
+        width: 100%;
+    }
+}
