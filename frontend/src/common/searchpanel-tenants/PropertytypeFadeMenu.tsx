@@ -11,8 +11,16 @@ import {
 } from './menuItemSelectStyle';
 import { PropertyTypesSelectProps } from '../../../types/props';
 
+
+
+
+
+
+
+
+
+// =============================== OLD ====================================
 export default function PropertytypeSelectLabels({propertytype, setPropertytype}:PropertyTypesSelectProps) {
-  //const [proptype, setProptype] = React.useState('');
 
   const handleChange = (event: SelectChangeEvent) => {
     setPropertytype(event.target.value);

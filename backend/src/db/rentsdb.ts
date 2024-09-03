@@ -12,7 +12,8 @@ export const RentSchema = new mongoose.Schema({
 
 export const RentModel = mongoose.model('Rent', RentSchema);
 
-export const getRents = () => RentModel.find();
+//export const getRents = () => RentModel.find();
+export const getRents = (filter: Record<string, any> = {}) => RentModel.find(filter);
 
 export const getRentByLocation = (location: String) =>
   RentModel.find({ location });

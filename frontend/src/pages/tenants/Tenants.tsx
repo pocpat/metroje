@@ -1,17 +1,20 @@
-import React from 'react';
 import Header from '../../common/header/Header';
 import Footer from '../../common/footer/Footer';
 import SearchPanel from '../../common/searchpanel-tenants/SearchPanel';
 import tenantsimg from '../../srcAssets/houses/tenantsimg.png';
 import grfLndsc from '../../srcAssets/tntsgraph_landsc.jpg';
 import '../../styles/Tenants.css';
+import { CardData } from '../../../types';
+import React, { useState } from 'react';
+
 const Tenants = () => {
   console.log('CardHero is being rendered');
+  const [cardData, setCardData] = useState<CardData[]>([]);
 
   return (
     <div>
       <Header />
-      <SearchPanel />
+     {/* <SearchPanel cardData={cardData} setCardData={setCardData} /> */}
       <div className="tntsCommon">
       <main className="tntsContainer"  
       style={{ backgroundImage: `url(${tenantsimg})`, 
